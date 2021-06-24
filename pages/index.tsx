@@ -1,8 +1,12 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const router = useRouter();
+  console.log(router);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +19,6 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://www.twitch.tv/scpWyatt">Wyatt.gg!</a>
         </h1>
-
         <p className={styles.description}>More to come soon.</p>
         <iframe
           src="https://player.twitch.tv/?channel=scpwyatt&parent=wyattgg.vercel.app"
@@ -25,14 +28,13 @@ export default function Home() {
           height="378"
           width="620"
         ></iframe>
-
         <iframe
           id="chat_embed"
           src="https://www.twitch.tv/embed/scpwyatt/chat?parent=wyattgg.vercel.app"
           height="500"
           width="350"
         ></iframe>
-
+        Basepath: {router.basePath}
         <div className={styles.grid}>
           <a href="" className={styles.card}>
             <h2>Socials &rarr;</h2>
