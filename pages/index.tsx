@@ -1,11 +1,8 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
-import Image from "next/image";
+import { Twitch } from "../components/Twitch.component";
+import { Footer } from "../components/Footer.component";
 
 export default function Home() {
-  const URLPATH =
-    process.env.NODE_ENV === "development" ? "localhost:3000" : "www.wyatt.gg";
-
   return (
     <div>
       <Head>
@@ -27,27 +24,10 @@ export default function Home() {
           </h1>
           <p className=" text-gray-100 text-3xl mt-2">More to come soon.</p>
         </div>
-        <div className="grid justify-center my-6">
-          <iframe
-            src={`https://player.twitch.tv/?channel=scpwyatt&parent=${URLPATH}`}
-            frameBorder="0"
-            allowFullScreen={true}
-            scrolling="no"
-            height="378"
-            width="620"
-          ></iframe>
-          <iframe
-            id="chat_embed"
-            src={`https://www.twitch.tv/embed/scpwyatt/chat?parent=${URLPATH}&darkpopout`}
-            height="378"
-            width="620"
-          ></iframe>
-        </div>
+        <Twitch />
       </main>
 
-      <footer className="text-center text-gray-200">
-        Copyright &copy; 2021
-      </footer>
+      <Footer />
     </div>
   );
 }
