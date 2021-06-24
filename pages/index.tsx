@@ -4,6 +4,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const URLPATH =
+    process.env.NODE_ENV === "development" ? "localhost:3000" : "wyatt.gg";
   return (
     <div className={styles.container}>
       <Head>
@@ -18,7 +20,7 @@ export default function Home() {
         </h1>
         <p className={styles.description}>More to come soon.</p>
         <iframe
-          src="https://player.twitch.tv/?channel=scpwyatt&parent=wyattgg.vercel.app"
+          src="https://player.twitch.tv/?autoplay=true"
           frameBorder="0"
           allowFullScreen={true}
           scrolling="no"
@@ -27,7 +29,7 @@ export default function Home() {
         ></iframe>
         <iframe
           id="chat_embed"
-          src="https://www.twitch.tv/embed/scpwyatt/chat?parent=wyattgg.vercel.app"
+          src="https://www.twitch.tv/embed/scpwyatt/chat"
           height="500"
           width="350"
         ></iframe>
