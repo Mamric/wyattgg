@@ -18,7 +18,7 @@ export default function Home() {
 
         <p className={styles.description}>More to come soon.</p>
         <iframe
-          src="https://player.twitch.tv/?channel=scpwyatt&parent=https://wyattgg.vercel.app"
+          src="https://player.twitch.tv/?channel=scpwyatt&parent=wyattgg.vercel.app"
           frameBorder="0"
           allowFullScreen={true}
           scrolling="no"
@@ -28,7 +28,7 @@ export default function Home() {
 
         <iframe
           id="chat_embed"
-          src="https://www.twitch.tv/embed/scpwyatt/chat?parent=https://wyattgg.vercel.app"
+          src="https://www.twitch.tv/embed/scpwyatt/chat?parent=wyattgg.vercel.app"
           height="500"
           width="350"
         ></iframe>
