@@ -20,7 +20,7 @@ export default function Home() {
         </h1>
         <p className={styles.description}>More to come soon.</p>
         <iframe
-          src="https://player.twitch.tv/?autoplay=true"
+          src={`https://player.twitch.tv/?channel=scpwyatt&parent=${URLPATH}`}
           frameBorder="0"
           allowFullScreen={true}
           scrolling="no"
@@ -29,7 +29,7 @@ export default function Home() {
         ></iframe>
         <iframe
           id="chat_embed"
-          src="https://www.twitch.tv/embed/scpwyatt/chat"
+          src={`https://www.twitch.tv/embed/scpwyatt/chat?parent=${URLPATH}`}
           height="500"
           width="350"
         ></iframe>
