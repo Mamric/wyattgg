@@ -4,9 +4,6 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  const router = useRouter();
-  console.log(router);
-
   return (
     <div className={styles.container}>
       <Head>
@@ -34,7 +31,6 @@ export default function Home() {
           height="500"
           width="350"
         ></iframe>
-        Basepath: {router.basePath}
         <div className={styles.grid}>
           <a href="" className={styles.card}>
             <h2>Socials &rarr;</h2>
