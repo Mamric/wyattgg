@@ -22,7 +22,7 @@ export default function Home() {
               Wyatt.gg!
             </a>
           </h1>
-          <p className=" text-gray-100 text-3xl mt-2">More to come soon.</p>
+          <p className=" text-gray-100 text-3xl mt-2">More to come soon. 🚀</p>
         </div>
         <Twitch />
       </main>
