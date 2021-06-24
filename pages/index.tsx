@@ -7,7 +7,6 @@ export default function Home() {
   const URLPATH =
     process.env.NODE_ENV === "development" ? "localhost:3000" : "www.wyatt.gg";
 
-  console.log(URLPATH);
   return (
     <div className={styles.container}>
       <Head>
