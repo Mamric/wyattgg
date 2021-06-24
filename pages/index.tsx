@@ -38,7 +38,7 @@ export default function Home() {
           ></iframe>
           <iframe
             id="chat_embed"
-            src={`https://www.twitch.tv/embed/scpwyatt/chat?parent=${URLPATH}`}
+            src={`https://www.twitch.tv/embed/scpwyatt/chat?parent=${URLPATH}&darkpopout`}
             height="378"
             width="620"
           ></iframe>
