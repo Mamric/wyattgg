@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Twitch } from "../components/Twitch.component";
 import { Footer } from "../components/Footer.component";
+import { Header } from "../components/Header.component";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <main className="text-center">
         <div className="my-3">
           <h1 className="text-7xl text-gray-100">
