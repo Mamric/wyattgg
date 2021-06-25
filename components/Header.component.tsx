@@ -19,29 +19,31 @@ const links: link[] = [
 
 export const Header = () => {
   return (
-    <div className="text-gray-100 py-2 text-lg">
+    <div className="text-gray-100 py-2 text-lg md:flex items-center justify-center md:justify-start p-2 text-center">
       <Link href="/">
         <a className="mx-2 text-4xl align-middle hover:underline">Wyatt.gg</a>
       </Link>
-      {links.map((l) => (
+      <div className="">
+        {links.map((l) => (
+          <a
+            key={l.text}
+            href={l.url}
+            target="_blank"
+            rel="noreferrer"
+            className={linkStyles + " hover:underline"}
+          >
+            {l.text}
+          </a>
+        ))}
         <a
-          key={l.text}
-          href={l.url}
+          href="//streamelements.com/scpwyatt/tip"
           target="_blank"
           rel="noreferrer"
-          className={linkStyles + " hover:underline"}
+          className={linkStyles + " bg-red-600 rounded-sm hover:bg-red-700"}
         >
-          {l.text}
+          Donate
         </a>
-      ))}
-      <a
-        href="//streamelements.com/scpwyatt/tip"
-        target="_blank"
-        rel="noreferrer"
-        className={linkStyles + " bg-red-600 rounded-sm hover:bg-red-700"}
-      >
-        Donate
-      </a>
+      </div>
     </div>
   );
 };
