@@ -3,7 +3,7 @@ export const Twitch = () => {
     process.env.NODE_ENV === "development" ? "localhost:3000" : "www.wyatt.gg";
   return (
     <div className="grid justify-center">
-      <div className="my-6 max-w-5xl" style={{ width: "97vw" }}>
+      <div className="my-6 max-w-5xl" style={{ width: "100vw" }}>
         <div className="">
           <iframe
             src={`https://player.twitch.tv/?channel=scpwyatt&parent=${URLPATH}`}
