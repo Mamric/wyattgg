@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <Header />
-      <main className="text-center">
+      <main className="text-center w-full">
         <div className="my-3">
           <h1 className="text-7xl text-gray-100">
             Welcome to{" "}
