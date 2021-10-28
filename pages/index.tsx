@@ -16,7 +16,7 @@ export default function Home() {
       <main className="text-center w-full">
         <div className="my-3">
           <h1 className="text-7xl text-gray-100">
-            Welcome to the greatest website ever, {" "}
+            Welcome to{" "}
             <a
               href="https://www.twitch.tv/scpWyatt"
               className="text-blue-700 hover:underline"
