@@ -6,7 +6,7 @@ const notFoundPage = () => {
       <div className="flex justify-center">
         <Image
           className="object-cover"
-          src="/../public/pepe-hands.png"
+          src="/../public/static/pepe-hands.png"
           alt={"404 image"}
           width={200}
           height={200}
