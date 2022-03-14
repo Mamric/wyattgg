@@ -12,7 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
       <main className="text-center w-full">
         <div className="my-3">
           <h1 className="text-7xl text-gray-100">
@@ -28,8 +27,6 @@ export default function Home() {
         </div>
         <Twitch />
       </main>
-
-      <Footer />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import { Header } from "../components/Header.component";
 
 export default function protoCDPage() {
     const YEARS = 999999
-  const FINAL_DATE = Date.now() + (1000 * 60 * 60 * 24 * 365 * YEARS);
+  const FINAL_DATE = (1000 * 60 * 60 * 24 * 365 * YEARS);
   return (
     <>
       <Head>
@@ -14,7 +14,6 @@ export default function protoCDPage() {
         <meta name="description" content="Wyatt's Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <main className="p-10">
         <div className="text-center w-full text-gray-100 text-5xl">
           When Will Stalix Get His Discord Title?
@@ -26,7 +25,6 @@ export default function protoCDPage() {
           <Countdown date={FINAL_DATE} />
         </div>
       </main>
-      <Footer />
     </>
   );
 }
