@@ -1,12 +1,19 @@
+import Head from "next/head";
 import React from "react";
 import Countdown from "react-countdown";
 import { Footer } from "../components/Footer.component";
 import { Header } from "../components/Header.component";
 
 export default function protoCDPage() {
-  const FINAL_DATE = Date.now() + 1000 * 60 * 60 * 24 * 365 * 2;
+    const YEARS = 999999
+  const FINAL_DATE = Date.now() + (1000 * 60 * 60 * 24 * 365 * YEARS);
   return (
     <>
+      <Head>
+        <title>Fuck You, Sleepy. | Wyatt.gg</title>
+        <meta name="description" content="Wyatt's Website" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <main className="p-10">
         <div className="text-center w-full text-gray-100 text-5xl">
