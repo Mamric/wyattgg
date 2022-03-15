@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { Twitch } from "../components/Twitch.component";
-import { Footer } from "../components/Footer.component";
-import { Header } from "../components/Header.component";
+import dynamic from 'next/dynamic'
+// import Twitch from "../components/Twitch.component";
+const DynamicTwitch = dynamic(() => import("../components/Twitch.component"), { ssr: false });
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
           </h1>
           <p className=" text-gray-100 text-3xl mt-2">More to come soon. 🚀</p>
         </div>
-        <Twitch />
+        <DynamicTwitch />
       </main>
     </div>
   );

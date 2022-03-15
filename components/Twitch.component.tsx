@@ -1,4 +1,4 @@
-export const Twitch = () => {
+export default function Twitch() {
   const URLPATH =
     process.env.NODE_ENV === "development" ? "localhost:3000" : "www.wyatt.gg";
   return (
@@ -20,4 +20,4 @@ export const Twitch = () => {
       </div>
     </div>
   );
-};
+}
