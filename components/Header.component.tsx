@@ -29,7 +29,8 @@ export const Header = () => {
           <Socials />
           <DonateButton />
         </div>
-        <BigScreenButton />
+        {/* re-add when /bigscreen is completed */}
+        {/* <BigScreenButton /> */}
       </div>
     </div>
   );
