@@ -17,7 +17,7 @@ const weightPage = () => {
             <div className="text-1xl italic mt-2">A Gamer's Journey</div>
             <div className="my-4 text-center md:text-left flex flex-wrap justify-evenly">
                 {entries.map((entry, i) => (
-                    <div className="my-5 flex-none w-7/12">
+                    <div key={i} className="my-5 flex-none w-7/12">
                         <div className="text-3xl font-bold">Entry {i + 1}:</div>
                         <div className="">
                             {new Date(entry.date).toLocaleString('en-us', { weekday: 'long' })}
