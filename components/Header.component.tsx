@@ -1,20 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
 
-type link = { url: string; text: string };
+type link = { url: string; text: string; newPage?: Boolean };
 const linkStyles = "ml-2 p-1 hover:cursor-pointer align-middle";
 const links: link[] = [
   {
+    url: "/weight",
+    text: "Weight"
+  },
+  {
     url: "//twitch.tv/scpWyatt",
     text: "Twitch",
+    newPage: true
   },
   {
     url: "//discord.gg/scpWyatt",
     text: "Discord",
+    newPage: true
   },
   {
-    url: "//reddit.com/r/scpWyatt",
+    url: "//reddit.com/r/scpWyatt2",
     text: "Reddit",
+    newPage: true
   },
 ];
 
@@ -42,7 +49,7 @@ const Socials = () => (
       <a
         key={l.text}
         href={l.url}
-        target="_blank"
+        target={l.newPage ? "_blank" : "_self"}
         rel="noreferrer"
         className={linkStyles + " hover:underline"}
       >
