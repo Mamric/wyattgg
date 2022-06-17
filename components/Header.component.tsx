@@ -46,15 +46,30 @@ export const Header = () => {
 const Socials = () => (
   <>
     {links.map((l) => (
-      <a
-        key={l.text}
-        href={l.url}
-        target={l.newPage ? "_blank" : "_self"}
-        rel="noreferrer"
-        className={linkStyles + " hover:underline"}
-      >
-        {l.text}
-      </a>
+      l.newPage ? (
+        <a
+          key={l.text}
+          href={l.url}
+          target={l.newPage ? "_blank" : "_self"}
+          rel="noreferrer"
+          className={linkStyles + " hover:underline"}
+        >
+          {l.text}
+        </a>
+      ) : (
+        <Link
+          key={l.text}
+          href={l.url}
+        >
+          <a
+            target={l.newPage ? "_blank" : "_self"}
+            rel="noreferrer"
+            className={linkStyles + " hover:underline"}
+          >
+            {l.text}
+          </a>
+        </Link>
+      )
     ))}
   </>
 );
