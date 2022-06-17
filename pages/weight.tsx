@@ -6,7 +6,7 @@ const weightPage = () => {
 
     const entries: Array<entry> = [
         {
-            date: "June 18, 2022",
+            date: "June 16, 2022",
             weight: 288.8,
         },
     ]
