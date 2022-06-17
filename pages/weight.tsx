@@ -42,8 +42,8 @@ const weightPage = () => {
                     ))}
                 </div>
             </div>
-            )
         </div>
+    )
 }
 
 export default weightPage
