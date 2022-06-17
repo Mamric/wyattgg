@@ -14,7 +14,7 @@ const weightPage = () => {
     return (
         <div className="text-center text-white my-8">
             <div className="text-5xl">My Weight</div>
-            <div className="text-1xl italic mt-2">A Gamer's Journey</div>
+            <div className="text-1xl italic mt-2">A Gamer&apos;s Journey</div>
             <div className="my-4 text-center md:text-left flex flex-wrap justify-evenly">
                 {entries.map((entry, i) => (
                     <div key={i} className="my-5 flex-none w-7/12">
