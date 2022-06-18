@@ -33,7 +33,10 @@ export const Header = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-gray-100 text-lg md:flex items-center justify-center md:justify-start text-center">
           <Link href="/">
-            <a className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-500 mx-2 pb-1 text-4xl font-bold">
+            <a
+              className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-500 mx-2 pb-1 text-4xl font-bold"
+              title={"Wyatt.gg Home"}
+            >
               Wyatt.gg
             </a>
           </Link>
@@ -44,6 +47,7 @@ export const Header = () => {
                   <a
                     key={l.text}
                     href={l.url}
+                    title={"Go to the " + l.text}
                     target={"_blank"}
                     rel="noreferrer"
                     className={linkStyles + " hover:underline"}
@@ -54,6 +58,7 @@ export const Header = () => {
                   <Link key={l.text} href={l.url}>
                     <a
                       rel="noreferrer"
+                      title={l.text}
                       className={
                         linkStyles +
                         (router.pathname == l.url ? "" : "") +
@@ -105,6 +110,7 @@ const DonateButton = () => (
     href="//streamelements.com/scpwyatt/tip"
     target="_blank"
     rel="noreferrer"
+    title="Donate to Wyatt!"
     className={
       linkStyles +
       " bg-red-600 rounded-md hover:bg-red-700 transition-all duration-75 ease-in-out"

@@ -14,6 +14,10 @@ const entries: Array<entry> = [
     date: "June 17, 2022",
     weight: 284.4,
   },
+  {
+    date: "June 18, 2022",
+    weight: 283.7,
+  },
 ];
 
 const weightPage = () => {
