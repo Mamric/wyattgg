@@ -24,7 +24,6 @@ const weightPage = () => {
   return (
     <div>
       <Head>
-        <title>Weight | Wyatt.gg</title>
         <meta name="description" content="Wyatt's Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

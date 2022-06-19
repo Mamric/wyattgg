@@ -10,7 +10,6 @@ export default function protoCDPage() {
   return (
     <>
       <Head>
-        <title>Fuck You, Sleepy. | Wyatt.gg</title>
         <meta name="description" content="Wyatt's Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

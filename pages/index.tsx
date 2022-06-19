@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Homepage | Wyatt.gg</title>
         <meta name="description" content="Wyatt's Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
