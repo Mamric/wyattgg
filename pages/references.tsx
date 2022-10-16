@@ -48,7 +48,7 @@ const referencesData: reference[] = [
 
 const referencesPage = () => {
   return (
-    <div className="text-white flex flex-col flex-w items-center">
+    <div className="text-white flex flex-col flex-w items-center px-3">
       <div className="text-center text-bold mt-5 text-5xl">REFERENCES</div>
       <div className="m-5">
         <span className="italic">
