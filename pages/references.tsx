@@ -52,7 +52,7 @@ const referencesPage = () => {
       <div className="text-center text-bold mt-5 text-5xl">REFERENCES</div>
       <div className="m-5">
         <span className="italic">
-          "The only true wisdom is in knowing you know nothing"
+          &quot;The only true wisdom is in knowing you know nothing&quot;
         </span>{" "}
         - Socrates
       </div>
