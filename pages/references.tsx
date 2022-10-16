@@ -43,14 +43,27 @@ const referencesData: reference[] = [
     url: "http://alex.vlachos.com/graphics/Vlachos-GDC10-Left4Dead2Wounds.pdf",
     mediaType: "powerpoint",
     description: "Rendering Wounds in Left 4 Dead 2",
-  }
+  },
 ];
 
 const referencesPage = () => {
   return (
     <div className="text-white flex flex-col flex-w items-center">
-      <div className="text-center text-bold m-5 text-5xl">REFERENCES</div>
-      <div className="max-w-xl">Below is a running list of game development resources that I have collected over the years. The intention for this list is to inspire independent game developers and to give them a few pointers from those that came before them. It is far from a complete list, and I intend to add onto it as time progresses, and as I find more articles and resources that I find useful.</div>
+      <div className="text-center text-bold mt-5 text-5xl">REFERENCES</div>
+      <div className="m-5">
+        <span className="italic">
+          "The only true wisdom is in knowing you know nothing"
+        </span>{" "}
+        - Socrates
+      </div>
+      <div className="max-w-xl">
+        Below is a running list of game development resources that I have
+        collected over the years. The intention for this list is to inspire
+        independent game developers and to give them a few pointers from those
+        that came before them. It is far from a complete list, and I intend to
+        add onto it as time progresses, and as I find more articles and
+        resources that I find useful.
+      </div>
       <div className="flex flex-col items-center my-10 p-10 pt-5 border rounded-md">
         {referencesData.map((r) => (
           <div key={r.name} className="mt-5 w-full">
@@ -69,7 +82,8 @@ const referencesPage = () => {
                   ? "Watch Video"
                   : r.mediaType === "powerpoint"
                   ? "View Presentation"
-                  : ""}  ↗
+                  : ""}{" "}
+                ↗
               </a>
             </div>
           </div>
