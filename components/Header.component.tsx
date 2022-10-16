@@ -5,8 +5,8 @@ type link = { url: string; text: string; newPage?: Boolean };
 const linkStyles = "m-2 p-1 hover:cursor-pointer align-middle";
 const links: link[] = [
   {
-    url: "/weight",
-    text: "Weight",
+    url: "/references",
+    text: "References",
   },
   {
     url: "//twitch.tv/scpWyatt",
