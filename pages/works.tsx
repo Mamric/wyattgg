@@ -30,7 +30,7 @@ const pageQuoteAuthor = "Carl Jung";
 
 const worksPage = () => {
   return (
-    <main className="text-white flex flex-col flex-w items-center px-3 pb-7">
+    <main className="text-white flex flex-col flex-w items-center px-3">
       <div className="text-white flex flex-col flex-w items-center px-3">
         <div className="text-center text-bold mt-5 text-5xl">WORKS</div>
       </div>
