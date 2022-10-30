@@ -46,15 +46,16 @@ const referencesData: reference[] = [
   },
 ];
 
+const pageQuote = "The only true wisdom is in knowing you know nothing.";
+const pageQuoteAuthor = "Socrates";
+
 const referencesPage = () => {
   return (
     <div className="text-white flex flex-col flex-w items-center px-3">
       <div className="text-center text-bold mt-5 text-5xl">REFERENCES</div>
       <div className="m-5">
-        <span className="italic">
-          &quot;The only true wisdom is in knowing you know nothing&quot;
-        </span>{" "}
-        - Socrates
+        <span className="italic">{`"${pageQuote}"`}</span>{" "}
+        {`- ${pageQuoteAuthor}`}
       </div>
       <div className="max-w-xl">
         Below is a running list of game development resources that I have
