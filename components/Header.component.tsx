@@ -1,13 +1,21 @@
 import Link from "next/link";
-import { Router, useRouter } from "next/router";
+import { NextRouter, useRouter } from "next/router";
 
 type link = { url: string; text: string; newPage?: Boolean };
-const linkStyles = "m-2 p-1 hover:cursor-pointer align-middle";
+const linkStyles =
+  "m-2 p-1 hover:cursor-pointer align-middle active:text-blue-400 ";
 const links: link[] = [
   {
     url: "/references",
     text: "References",
   },
+  {
+    url: "/works",
+    text: "Works",
+  },
+];
+
+const extLinks: link[] = [
   {
     url: "//twitch.tv/scpWyatt",
     text: "Twitch",
@@ -40,39 +48,11 @@ export const Header = () => {
               Wyatt.gg
             </a>
           </Link>
-          <div>
-            <span className="active:color-blue-100">
-              {links.map((l) =>
-                l.newPage ? (
-                  <a
-                    key={l.text}
-                    href={l.url}
-                    title={"Go to the " + l.text}
-                    target={"_blank"}
-                    rel="noreferrer"
-                    className={linkStyles + " hover:underline"}
-                  >
-                    {l.text}
-                  </a>
-                ) : (
-                  <Link key={l.text} href={l.url}>
-                    <a
-                      rel="noreferrer"
-                      title={l.text}
-                      className={
-                        linkStyles +
-                        (router.pathname == l.url ? "" : "") +
-                        " hover:underline"
-                      }
-                    >
-                      {l.text}
-                    </a>
-                  </Link>
-                )
-              )}
-            </span>
-            <DonateButton />
-          </div>
+          <span className="active:color-blue-100 flex flex-wrap justify-center md:justify-start">
+            <Socials router={router} />
+            <ExtSocials />
+          </span>
+          <DonateButton />
           {/* re-add when /bigscreen is completed */}
           {/* <BigScreenButton /> */}
         </div>
@@ -81,28 +61,40 @@ export const Header = () => {
   );
 };
 
-const Socials = () => (
-  <>
-    {links.map((l) =>
-      l.newPage ? (
+const Socials = ({ router }: { router: NextRouter }) => (
+  <span>
+    {links.map((l) => (
+      <Link key={l.text} href={l.url}>
         <a
-          key={l.text}
-          href={l.url}
-          target={"_blank"}
           rel="noreferrer"
-          className={linkStyles + " hover:underline"}
+          title={l.text}
+          className={
+            linkStyles +
+            (router.pathname == l.url ? "underline" : "") +
+            " hover:underline"
+          }
         >
           {l.text}
         </a>
-      ) : (
-        <Link key={l.text} href={l.url}>
-          <a rel="noreferrer" className={linkStyles + " hover:underline"}>
-            {l.text}
-          </a>
-        </Link>
-      )
-    )}
-  </>
+      </Link>
+    ))}
+  </span>
+);
+const ExtSocials = () => (
+  <span>
+    {extLinks.map((l) => (
+      <a
+        key={l.text}
+        href={l.url}
+        title={"Go to the " + l.text}
+        target={"_blank"}
+        rel="noreferrer"
+        className={linkStyles + " hover:underline"}
+      >
+        {l.text}
+      </a>
+    ))}
+  </span>
 );
 
 const DonateButton = () => (
