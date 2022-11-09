@@ -66,7 +66,6 @@ const worksPage = () => {
             </div>
           ))}
         </div>
-        FRAGMENT 2 // RVBJ8
       </div>
     </main>
   );
