@@ -1,7 +1,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-const DynamicTwitch = dynamic(() => import("../components/Twitch.component"), {
+const DynamicTwitch = dynamic(() => import("@/components/Twitch.component"), {
   ssr: false,
 });
 
