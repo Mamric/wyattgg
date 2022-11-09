@@ -17,8 +17,8 @@ const links: link[] = [
 
 const extLinks: link[] = [
   {
-    url: "//twitch.tv/scpWyatt",
-    text: "Twitch",
+    url: "//youtube.com/scpWyatt",
+    text: "Youtube",
     newPage: true,
   },
   {
