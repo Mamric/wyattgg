@@ -1,5 +1,6 @@
 import React from "react";
 
+// define the works data
 type work = {
   name: string;
   url: string;
@@ -8,6 +9,7 @@ type work = {
   attributions: string;
 };
 
+// object containing the works data
 const worksData: work[] = [
   {
     name: "Order Your Ghostlight Now!",
@@ -55,25 +57,28 @@ const worksPage = () => {
           enjoy the works that I have been a part of.
         </div>
         <div className="flex flex-col items-center my-10 p-10 pt-5 border rounded-md">
-          {worksData.map((r) => (
-            <div key={r.name} className="mt-5 w-full">
-              <div className="text-left font-bold text-3xl">{r.name}</div>
-              <div className="italic">{r.description}</div>
-              <div className="text-center">
-                <a
-                  href={r.url}
-                  className="hover:underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {r.mediaType === "video" ? "Watch Video" : ""} ↗
-                </a>
+          {worksData
+            .map((r) => (
+              <div key={r.name} className="mt-5 w-full">
+                <div className="text-left font-bold text-3xl">{r.name}</div>
+                <div className="italic">{r.description}</div>
+                <div className="text-center">
+                  <a
+                    href={r.url}
+                    className="hover:underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {r.mediaType === "video" ? "Watch Video" : ""} ↗
+                  </a>
+                </div>
+                <div>
+                  Played: <span className="italic">{r.attributions}</span>
+                </div>
               </div>
-              <div>
-                Played: <span className="italic">{r.attributions}</span>
-              </div>
-            </div>
-          ))}
+            ))
+            .reverse()}
+          {/*Reverse the order of the works so most recent is on top*/}
         </div>
       </div>
     </main>
