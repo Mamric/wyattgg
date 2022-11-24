@@ -79,7 +79,6 @@ const PageInfoDisplayer = ({ pagesInfo }: { pagesInfo: pageInfo[] }) => {
           </a>
         </Link>
       ))}
-      ;
     </div>
   );
 };
@@ -107,7 +106,6 @@ const ExternalPageInfoDisplayer = ({
           </p>
         </a>
       ))}
-      ;
     </div>
   );
 };
