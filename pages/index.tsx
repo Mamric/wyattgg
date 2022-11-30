@@ -50,12 +50,14 @@ export default function Home() {
     <div>
       <main className="text-center w-full select-none">
         <div className="mt-3">
-          <h1 className="text-7xl font-bold">
-            Welcome to{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-500 font-bold">
-              Wyatt.gg!
-            </span>
-          </h1>
+          <div className="flex justify-center">
+            <h1 className="text-5xl lg:text-7xl md:w-full w-3/5 font-bold transition-all duration-150">
+              Welcome to{" "}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-500 font-bold">
+                Wyatt.gg!
+              </span>
+            </h1>
+          </div>
           <p className="font-semibold text-3xl mt-2">More to come soon. 🚀</p>
           <PageInfoDisplayer pagesInfo={referencesData} />
           <div className="flex justify-center">

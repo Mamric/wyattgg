@@ -42,13 +42,15 @@ export const Header = () => {
         <div className="text-gray-800 text-lg md:flex items-center justify-center md:justify-start text-center">
           <Link href="/">
             <a
-              className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-500 mx-2 pb-1 text-4xl font-bold"
+              className={
+                "bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-500 mx-2 py-2 text-4xl font-bold border-b-4 border-transparent hover:border-gray-400 transition-all duration-150 "
+              }
               title={"Wyatt.gg Home"}
             >
               Wyatt.gg
             </a>
           </Link>
-          <span className="active:color-blue-100 flex flex-wrap justify-center md:justify-start">
+          <span className="active:color-blue-100 flex flex-wrap justify-center md:justify-start my-3">
             <Socials router={router} />
             <ExtSocials />
           </span>
@@ -70,8 +72,10 @@ const Socials = ({ router }: { router: NextRouter }) => (
           title={l.text}
           className={
             linkStyles +
-            (router.pathname == l.url ? "underline" : "") +
-            " hover:underline"
+            "hover:border-gray-400 transition-all duration-150 md:pb-3 " +
+            (router.pathname == l.url
+              ? "border-b-4 border-gray-500 hover:border-gray-500"
+              : "border-b-4 border-transparent")
           }
         >
           {l.text}
@@ -89,9 +93,12 @@ const ExtSocials = () => (
         title={"Go to the " + l.text}
         target={"_blank"}
         rel="noreferrer"
-        className={linkStyles + " hover:underline"}
+        className={
+          linkStyles +
+          " group md:pb-3 border-b-4 border-transparent hover:border-gray-400 text-gray-600 text-sm transition-all duration-150"
+        }
       >
-        {l.text}
+        {l.text} <span className="text-transparent group-hover:text-gray-400 text-lg transition-all duration-150">↗</span>
       </a>
     ))}
   </span>

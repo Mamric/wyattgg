@@ -63,7 +63,7 @@ const worksPage = () => {
             <div key={r.name} className="my-5 w-full">
               <div className="text-left font-bold text-3xl">{r.name}</div>
               <div className="">{r.description}</div>
-              <div className="border-l-2 pl-2 border-gray-800 ">
+              <div className="border-l-4 pl-3 border-gray-300 ">
                 Played: <span className="italic">{r.attributions}</span>
               </div>
               <div className="text-center">
