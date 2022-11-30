@@ -71,7 +71,7 @@ const referencesPage = () => {
       </div>
       <div className="flex flex-col items-center mt-10 w-11/12 p-10 pt-5 border rounded-md shadow-md">
         {referencesData.map((r) => (
-          <div key={r.name} className="mt-5 w-full mb-5">
+          <div key={r.name} className="my-5 w-full">
             <div className="text-left font-bold text-3xl select-none">
               {r.name.toUpperCase()}
             </div>
