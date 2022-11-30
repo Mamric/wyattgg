@@ -14,9 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           {router.pathname === "/"
             ? "Wyatt.gg | homepage"
             : `Wyatt.gg | ${router.pathname.slice(1)}`}
-          <meta name="description" content="Wyatt's Website" />
-          <link rel="icon" href="/favicon.ico" />
         </title>
+        <meta name="description" content="Wyatt's Website" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <div className="flex justify-center">
