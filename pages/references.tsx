@@ -52,7 +52,7 @@ const pageQuoteAuthor = "Socrates";
 const referencesPage = () => {
   return (
     <div className="flex flex-col flex-w items-center">
-      <div className="w-9/12">
+      <div className="w-11/12">
         <div className="font-bold mt-5 text-5xl text-center md:text-left">
           REFERENCES
         </div>
@@ -60,7 +60,7 @@ const referencesPage = () => {
           <span className="italic">{`"${pageQuote}"`}</span>{" "}
           {`- ${pageQuoteAuthor}`}
         </div>
-        <div className="">
+        <div className="border-l-4 pl-4">
           Below is a running list of game development resources that I have
           collected over the years. The intention for this list is to inspire
           independent game developers and to give them a few pointers from those

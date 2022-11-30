@@ -42,14 +42,14 @@ const pageQuoteAuthor = "Carl Jung";
 const worksPage = () => {
   return (
     <main className="flex flex-col flex-w items-center">
-      <div className="w-9/12">
+      <div className="w-11/12">
         <div className="mt-5 text-5xl text-center md:text-left">WORKS</div>
         <div>
           <div className="m-5 text-center md:text-left">
             <span className="italic">{`"${pageQuote}"`}</span>{" "}
             {`- ${pageQuoteAuthor}`}
           </div>
-          <div className="">
+          <div className="border-l-4 pl-4">
             Below is a list of works that I have leant my voice to. As I
             continue to work on more projects, I will update this page with more
             information, and with additional sections. But for now, I hope you
@@ -63,7 +63,7 @@ const worksPage = () => {
             <div key={r.name} className="my-5 w-full">
               <div className="text-left font-bold text-3xl">{r.name}</div>
               <div className="">{r.description}</div>
-              <div>
+              <div className="border-l-2 pl-2 border-gray-800 ">
                 Played: <span className="italic">{r.attributions}</span>
               </div>
               <div className="text-center">
