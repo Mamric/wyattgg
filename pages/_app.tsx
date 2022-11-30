@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>
           {router.pathname === "/"
-            ? "Wyatt.gg | homepage"
+            ? "Wyatt.gg | HOME"
             : `Wyatt.gg | ${router.pathname.slice(1)}`}
         </title>
         <meta name="description" content="Wyatt's Website" />
