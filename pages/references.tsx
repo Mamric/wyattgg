@@ -9,7 +9,7 @@ type reference = {
 
 const referencesData: reference[] = [
   {
-    name: "AI part 1",
+    name: "AI Part 1",
     url: "https://www.gamedeveloper.com/programming/gdc-2005-proceeding-handling-complexity-in-the-i-halo-2-i-ai",
     mediaType: "article",
     description: "GDC 2005 Proceeding: Handling Complexity in the Halo 2 AI",
@@ -51,26 +51,32 @@ const pageQuoteAuthor = "Socrates";
 
 const referencesPage = () => {
   return (
-    <div className="text-white flex flex-col flex-w items-center px-3">
-      <div className="text-center text-bold mt-5 text-5xl">REFERENCES</div>
-      <div className="m-5">
-        <span className="italic">{`"${pageQuote}"`}</span>{" "}
-        {`- ${pageQuoteAuthor}`}
+    <div className="flex flex-col flex-w items-center">
+      <div className="w-9/12">
+        <div className="font-bold mt-5 text-5xl text-center md:text-left">
+          REFERENCES
+        </div>
+        <div className="m-5 text-center md:text-left">
+          <span className="italic">{`"${pageQuote}"`}</span>{" "}
+          {`- ${pageQuoteAuthor}`}
+        </div>
+        <div className="">
+          Below is a running list of game development resources that I have
+          collected over the years. The intention for this list is to inspire
+          independent game developers and to give them a few pointers from those
+          that came before them. It is far from a complete list, and I intend to
+          add onto it as time progresses, and as I find more articles and
+          resources that I find useful.
+        </div>
       </div>
-      <div className="max-w-xl">
-        Below is a running list of game development resources that I have
-        collected over the years. The intention for this list is to inspire
-        independent game developers and to give them a few pointers from those
-        that came before them. It is far from a complete list, and I intend to
-        add onto it as time progresses, and as I find more articles and
-        resources that I find useful.
-      </div>
-      <div className="flex flex-col items-center my-10 p-10 pt-5 border rounded-md">
+      <div className="flex flex-col items-center mt-10 w-11/12 p-10 pt-5 border rounded-md shadow-md">
         {referencesData.map((r) => (
-          <div key={r.name} className="mt-5 w-full">
-            <div className="text-left font-bold text-3xl">{r.name}</div>
-            <div className="italic">{r.description}</div>
-            <div className="text-center">
+          <div key={r.name} className="mt-5 w-full mb-5">
+            <div className="text-left font-bold text-3xl select-none">
+              {r.name.toUpperCase()}
+            </div>
+            <div className="select-none">{r.description}</div>
+            <div className="text-center select-none">
               <a
                 href={r.url}
                 className="hover:underline text-blue-600 hover:text-blue-800 visited:text-purple-600"

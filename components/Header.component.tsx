@@ -37,9 +37,9 @@ export const Header = () => {
   const router = useRouter();
 
   return (
-    <div className="border-solid border-b-2 border-gray-800 pb-3 py-1">
+    <div className="border-solid border-b-2 bg-gradient-to-t from-white to-gray-300  pb-3 py-1 select-none shadow-md md:px-2">
       <div className="max-w-6xl mx-auto">
-        <div className="text-gray-100 text-lg md:flex items-center justify-center md:justify-start text-center">
+        <div className="text-gray-800 text-lg md:flex items-center justify-center md:justify-start text-center">
           <Link href="/">
             <a
               className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-500 mx-2 pb-1 text-4xl font-bold"
@@ -105,7 +105,7 @@ const DonateButton = () => (
     title="Donate to Wyatt!"
     className={
       linkStyles +
-      " bg-red-600 rounded-md hover:bg-red-700 transition-all duration-75 ease-in-out"
+      " bg-red-600 rounded-md hover:bg-red-700 transition-all duration-75 ease-in-out text-gray-100 "
     }
   >
     Donate

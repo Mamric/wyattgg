@@ -19,8 +19,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         </title>
       </Head>
       <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <div className="flex justify-center">
+        <div className="w-11/12 max-w-screen-2xl">
+          <Component {...pageProps} />
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }
