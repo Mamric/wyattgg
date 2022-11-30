@@ -11,16 +11,16 @@ type pageInfo = {
 
 const referencesData: pageInfo[] = [
   {
-    title: "references",
-    description: "References for games development",
-    url: "/references",
-    emoji: "📚",
-  },
-  {
     title: "works",
     description: "Voice Over Artistry Portfolio",
     url: "/works",
     emoji: "🎙️",
+  },
+  {
+    title: "references",
+    description: "References for games development",
+    url: "/references",
+    emoji: "📚",
   },
 ];
 
@@ -72,8 +72,8 @@ export default function Home() {
 const PageInfoDisplayer = ({ pagesInfo }: { pagesInfo: pageInfo[] }) => {
   return (
     <div className="flex flex-col md:flex-row self-center my-10 justify-center">
-      {pagesInfo.map((pageInfo) => (
-        <Card {...pageInfo} key={pageInfo.title} />
+      {pagesInfo.map((pageInfo, i) => (
+        <Card {...pageInfo} index={i} key={i} />
       ))}
     </div>
   );

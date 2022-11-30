@@ -41,7 +41,7 @@ const pageQuoteAuthor = "Carl Jung";
 
 const worksPage = () => {
   return (
-    <main className="flex flex-col flex-w items-center">
+    <main className="flex flex-col flex-w items-center select-none">
       <div className="w-11/12">
         <div className="mt-5 text-5xl text-center md:text-left">WORKS</div>
         <div>
@@ -60,7 +60,7 @@ const worksPage = () => {
       <div className="flex flex-col items-center mt-10 w-11/12 p-10 pt-5 border rounded-md shadow-md">
         {worksData
           .map((r) => (
-            <div key={r.name} className="my-5 w-full">
+            <div key={r.name} className="my-2 w-full hover:bg-gray-100 rounded-md p-3 transition-all duration-150">
               <div className="text-left font-bold text-3xl">{r.name}</div>
               <div className="">{r.description}</div>
               <div className="border-l-4 pl-3 border-gray-300 ">
@@ -69,7 +69,7 @@ const worksPage = () => {
               <div className="text-center">
                 <a
                   href={r.url}
-                  className="hover:underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  className="border-b-2 border-transparent hover:border-blue-400 text-blue-600 hover:text-blue-800 visited:text-purple-600"
                   target="_blank"
                   rel="noreferrer"
                 >

@@ -51,7 +51,7 @@ const pageQuoteAuthor = "Socrates";
 
 const referencesPage = () => {
   return (
-    <div className="flex flex-col flex-w items-center">
+    <div className="flex flex-col flex-w items-center select-none">
       <div className="w-11/12">
         <div className="font-bold mt-5 text-5xl text-center md:text-left">
           REFERENCES
@@ -71,7 +71,10 @@ const referencesPage = () => {
       </div>
       <div className="flex flex-col items-center mt-10 w-11/12 p-10 pt-5 border rounded-md shadow-md">
         {referencesData.map((r) => (
-          <div key={r.name} className="my-5 w-full">
+          <div
+            key={r.name}
+            className="my-2 w-full hover:bg-gray-100 rounded-md p-3 transition-all duration-150 "
+          >
             <div className="text-left font-bold text-3xl select-none">
               {r.name.toUpperCase()}
             </div>
@@ -79,7 +82,7 @@ const referencesPage = () => {
             <div className="text-center select-none">
               <a
                 href={r.url}
-                className="hover:underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                className="border-b-2 border-transparent hover:border-blue-400 text-blue-600 hover:text-blue-800 visited:text-purple-600"
                 target="_blank"
                 rel="noreferrer"
               >

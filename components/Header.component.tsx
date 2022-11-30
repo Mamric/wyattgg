@@ -98,7 +98,10 @@ const ExtSocials = () => (
           " group md:pb-3 border-b-4 border-transparent hover:border-gray-400 text-gray-600 text-sm transition-all duration-150"
         }
       >
-        {l.text} <span className="text-transparent group-hover:text-gray-400 text-lg transition-all duration-150">↗</span>
+        {l.text}{" "}
+        <span className="text-transparent group-hover:text-gray-400 text-lg transition-all duration-150">
+          ↗
+        </span>
       </a>
     ))}
   </span>
