@@ -51,7 +51,7 @@ export default function Home() {
       <main className="text-center w-full select-none">
         <div className="mt-3">
           <div className="flex justify-center">
-            <h1 className="text-5xl lg:text-7xl md:w-full w-3/5 font-bold transition-all duration-150">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl md:w-full w-3/5 font-bold transition-all duration-150">
               Welcome to{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-500 font-bold">
                 Wyatt.gg!
