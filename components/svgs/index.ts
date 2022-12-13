@@ -1,1 +1,2 @@
-export { default as IconArrowThinUpCircle } from "./IconArrowThinUpCircle";
+// todo: add all svgs here
+// export { default as IconArrowThinUpCircle } from "./IconArrowThinUpCircle";
