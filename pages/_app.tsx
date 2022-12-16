@@ -4,9 +4,15 @@ import { Header } from "@/components/Header.component";
 import { Footer } from "@/components/Footer.component";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
+  const [darkMode, setDarkMode] = useState(false);
+  useEffect(() => {
+  }, [darkMode]);
+
+
   return (
     <>
       <Head>
@@ -19,8 +25,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="flex justify-center">
-        <div className="w-11/12 max-w-screen-2xl">
+      {/* <button onClick={() => setDarkMode(!darkMode)}>Dark Mode</button> */}
+      <div className={`flex justify-center ${darkMode && "dark"}`}>
+        <div className="w-11/12 max-w-screen-2xl dark:bg-gray-800">
           <Component {...pageProps} />
           <Footer />
         </div>
