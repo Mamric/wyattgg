@@ -1,8 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
-html {
-  /* background: #111827; */
+:root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
 }
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Additional dark mode styles */
+a {
+    color: #3b82f6; /* blue-500 */
+}
+
+a:hover {
+    color: #60a5fa; /* blue-400 */
+}
+/* You can add more global dark mode styles here */
