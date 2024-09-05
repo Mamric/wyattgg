@@ -60,7 +60,7 @@ const externalLinks: PageInfo[] = [
 export default function Home() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 text-white">
-            <main className="max-w-6xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <main className="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
                         Welcome to{" "}
@@ -106,13 +106,13 @@ export default function Home() {
 const InternalCard = ({ title, description, url, icon: Icon }: PageInfo) => (
     <Link
         href={url}
-        className="block p-6 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition duration-150 ease-in-out"
+        className="block p-4 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition duration-150 ease-in-out"
     >
         <div className="flex items-center">
-            <Icon className="h-8 w-8 text-blue-400 mr-4" />
+            <Icon className="h-6 w-6 text-blue-400 mr-3" />
             <div>
-                <h3 className="text-xl font-semibold">{title}</h3>
-                <p className="text-gray-400">{description}</p>
+                <h3 className="text-lg font-semibold">{title}</h3>
+                <p className="text-sm text-gray-400">{description}</p>
             </div>
         </div>
     </Link>
@@ -123,13 +123,13 @@ const ExternalCard = ({ title, description, url, icon: Icon }: PageInfo) => (
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="block p-4 bg-gray-800 bg-opacity-50 rounded-lg shadow-sm hover:bg-opacity-75 transition duration-150 ease-in-out"
+        className="block p-3 bg-gray-800 bg-opacity-50 rounded-lg shadow-sm hover:bg-opacity-75 transition duration-150 ease-in-out"
     >
         <div className="flex items-center">
-            <Icon className="h-5 w-5 text-gray-400 mr-3" />
+            <Icon className="h-5 w-5 text-gray-400 mr-2" />
             <div>
-                <h3 className="text-base font-medium">{title}</h3>
-                <p className="text-sm text-gray-500">{description}</p>
+                <h3 className="text-sm font-medium">{title}</h3>
+                <p className="text-xs text-gray-500">{description}</p>
             </div>
         </div>
     </a>
