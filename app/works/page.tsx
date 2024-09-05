@@ -47,7 +47,7 @@ export default function WorksPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold mb-8 text-center">My Works</h1>
         <div className="mb-12 text-center">
-          <p className="text-xl italic mb-2">"{pageQuote}"</p>
+          <p className="text-xl italic mb-2">&quot;{pageQuote}&quot;</p>
           <p className="text-lg">- {pageQuoteAuthor}</p>
         </div>
         <div className="border-l-4 border-blue-500 pl-4 mb-12">
