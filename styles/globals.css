@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+  }
+}
+
 :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 255, 255, 255;

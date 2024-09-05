@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer.component";
 import "../styles/globals.css";
 import { Inter, Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const poppins = Poppins({ 
   weight: ['400', '600', '700'], 
   subsets: ['latin'],
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.className} ${poppins.variable} font-sans min-h-screen flex flex-col`}>
+    <html lang="en" className={`dark ${inter.variable} ${poppins.variable}`}>
+      <body className="font-sans min-h-screen flex flex-col">
         <Header />
         <main className="flex-grow">
           {children}

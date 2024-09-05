@@ -28,7 +28,8 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "next-env.d.ts",
