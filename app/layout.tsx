@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`dark ${inter.variable} ${poppins.variable}`}>
-      <body className="font-sans min-h-screen flex flex-col">
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${poppins.variable} dark font-sans min-h-screen flex flex-col`}>
         <Header />
         <main className="flex-grow">
           {children}
@@ -25,5 +25,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
+  );
 }
