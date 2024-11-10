@@ -1,4 +1,6 @@
 import CompletionStats from "./CompletionStats";
+import literaryDevices from "@/data/writing-exercises/literary-devices.json";
+import { LiteraryDevice } from "../types";
 
 type CompletedScreenProps = {
     exercise: {
@@ -8,18 +10,22 @@ type CompletedScreenProps = {
         deviceKeys: string[];
         exportResults: () => void;
         restartExercise: () => void;
+        currentSentence: string;
     };
 };
 
+const typedLiteraryDevices = literaryDevices as { [key: string]: LiteraryDevice };
+
 export default function CompletedScreen({ exercise }: CompletedScreenProps) {
-    const duration = exercise.startTime && exercise.endTime
-        ? Math.floor((exercise.endTime.getTime() - exercise.startTime.getTime()) / 1000)
-        : 0;
+    const duration =
+        exercise.startTime && exercise.endTime
+            ? Math.floor((exercise.endTime.getTime() - exercise.startTime.getTime()) / 1000)
+            : 0;
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
             <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-                <div className="bg-gray-800 rounded-lg p-8">
+                <div className="bg-gray-800 rounded-lg p-8 shadow-lg">
                     <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-8">
                         <h2 className="text-3xl font-bold text-white mb-4 md:mb-0">Exercise Complete!</h2>
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -40,30 +46,38 @@ export default function CompletedScreen({ exercise }: CompletedScreenProps) {
                         </div>
                     </div>
 
-                    <CompletionStats
-                        startTime={exercise.startTime}
-                        endTime={exercise.endTime}
-                        duration={duration}
-                    />
+                    <CompletionStats startTime={exercise.startTime} endTime={exercise.endTime} duration={duration} />
 
                     <div className="space-y-6">
-                        {exercise.deviceKeys.map((key) => (
-                            <div key={key} className="bg-gray-700 rounded-lg p-6">
-                                <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                                    <h3 className="text-xl font-bold text-white mb-2 md:mb-0">
-                                        {key}
-                                    </h3>
+                        {exercise.deviceKeys.map((key) => {
+                            const device = typedLiteraryDevices[key];
+                            const school = device ? device.school : "Unknown school";
+
+                            return (
+                                <div key={key} className="bg-gray-700 rounded-lg p-6 shadow-md">
+                                    <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                                        <h3 className="text-xl font-bold text-white mb-2 md:mb-0">
+                                            {key.charAt(0).toUpperCase() + key.slice(1).toLowerCase()}
+                                        </h3>
+                                        <div className="text-sm text-gray-400">{school}</div>
+                                    </div>
+                                    <div className="space-y-3">
+                                        <p className="text-gray-400 text-sm">
+                                            <span className="font-semibold">Example Sentence:</span>{" "}
+                                            <span className="italic">{exercise.currentSentence}</span>
+                                        </p>
+                                        <div className="bg-gray-800 rounded p-4">
+                                            <p className="text-gray-300 break-words whitespace-pre-wrap">
+                                                <span className="font-semibold text-sm">Your Answer:</span>{" "}
+                                                <span className="block mt-1 text-gray-500 italic">
+                                                    {exercise.userAnswers[key] || "No answer provided"}
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="bg-gray-800 rounded p-4">
-                                    <p className="text-gray-300">
-                                        <span className="font-semibold text-sm">Your Answer:</span>{' '}
-                                        <span className={exercise.userAnswers[key] ? "text-white" : "text-gray-500 italic"}>
-                                            {exercise.userAnswers[key] || "No answer provided"}
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
             </div>
