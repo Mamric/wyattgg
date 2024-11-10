@@ -116,7 +116,7 @@ export function useWritingExercise() {
         deviceKeys,
         currentDeviceIndex,
         deviceSentences,
-        furthestIndex, // Add this line
+        furthestIndex,
         setCurrentDeviceIndex,
         beginExercise,
         submitExercises,
