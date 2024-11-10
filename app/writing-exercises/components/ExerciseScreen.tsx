@@ -3,6 +3,7 @@ import ExampleSentence from "./ExampleSentence";
 import ResponseInput from "./ResponseInput";
 import NavigationButtons from "./NavigationButtons";
 import { LiteraryDevice } from "../types";
+import ProgressBar from "./ProgressBar";
 
 type ExerciseScreenProps = {
     exercise: {
@@ -11,8 +12,11 @@ type ExerciseScreenProps = {
         userAnswers: { [key: string]: string };
         deviceKeys: string[];
         currentDeviceIndex: number;
+        furthestIndex: number;
 		// eslint-disable-next-line no-unused-vars
-        handleAnswerChange: (value: string) => void;
+        setCurrentDeviceIndex: (index: number) => void;
+        // eslint-disable-next-line no-unused-vars
+		handleAnswerChange: (value: string) => void;
         goToNext: () => void;
         goToPrevious: () => void;
         submitExercises: () => void;
@@ -29,6 +33,15 @@ export default function ExerciseScreen({ exercise }: ExerciseScreenProps) {
                 </div>
 
                 <div className="bg-gray-800 rounded-lg p-6">
+                    <ProgressBar
+                        current={exercise.currentDeviceIndex}
+                        total={exercise.deviceKeys.length}
+                        userAnswers={exercise.userAnswers}
+                        deviceKeys={exercise.deviceKeys}
+                        furthestIndex={exercise.furthestIndex}
+                        onQuestionSelect={exercise.setCurrentDeviceIndex}
+                    />
+
                     <DeviceInfo device={exercise.currentDevice} />
                     <ExampleSentence sentence={exercise.currentSentence} />
                     <ResponseInput

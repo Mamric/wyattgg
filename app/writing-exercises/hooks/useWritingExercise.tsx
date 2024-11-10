@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import literaryDevices from "@/data/writing-exercises/literary-devices.json";
 import templateSentences from "@/data/writing-exercises/template-sentences.json";
 import { ExerciseState, LiteraryDevice, UserAnswers, ExerciseResult } from "../types";
@@ -19,22 +19,29 @@ export function useWritingExercise() {
     const [startTime, setStartTime] = useState<Date | null>(null);
     const [endTime, setEndTime] = useState<Date | null>(null);
     const [currentDeviceIndex, setCurrentDeviceIndex] = useState(0);
+    const [furthestIndex, setFurthestIndex] = useState(0);
     const [userAnswers, setUserAnswers] = useState<UserAnswers>({});
-    const [currentSentence, setCurrentSentence] = useState<string>("");
+    const [deviceSentences, setDeviceSentences] = useState<{ [key: string]: string }>({});
 
     const currentDevice = typedLiteraryDevices[deviceKeys[currentDeviceIndex]];
+    const currentSentence = deviceSentences[deviceKeys[currentDeviceIndex]] || "";
 
-    useEffect(() => {
-        if (currentDevice) {
-            const sentences = typedTemplateSentences[currentDevice.school].sentences;
-            const randomIndex = Math.floor(Math.random() * sentences.length);
-            setCurrentSentence(sentences[randomIndex]);
-        }
-    }, [currentDevice]);
-
-    const beginExercise = () => {
+    // Initialize random sentences for all devices when exercise begins
+    const initializeExercise = () => {
+        const sentences: { [key: string]: string } = {};
+        deviceKeys.forEach((key) => {
+            const device = typedLiteraryDevices[key];
+            const availableSentences = typedTemplateSentences[device.school].sentences;
+            const randomIndex = Math.floor(Math.random() * availableSentences.length);
+            sentences[key] = availableSentences[randomIndex];
+        });
+        setDeviceSentences(sentences);
         setExerciseState("in-progress");
         setStartTime(new Date());
+    };
+
+    const beginExercise = () => {
+        initializeExercise();
     };
 
     const submitExercises = () => {
@@ -51,7 +58,9 @@ export function useWritingExercise() {
 
     const goToNext = () => {
         if (currentDeviceIndex < deviceKeys.length - 1) {
-            setCurrentDeviceIndex((prev) => prev + 1);
+            const nextIndex = currentDeviceIndex + 1;
+            setCurrentDeviceIndex(nextIndex);
+            setFurthestIndex(Math.max(furthestIndex, nextIndex));
         }
     };
 
@@ -70,7 +79,7 @@ export function useWritingExercise() {
             exercises: deviceKeys.reduce((acc, key) => {
                 acc[key] = {
                     deviceName: typedLiteraryDevices[key].name,
-                    exampleSentence: typedTemplateSentences[typedLiteraryDevices[key].school].sentences[0],
+                    exampleSentence: deviceSentences[key],
                     userAnswer: userAnswers[key] || "No answer provided",
                 };
                 return acc;
@@ -93,10 +102,10 @@ export function useWritingExercise() {
         setStartTime(null);
         setEndTime(null);
         setCurrentDeviceIndex(0);
+        setFurthestIndex(0); // Add this line
         setUserAnswers({});
-        setCurrentSentence("");
+        setDeviceSentences({});
     };
-
     return {
         exerciseState,
         startTime,
@@ -106,6 +115,9 @@ export function useWritingExercise() {
         userAnswers,
         deviceKeys,
         currentDeviceIndex,
+        deviceSentences,
+        furthestIndex, // Add this line
+        setCurrentDeviceIndex,
         beginExercise,
         submitExercises,
         handleAnswerChange,

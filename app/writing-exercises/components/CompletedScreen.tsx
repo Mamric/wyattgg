@@ -10,7 +10,7 @@ type CompletedScreenProps = {
         deviceKeys: string[];
         exportResults: () => void;
         restartExercise: () => void;
-        currentSentence: string;
+        deviceSentences: { [key: string]: string };
     };
 };
 
@@ -64,7 +64,7 @@ export default function CompletedScreen({ exercise }: CompletedScreenProps) {
                                     <div className="space-y-3">
                                         <p className="text-gray-400 text-sm">
                                             <span className="font-semibold">Example Sentence:</span>{" "}
-                                            <span className="italic">{exercise.currentSentence}</span>
+                                            <span className="italic">{exercise.deviceSentences[key]}</span>
                                         </p>
                                         <div className="bg-gray-800 rounded p-4">
                                             <p className="text-gray-300 break-words whitespace-pre-wrap">
