@@ -1,42 +1,36 @@
 const js = require('@eslint/js');
 const nextPlugin = require('@next/eslint-plugin-next');
-const reactPlugin = require('eslint-plugin-react');
-const reactHooksPlugin = require('eslint-plugin-react-hooks');
-const typescriptPlugin = require('@typescript-eslint/eslint-plugin');
+const reactHooks = require('eslint-plugin-react-hooks');
+const typescript = require('@typescript-eslint/eslint-plugin');
 const typescriptParser = require('@typescript-eslint/parser');
 
 module.exports = [
+    {
+        ignores: ['node_modules/**', '.next/**', 'dist/**']
+    },
     js.configs.recommended,
     {
-        files: ["**/*.{js,jsx,ts,tsx}"],
+        files: ['**/*.{js,jsx,ts,tsx}'],
         plugins: {
-            "@next/next": nextPlugin,
-            react: reactPlugin,
-            "react-hooks": reactHooksPlugin,
-            "@typescript-eslint": typescriptPlugin,
+            '@next/next': nextPlugin,
+            'react-hooks': reactHooks,
+            '@typescript-eslint': typescript
         },
         languageOptions: {
             parser: typescriptParser,
             parserOptions: {
-                ecmaVersion: "latest",
-                sourceType: "module",
+                ecmaVersion: 'latest',
+                sourceType: 'module',
                 ecmaFeatures: {
-                    jsx: true,
-                },
-            },
+                    jsx: true
+                }
+            }
         },
         rules: {
-            ...nextPlugin.configs.recommended.rules,
-            ...typescriptPlugin.configs.recommended.rules,
-            "react/no-unescaped-entities": "error",
-            "react/react-in-jsx-scope": "off",
-            "react-hooks/rules-of-hooks": "error",
-            "react-hooks/exhaustive-deps": "warn",
-        },
-        settings: {
-            react: {
-                version: "detect",
-            },
-        },
-    },
+            'react-hooks/rules-of-hooks': 'error',
+            'react-hooks/exhaustive-deps': 'warn',
+            '@next/next/no-html-link-for-pages': 'error',
+            '@typescript-eslint/no-unused-vars': 'warn'
+        }
+    }
 ];

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 type Reference = {
     name: string;
     url: string;
-    mediaType: "video" | "article" | "powerpoint" | "other";
+    mediaType: string;
     description: string;
 };
 
