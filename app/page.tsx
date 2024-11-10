@@ -1,10 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import {
-    ArrowRightIcon,
-    MicrophoneIcon,
-    BookOpenIcon,
-} from "@heroicons/react/24/outline";
+import { ArrowRightIcon, MicrophoneIcon, BookOpenIcon } from "@heroicons/react/24/outline";
 
 const XIcon = ({ className }: { className?: string }) => (
     <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -87,12 +83,12 @@ export default function Home() {
                         Voice Over Artist | Content Creator | Game Enthusiast
                     </p>
                     <Link
-                        href="/about"
-                        className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition duration-150 ease-in-out"
-                    >
-                        Learn More About Me
-                        <ArrowRightIcon className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
-                    </Link>
+    href="/contact"
+    className="inline-flex items-center px-8 py-4 text-lg font-bold rounded-lg text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
+>
+    Get in Touch
+    <ArrowRightIcon className="ml-2 -mr-1 h-6 w-6" aria-hidden="true" />
+</Link>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">

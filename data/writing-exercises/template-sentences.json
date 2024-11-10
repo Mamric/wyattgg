@@ -1,0 +1,210 @@
+{
+	"Descriptive Imagery": {
+		"devices": [
+			"Metaphor",
+			"Simile",
+			"Personification",
+			"Imagery",
+			"Hyperbole"
+		],
+		"sentences": [
+			"The sun rose over the horizon.",
+			"She looked at the stars in the night sky.",
+			"The wind blew through the trees.",
+			"He walked along the sandy beach.",
+			"The mountain stood tall against the sky.",
+			"She gazed out at the vast ocean.",
+			"The garden was full of blooming flowers.",
+			"He listened to the sound of the waves.",
+			"The forest was quiet and peaceful.",
+			"She watched the snow fall gently.",
+			"The city lights twinkled in the distance.",
+			"He felt the warmth of the fire.",
+			"The desert stretched out before them.",
+			"She sat by the calm lake.",
+			"The clouds moved slowly across the sky.",
+			"He stood at the edge of the cliff.",
+			"The rain fell steadily all day.",
+			"She admired the colorful sunset.",
+			"The river flowed through the valley.",
+			"He enjoyed the cool breeze."
+		]
+	},
+	"Sound and Rhythm": {
+		"devices": [
+			"Alliteration",
+			"Onomatopoeia",
+			"Assonance",
+			"Consonance"
+		],
+		"sentences": [
+			"The clock chimed at midnight.",
+			"She hummed a tune quietly.",
+			"The fire crackled in the hearth.",
+			"He heard the drip of the faucet.",
+			"The birds sang in the morning.",
+			"She whispered a secret.",
+			"The thunder rumbled loudly.",
+			"He listened to the rustling leaves.",
+			"The phone rang unexpectedly.",
+			"She tapped her foot to the music.",
+			"The door creaked open slowly.",
+			"He heard the splash of water.",
+			"The audience clapped after the performance.",
+			"She giggled at the joke.",
+			"The engine roared to life.",
+			"He sighed with relief.",
+			"The crowd cheered loudly.",
+			"She yawned sleepily.",
+			"The wind whistled past the window.",
+			"He clicked the pen nervously."
+		]
+	},
+	"Contrast and Opposition": {
+		"devices": [
+			"Irony",
+			"Antithesis",
+			"Oxymoron",
+			"Paradox"
+		],
+		"sentences": [
+			"He laughed during the sad movie.",
+			"She felt both excited and scared.",
+			"They were alone together in the room.",
+			"He spoke of peace while starting a fight.",
+			"She loved to hate that song.",
+			"He was a wise fool at times.",
+			"She saved money by spending it wisely.",
+			"He found joy in his sorrow.",
+			"She worked hard for a pointless task.",
+			"He was the youngest old man she knew.",
+			"She decided to quit by continuing on.",
+			"He felt an empty fullness inside.",
+			"She saw darkness in the brightest day.",
+			"He heard silence amidst the noise.",
+			"She was painfully happy.",
+			"He agreed to disagree on the matter.",
+			"She discovered the known unknowns.",
+			"He experienced a bitter sweetness.",
+			"She embraced the cold warmth.",
+			"He found order in the chaos."
+		]
+	},
+	"Repetition and Structure": {
+		"devices": [
+			"Anaphora",
+			"Parallelism",
+			"Repetition",
+			"Epistrophe"
+		],
+		"sentences": [
+			"She wanted freedom, she wanted peace.",
+			"They laughed, they cried, they lived.",
+			"He ran fast, jumped high, and swam far.",
+			"She believed in truth and justice.",
+			"He came home, he cooked dinner, he went to bed.",
+			"She sings in the morning and dances at night.",
+			"He wanted to write, to create, to inspire.",
+			"They worked diligently and rested peacefully.",
+			"She thought deeply and acted wisely.",
+			"He dreamed of adventure and sought excitement.",
+			"She hoped for success, she hoped for happiness.",
+			"They traveled by plane, by train, by car.",
+			"He looked here, he looked there, he looked everywhere.",
+			"She learned to listen, to observe, to understand.",
+			"He fought for honor, for glory, for victory.",
+			"They ate quickly, slept soundly, woke early.",
+			"She read the book, she closed the book, she pondered the book.",
+			"He spoke softly, he spoke gently, he spoke kindly.",
+			"They built the house brick by brick.",
+			"She waited patiently, waited hopefully, waited silently."
+		]
+	},
+	"Indirect Reference and Symbolism": {
+		"devices": [
+			"Allusion",
+			"Symbolism",
+			"Metonymy",
+			"Synecdoche"
+		],
+		"sentences": [
+			"He climbed the steps of power.",
+			"She wore a red rose on her dress.",
+			"They followed the path less traveled.",
+			"He reached for the stars in his career.",
+			"She found a four-leaf clover.",
+			"They sailed on uncharted waters.",
+			"He faced his demons bravely.",
+			"She unlocked the door to success.",
+			"They stood at the crossroads of life.",
+			"He chased the golden ring of opportunity.",
+			"She carried the weight of the world.",
+			"They searched for the Holy Grail.",
+			"He walked the green mile.",
+			"She danced to the rhythm of time.",
+			"They looked for a needle in a haystack.",
+			"He held the key to the mystery.",
+			"She stepped into the lion's den.",
+			"They reached the peak of achievement.",
+			"He entered the halls of justice.",
+			"She gazed into the looking glass."
+		]
+	},
+	"Sensitive Topics and Euphemism": {
+		"devices": [
+			"Euphemism",
+			"Understatement"
+		],
+		"sentences": [
+			"He died last night.",
+			"They are getting divorced.",
+			"She was fired from her job.",
+			"He is broke and cannot pay.",
+			"She is struggling with illness.",
+			"They are homeless now.",
+			"He failed the important test.",
+			"She is overweight.",
+			"They went bankrupt.",
+			"He is in prison.",
+			"She is unemployed.",
+			"They lost their home.",
+			"He has passed his prime.",
+			"She is a senior citizen.",
+			"They are facing hard times.",
+			"He has a drinking problem.",
+			"She lied to her friend.",
+			"They are cutting staff.",
+			"He suffers from mental issues.",
+			"She made a serious mistake."
+		]
+	},
+	"Dialogue and Thought": {
+		"devices": [
+			"Foreshadowing",
+			"Anecdote",
+			"Rhetorical Question"
+		],
+		"sentences": [
+			"\"What's the worst that could happen?\" he asked.",
+			"She thought about the journey ahead.",
+			"They didn't know the danger they were in.",
+			"He recalled his grandfather's advice.",
+			"She wondered if dreams ever come true.",
+			"They had no idea what lay around the corner.",
+			"He remembered the day he met her.",
+			"She asked herself why she cared.",
+			"They questioned their own decisions.",
+			"He felt that something was off.",
+			"She considered the possibilities.",
+			"They didn't suspect a thing.",
+			"He mused about the meaning of life.",
+			"She thought it was too quiet.",
+			"They ignored the warnings.",
+			"He reflected on past mistakes.",
+			"She whispered, \"Is this real?\"",
+			"They believed the future was bright.",
+			"He said, \"This is only the beginning.\"",
+			"She felt a chill run down her spine."
+		]
+	}
+}

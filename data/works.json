@@ -1,0 +1,27 @@
+{
+	"pageQuote": "You are what you do, not what you say you'll do.",
+	"pageQuoteAuthor": "Carl Jung",
+	"works": [
+		{
+			"name": "Order Your Ghostlight Now!",
+			"url": "https://www.youtube.com/watch?v=QeSmUl9YBSg",
+			"mediaType": "video",
+			"description": "A teaser trailer for SCP: Secret Laboratory's Ghostlight update",
+			"attributions": "Theo (Presenter)"
+		},
+		{
+			"name": "Mimicry - SCP-939 Reveal Trailer",
+			"url": "https://www.youtube.com/watch?v=L2k7dQnKUMw",
+			"mediaType": "video",
+			"description": "A trailer for SCP: Secret Laboratory's Patch 12.0 update",
+			"attributions": "MTF 4"
+		},
+		{
+			"name": "SCP Secret Laboratory in REALITY Animated | part 2",
+			"url": "https://www.youtube.com/watch?v=4_EdJXAuKeM",
+			"mediaType": "video",
+			"description": "Just your average day in SCP: Secret Laboratory",
+			"attributions": "SCP-049"
+		}
+	]
+}

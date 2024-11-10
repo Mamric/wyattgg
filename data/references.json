@@ -1,0 +1,42 @@
+{
+	"pageQuote": "The only true wisdom is in knowing you know nothing.",
+	"pageQuoteAuthor": "Socrates",
+	"references": [
+		{
+			"name": "AI Part 1",
+			"url": "https://www.gamedeveloper.com/programming/gdc-2005-proceeding-handling-complexity-in-the-i-halo-2-i-ai",
+			"mediaType": "article",
+			"description": "GDC 2005 Proceeding: Handling Complexity in the Halo 2 AI"
+		},
+		{
+			"name": "AI Part 2",
+			"url": "https://www.youtube.com/watch?v=kda7rz5qFtI",
+			"mediaType": "video",
+			"description": "The AI of Halo 1 Combat Evolved | Design and Implementation"
+		},
+		{
+			"name": "AI Part 3",
+			"url": "https://medium.com/the-cube/theaiofhalo2-33e824209a4c",
+			"mediaType": "article",
+			"description": "Outsmarting The Covenant: The AI of Halo 2"
+		},
+		{
+			"name": "AI Part 4",
+			"url": "https://www.gamedeveloper.com/pc/in-depth-bungie-on-eight-years-of-i-halo-i-ai",
+			"mediaType": "article",
+			"description": "In-Depth: Bungie on Eight Years of Halo AI"
+		},
+		{
+			"name": "Visual Arts & Shading Part 1",
+			"url": "https://www.gdcvault.com/play/1012264/Shading-a-Bigger-Better-Sequel",
+			"mediaType": "video",
+			"description": "Shading a Bigger, Better Sequel: Techniques in Left 4 Dead 2"
+		},
+		{
+			"name": "Visual Arts & Shading Part 2",
+			"url": "http://alex.vlachos.com/graphics/Vlachos-GDC10-Left4Dead2Wounds.pdf",
+			"mediaType": "powerpoint",
+			"description": "Rendering Wounds in Left 4 Dead 2"
+		}
+	]
+}

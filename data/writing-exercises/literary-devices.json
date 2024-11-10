@@ -1,0 +1,184 @@
+{
+	"metaphor": {
+		"name": "Metaphor",
+		"definition": "A figure of speech that directly refers to one thing by mentioning another, implying a comparison without using 'like' or 'as'.",
+		"whyUseIt": "Metaphors create vivid imagery and make abstract ideas more relatable by linking them to familiar concepts.",
+		"howToUseIt": "Use a metaphor to draw a direct comparison between two unrelated things to highlight a particular quality or aspect of one of them.",
+		"school": "Descriptive Imagery"
+	},
+	"simile": {
+		"name": "Simile",
+		"definition": "A figure of speech that compares two different things using the words 'like' or 'as'.",
+		"whyUseIt": "Similes help create vivid descriptions by highlighting similarities between two different things.",
+		"howToUseIt": "Use 'like' or 'as' to compare one thing to another, enhancing the description and imagery in your writing.",
+		"school": "Descriptive Imagery"
+	},
+	"alliteration": {
+		"name": "Alliteration",
+		"definition": "The repetition of the same consonant sounds at the beginning of closely connected words.",
+		"whyUseIt": "Alliteration creates rhythm and musicality in writing, making it more memorable.",
+		"howToUseIt": "Repeat consonant sounds at the start of nearby words to enhance the poetic quality of your writing.",
+		"school": "Sound and Rhythm"
+	},
+	"personification": {
+		"name": "Personification",
+		"definition": "Attributing human characteristics to non-human entities or inanimate objects.",
+		"whyUseIt": "Personification makes descriptions more vivid and relatable by bringing non-human elements to life.",
+		"howToUseIt": "Assign human traits or actions to objects, animals, or ideas to create more engaging and vivid imagery.",
+		"school": "Descriptive Imagery"
+	},
+	"hyperbole": {
+		"name": "Hyperbole",
+		"definition": "An exaggerated statement not meant to be taken literally.",
+		"whyUseIt": "Hyperbole emphasizes a point or conveys strong emotion through exaggeration.",
+		"howToUseIt": "Use deliberate exaggeration to stress the importance or intensity of something.",
+		"school": "Descriptive Imagery"
+	},
+	"anaphora": {
+		"name": "Anaphora",
+		"definition": "The repetition of a word or phrase at the beginning of successive clauses or sentences.",
+		"whyUseIt": "Anaphora emphasizes ideas and creates a rhythmic effect.",
+		"howToUseIt": "Repeat key words or phrases at the start of sentences to highlight important concepts.",
+		"school": "Repetition and Structure"
+	},
+	"imagery": {
+		"name": "Imagery",
+		"definition": "Descriptive language that appeals to the senses to create mental images.",
+		"whyUseIt": "Imagery helps readers visualize scenes, enhancing the emotional impact of writing.",
+		"howToUseIt": "Use vivid and sensory details to paint a picture in the reader's mind.",
+		"school": "Descriptive Imagery"
+	},
+	"irony": {
+		"name": "Irony",
+		"definition": "A contrast between expectation and reality, where the outcome is opposite to what was anticipated.",
+		"whyUseIt": "Irony adds complexity and humor, and can provoke thought by highlighting contradictions.",
+		"howToUseIt": "Present situations or statements where the intended meaning or outcome is opposite to what is expected.",
+		"school": "Contrast and Opposition"
+	},
+	"allusion": {
+		"name": "Allusion",
+		"definition": "An indirect reference to a person, place, event, or literary work.",
+		"whyUseIt": "Allusions add depth by connecting your writing to broader cultural or literary contexts.",
+		"howToUseIt": "Reference well-known works, events, or figures to enrich your narrative and engage readers.",
+		"school": "Indirect Reference and Symbolism"
+	},
+	"onomatopoeia": {
+		"name": "Onomatopoeia",
+		"definition": "A word that phonetically imitates or suggests the source of the sound it describes.",
+		"whyUseIt": "Onomatopoeia brings descriptions to life by appealing to the reader's auditory senses.",
+		"howToUseIt": "Use words that imitate sounds to create a more immersive and vivid experience for the reader.",
+		"school": "Sound and Rhythm"
+	},
+	"oxymoron": {
+		"name": "Oxymoron",
+		"definition": "A figure of speech that combines contradictory terms.",
+		"whyUseIt": "Oxymorons create dramatic effect and can provoke thought or highlight complexity.",
+		"howToUseIt": "Pair contradictory words to create a striking or thought-provoking phrase.",
+		"school": "Contrast and Opposition"
+	},
+	"symbolism": {
+		"name": "Symbolism",
+		"definition": "Using symbols to represent ideas or qualities beyond their literal sense.",
+		"whyUseIt": "Symbolism adds deeper meaning to writing, allowing readers to explore themes and concepts.",
+		"howToUseIt": "Incorporate symbols that represent larger ideas or themes to add depth to your writing.",
+		"school": "Indirect Reference and Symbolism"
+	},
+	"parallelism": {
+		"name": "Parallelism",
+		"definition": "The use of successive verbal constructions that correspond in grammatical structure, sound, meter, meaning, etc.",
+		"whyUseIt": "Parallelism adds balance and rhythm to sentences, making them easier to read and more persuasive.",
+		"howToUseIt": "Use similar grammatical structures in a series of phrases or clauses to create a pattern and enhance readability.",
+		"school": "Repetition and Structure"
+	},
+	"foreshadowing": {
+		"name": "Foreshadowing",
+		"definition": "Hints or clues about events that will occur later in the narrative.",
+		"whyUseIt": "Foreshadowing builds suspense and prepares readers for future developments.",
+		"howToUseIt": "Include subtle hints or symbolic elements that suggest future plot points.",
+		"school": "Dialogue and Thought"
+	},
+	"euphemism": {
+		"name": "Euphemism",
+		"definition": "A mild or indirect word or expression substituted for one considered too harsh or blunt.",
+		"whyUseIt": "Euphemisms can soften the impact of sensitive topics and make language more palatable.",
+		"howToUseIt": "Replace direct, potentially offensive terms with gentler expressions.",
+		"school": "Sensitive Topics and Euphemism"
+	},
+	"anecdote": {
+		"name": "Anecdote",
+		"definition": "A short and amusing or interesting story about a real incident or person.",
+		"whyUseIt": "Anecdotes engage readers and illustrate points through relatable experiences.",
+		"howToUseIt": "Include brief stories or personal experiences to support or demonstrate a point.",
+		"school": "Dialogue and Thought"
+	},
+	"rhetoricalQuestion": {
+		"name": "Rhetorical Question",
+		"definition": "A question asked to make a point rather than elicit an answer.",
+		"whyUseIt": "Rhetorical questions engage readers and provoke thought without expecting a response.",
+		"howToUseIt": "Pose a question to emphasize a point or encourage readers to consider an idea.",
+		"school": "Dialogue and Thought"
+	},
+	"antithesis": {
+		"name": "Antithesis",
+		"definition": "A figure of speech that contrasts two opposing ideas in a parallel structure.",
+		"whyUseIt": "Antithesis highlights contrasts and can make arguments more compelling.",
+		"howToUseIt": "Place contrasting ideas in close proximity using parallel grammatical structures.",
+		"school": "Contrast and Opposition"
+	},
+	"repetition": {
+		"name": "Repetition",
+		"definition": "The action of repeating something that has already been said or written.",
+		"whyUseIt": "Repetition reinforces ideas and makes them more memorable.",
+		"howToUseIt": "Repeat words, phrases, or structures to emphasize important points.",
+		"school": "Repetition and Structure"
+	},
+	"metonymy": {
+		"name": "Metonymy",
+		"definition": "A figure of speech where something is referred to by the name of something closely associated with it.",
+		"whyUseIt": "Metonymy adds variety and can make descriptions more vivid and concise.",
+		"howToUseIt": "Use a related term to stand in for an object or concept (e.g., 'the White House' for 'the U.S. President and administration').",
+		"school": "Indirect Reference and Symbolism"
+	},
+	"assonance": {
+		"name": "Assonance",
+		"definition": "The repetition of vowel sounds in nearby words.",
+		"whyUseIt": "Assonance enhances the musical quality of writing and can create internal rhyming within phrases or sentences.",
+		"howToUseIt": "Repeat vowel sounds in closely connected words to create rhythm and mood.",
+		"school": "Sound and Rhythm"
+	},
+	"consonance": {
+		"name": "Consonance",
+		"definition": "The repetition of consonant sounds within or at the end of words in a phrase or sentence.",
+		"whyUseIt": "Consonance adds harmony and can enhance the mood or tone of writing.",
+		"howToUseIt": "Use repeated consonant sounds in nearby words, particularly at the ends, to create a lyrical effect.",
+		"school": "Sound and Rhythm"
+	},
+	"paradox": {
+		"name": "Paradox",
+		"definition": "A statement that appears self-contradictory but reveals a deeper truth.",
+		"whyUseIt": "Paradoxes provoke thought and illustrate complex ideas or truths.",
+		"howToUseIt": "Present a seemingly contradictory statement that, upon reflection, makes sense or reveals insight.",
+		"school": "Contrast and Opposition"
+	},
+	"epistrophe": {
+		"name": "Epistrophe",
+		"definition": "The repetition of a word or phrase at the end of successive clauses or sentences.",
+		"whyUseIt": "Epistrophe emphasizes ideas and creates a strong rhythm and impact.",
+		"howToUseIt": "Repeat key words or phrases at the end of sentences or clauses to highlight important concepts.",
+		"school": "Repetition and Structure"
+	},
+	"synecdoche": {
+		"name": "Synecdoche",
+		"definition": "A figure of speech in which a part is made to represent the whole or vice versa.",
+		"whyUseIt": "Synecdoche creates vivid imagery and can make descriptions more concise and impactful.",
+		"howToUseIt": "Use a part of something to refer to the whole, or the whole to refer to a part (e.g., 'wheels' for 'car').",
+		"school": "Indirect Reference and Symbolism"
+	},
+	"understatement": {
+		"name": "Understatement",
+		"definition": "A figure of speech in which something is presented as less significant than it is.",
+		"whyUseIt": "Understatements can create irony, humor, or emphasize a point by downplaying it.",
+		"howToUseIt": "Deliberately make a situation seem less important or serious than it is to achieve a subtle effect.",
+		"school": "Sensitive Topics and Euphemism"
+	}
+}
