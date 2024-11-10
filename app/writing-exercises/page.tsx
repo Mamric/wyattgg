@@ -4,6 +4,13 @@ import { useState, useEffect } from "react";
 import literaryDevices from "@/data/writing-exercises/literary-devices.json";
 import templateSentences from "@/data/writing-exercises/template-sentences.json";
 
+type TemplateSentences = {
+    [key: string]: {
+        devices: string[];
+        sentences: string[];
+    };
+};
+
 type LiteraryDevice = {
     name: string;
     definition: string;
@@ -34,6 +41,9 @@ type ExerciseResult = {
     };
 };
 
+// Type assertion for templateSentences
+const typedTemplateSentences = templateSentences as TemplateSentences;
+
 export default function WritingExercises() {
     const [exerciseState, setExerciseState] = useState<ExerciseState>("start");
     const [startTime, setStartTime] = useState<Date | null>(null);
@@ -56,7 +66,7 @@ export default function WritingExercises() {
     };
 
     const getRandomSentence = (school: string) => {
-        const schoolSentences = templateSentences[school as keyof typeof templateSentences].sentences;
+        const schoolSentences = typedTemplateSentences[school].sentences;
         const randomIndex = Math.floor(Math.random() * schoolSentences.length);
         return schoolSentences[randomIndex];
     };
@@ -92,7 +102,7 @@ export default function WritingExercises() {
         const exercises = deviceKeys.reduce((acc, key) => {
             acc[key] = {
                 deviceName: literaryDevices[key].name,
-                exampleSentence: templateSentences[literaryDevices[key].school].sentences[0], // Using first sentence as example
+                exampleSentence: typedTemplateSentences[literaryDevices[key].school].sentences[0],
                 userAnswer: userAnswers[key] || "No answer provided",
             };
             return acc;
@@ -134,9 +144,9 @@ export default function WritingExercises() {
                     <div className="bg-gray-800 rounded-lg p-8 text-center">
                         <h1 className="text-4xl font-bold text-white mb-6">Writing Exercises</h1>
                         <p className="text-gray-300 text-lg mb-8">
-                            Practice using various literary devices to enhance your writing skills. 
-                            You'll be presented with different literary devices and example sentences 
-                            to practice with. Take your time and be creative with your responses.
+                            Practice using various literary devices to enhance your writing skills. You'll be presented
+                            with different literary devices and example sentences to practice with. Take your time and
+                            be creative with your responses.
                         </p>
                         <button
                             onClick={beginExercise}
@@ -293,7 +303,7 @@ export default function WritingExercises() {
                                         <p className="text-gray-400 text-sm">
                                             <span className="font-semibold">Example Sentence:</span>{" "}
                                             <span className="italic">
-                                                {templateSentences[literaryDevices[key].school].sentences[0]}
+                                                {typedTemplateSentences[literaryDevices[key].school].sentences[0]}
                                             </span>
                                         </p>
                                         <div className="bg-gray-800 rounded p-4">
@@ -323,9 +333,7 @@ export default function WritingExercises() {
             <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-bold text-white mb-4">Writing Exercises</h1>
-                    <p className="text-gray-300 text-lg mb-4">
-                        Practice literary devices with example sentences
-                    </p>
+                    <p className="text-gray-300 text-lg mb-4">Practice literary devices with example sentences</p>
                 </div>
 
                 <div className="bg-gray-800 rounded-lg p-6">

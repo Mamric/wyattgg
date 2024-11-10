@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 type Work = {
     name: string;
     url: string;
-    mediaType: "video";
+    mediaType: string;
     description: string;
     attributions: string;
 };
