@@ -1,7 +1,8 @@
 import Header from "../../components/Header";
 
 type StartScreenProps = {
-    onBegin: (isReverseMode: boolean) => void;
+    // eslint-disable-next-line no-unused-vars
+    onBegin: (reverse: boolean) => void;
 };
 
 export default function StartScreen({ onBegin }: StartScreenProps) {
@@ -21,15 +22,15 @@ export default function StartScreen({ onBegin }: StartScreenProps) {
                         <button
                             onClick={() => onBegin(false)}
                             className="px-8 py-4 bg-blue-600 text-white rounded-lg text-2xl 
-                                     hover:bg-blue-700 transition-colors shadow-lg transform 
-                                     hover:scale-105 transition-transform duration-200"
+                                     hover:bg-blue-700 transition-all duration-200 shadow-lg 
+                                     hover:scale-105"
                         >
                             Default Mode
                         </button>
                         <button
                             onClick={() => onBegin(true)}
                             className="px-8 py-3 bg-gray-600 text-white rounded-lg text-xl 
-                                     hover:bg-gray-700 transition-colors"
+                                     hover:bg-gray-700 transition-all"
                         >
                             Reverse Mode
                         </button>

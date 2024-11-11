@@ -29,7 +29,7 @@ export default function ExerciseScreen({ exercise }: ExerciseScreenProps) {
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
             <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
                 <Header 
-                    title="Literary Devices Quiz" 
+                    title="Literary Devices Exercise" 
                     subtitle="Practice literary devices with example sentences" 
                 />
                 <div className="bg-gray-800 rounded-lg p-6">

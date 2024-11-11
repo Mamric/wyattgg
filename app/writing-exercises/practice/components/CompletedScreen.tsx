@@ -25,7 +25,7 @@ export default function CompletedScreen({ exercise }: CompletedScreenProps) {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
             <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-                <Header title="Quiz Complete!" />
+                <Header title="Practice Complete!" />
                 <div className="bg-gray-800 rounded-lg p-8 shadow-lg">
                     <CompletionStats startTime={exercise.startTime} endTime={exercise.endTime} duration={duration} />
                     <div className="flex flex-col sm:flex-row gap-4 justify-end mb-8">
@@ -41,7 +41,7 @@ export default function CompletedScreen({ exercise }: CompletedScreenProps) {
                             className="px-6 py-2 bg-green-600 text-white rounded hover:bg-green-700 
                                      transition-colors w-full sm:w-auto"
                         >
-                            Start New Quiz
+                            Start New Practice
                         </button>
                     </div>
                     <div className="space-y-6">

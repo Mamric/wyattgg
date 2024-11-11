@@ -89,7 +89,6 @@ export default function WritingExercisesFlashcards() {
                     isLastCard={currentIndex === deck.length - 1}
                     onShuffle={handleShuffle}
                     currentIndex={currentIndex}
-                    deckLength={deck.length}
                     totalCards={deck.length}
                     isInPracticeMode={isInPracticeMode}
                     showPracticeButton={!isInPracticeMode}

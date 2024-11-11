@@ -9,8 +9,8 @@ type FlashcardProps = {
     isReverseMode: boolean;
     isLastCard: boolean;
     currentIndex: number;
-    deckLength: number;
     totalCards: number;
+    // eslint-disable-next-line no-unused-vars
     onAddToPractice: (device: LiteraryDevice) => void;
     isInPracticeMode: boolean;
     showPracticeButton: boolean;
@@ -24,7 +24,6 @@ export default function Flashcard({
     isReverseMode,
     isLastCard,
     currentIndex,
-    deckLength,
     totalCards,
     onAddToPractice,
     isInPracticeMode,
