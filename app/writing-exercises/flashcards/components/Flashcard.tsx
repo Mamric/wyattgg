@@ -52,7 +52,7 @@ export default function Flashcard({
 
     return (
         <div>
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex justify-between items-center mb-4">
                 <div className="text-gray-300 text-sm sm:text-base">
                     Card {Math.min(currentIndex + 1, totalCards)} of {totalCards}
                 </div>
@@ -68,6 +68,16 @@ export default function Flashcard({
                 </button>
             </div>
 
+            <div className="flex justify-center gap-4 mb-4">
+                <button
+                    onClick={handleAction}
+                    className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 
+                             transition-colors text-base"
+                >
+                    {isFlipped ? (isLastCard ? "Shuffle Deck" : "Next Device") : "Show Answer"}
+                </button>
+            </div>
+
             <div className="h-[650px] sm:h-[525px] perspective-1000">
                 <div
                     className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${
@@ -76,7 +86,7 @@ export default function Flashcard({
                 >
                     {/* Front of card */}
                     <div className="absolute w-full h-full bg-gray-800 rounded-lg p-4 sm:p-8 shadow-lg backface-hidden">
-                        <div className="flex items-center justify-center h-full">
+                        <div className="flex items-start sm:items-center justify-center h-full pt-8 sm:pt-0">
                             {isReverseMode ? (
                                 <div className="text-center">
                                     <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
@@ -146,16 +156,6 @@ export default function Flashcard({
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="flex justify-center gap-4 mt-8">
-                <button
-                    onClick={handleAction}
-                    className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 
-                             transition-colors text-base"
-                >
-                    {isFlipped ? (isLastCard ? "Shuffle Deck" : "Next Device") : "Show Answer"}
-                </button>
             </div>
         </div>
     );
