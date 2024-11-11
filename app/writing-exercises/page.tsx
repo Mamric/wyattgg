@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function WritingExercisesLanding() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
@@ -10,7 +12,7 @@ export default function WritingExercisesLanding() {
                         Choose an exercise type to practice and improve your writing skills.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <a
+                        <Link
                             href="/writing-exercises/quiz"
                             className="bg-gray-700 p-6 rounded-lg hover:bg-gray-600 transition-colors"
                         >
@@ -19,8 +21,8 @@ export default function WritingExercisesLanding() {
                                 Practice using literary devices by writing your own examples based on provided
                                 sentences.
                             </p>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="/writing-exercises/flashcards"
                             className="bg-gray-700 p-6 rounded-lg hover:bg-gray-600 transition-colors"
                         >
@@ -28,7 +30,7 @@ export default function WritingExercisesLanding() {
                             <p className="text-gray-300">
                                 Study literary devices using interactive flashcards to learn definitions and usage.
                             </p>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

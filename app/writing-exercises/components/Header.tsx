@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type HeaderProps = {
     title: string;
     subtitle?: string;
@@ -7,7 +9,7 @@ export default function Header({ title, subtitle }: HeaderProps) {
     return (
         <div className="relative mb-12">
             <div className="flex items-center justify-between mb-6">
-                <a 
+                <Link 
                     href="/writing-exercises" 
                     className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 
                              px-4 py-2 rounded-lg hover:bg-gray-800"
@@ -26,7 +28,7 @@ export default function Header({ title, subtitle }: HeaderProps) {
                         />
                     </svg>
                     <span className="text-sm font-medium">Back to Writing Exercises</span>
-                </a>
+                </Link>
             </div>
             <div className="text-center">
                 <h1 className="text-4xl font-bold text-white mb-3">{title}</h1>

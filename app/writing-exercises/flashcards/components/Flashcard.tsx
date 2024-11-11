@@ -13,26 +13,32 @@ export default function Flashcard({ device, onNext, isReverseMode }: FlashcardPr
     return (
         <div className="bg-gray-800 rounded-lg p-8 shadow-lg">
             <div className="mb-8">
-                {!isFlipped ? (
-                    <div className="text-center mb-6">
-                        {!isReverseMode ? (
-                            <h2 className="text-3xl font-bold text-white">{device.name}</h2>
-                        ) : (
+                <div className="text-center mb-6">
+                    {!isReverseMode ? (
+                        <h2 className="text-3xl font-bold text-white">{device.name}</h2>
+                    ) : (
+                        !isFlipped && (
                             <div>
                                 <h3 className="text-lg font-semibold text-blue-400 mb-2">Definition</h3>
                                 <p className="text-gray-300 text-xl">{device.definition}</p>
                             </div>
-                        )}
-                    </div>
-                ) : (
+                        )
+                    )}
+                </div>
+
+                {isFlipped && (
                     <div className="space-y-6">
-                        <div className="text-center mb-6">
-                            <h2 className="text-3xl font-bold text-white">{device.name}</h2>
-                        </div>
-                        <div>
-                            <h3 className="text-lg font-semibold text-blue-400 mb-2">Definition</h3>
-                            <p className="text-gray-300">{device.definition}</p>
-                        </div>
+                        {isReverseMode && (
+                            <div className="text-center mb-6">
+                                <h2 className="text-3xl font-bold text-white">{device.name}</h2>
+                            </div>
+                        )}
+                        {!isReverseMode && (
+                            <div>
+                                <h3 className="text-lg font-semibold text-blue-400 mb-2">Definition</h3>
+                                <p className="text-gray-300">{device.definition}</p>
+                            </div>
+                        )}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div className="bg-gray-700 rounded-lg p-4">
                                 <h3 className="text-lg font-semibold text-blue-400 mb-2">Why use it?</h3>
