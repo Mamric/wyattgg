@@ -11,6 +11,10 @@ type FlashcardProps = {
     currentIndex: number;
     deckLength: number;
     totalCards: number;
+    onAddToPractice: (device: LiteraryDevice) => void;
+    isInPracticeMode: boolean;
+    showPracticeButton: boolean;
+    practiceDeckLength: number;
 };
 
 export default function Flashcard({
@@ -22,6 +26,10 @@ export default function Flashcard({
     currentIndex,
     deckLength,
     totalCards,
+    onAddToPractice,
+    isInPracticeMode,
+    showPracticeButton,
+    practiceDeckLength,
 }: FlashcardProps) {
     const [isFlipped, setIsFlipped] = useState(false);
     const [displayedDevice, setDisplayedDevice] = useState(device);
@@ -37,7 +45,11 @@ export default function Flashcard({
             if (isLastCard) {
                 setIsFlipped(false);
                 setTimeout(() => {
-                    onShuffle();
+                    if (!isInPracticeMode && practiceDeckLength > 0) {
+                        onNext();
+                    } else {
+                        onShuffle();
+                    }
                 }, 275);
             } else {
                 setIsFlipped(false);
@@ -54,7 +66,11 @@ export default function Flashcard({
         <div>
             <div className="flex justify-between items-center mb-4">
                 <div className="text-gray-300 text-sm sm:text-base">
-                    Card {Math.min(currentIndex + 1, totalCards)} of {totalCards}
+                    {isInPracticeMode ? (
+                        `Reviewing card ${currentIndex + 1} of ${totalCards}`
+                    ) : (
+                        `Card ${currentIndex + 1} of ${totalCards}`
+                    )}
                 </div>
                 <button
                     onClick={() => {
@@ -69,12 +85,26 @@ export default function Flashcard({
             </div>
 
             <div className="flex justify-center gap-4 mb-4">
+                {showPracticeButton && isFlipped && (
+                    <button
+                        onClick={() => {
+                            setIsFlipped(false);
+                            setTimeout(() => {
+                                onAddToPractice(device);
+                            }, 275);
+                        }}
+                        className="px-6 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 
+                                 transition-colors text-base"
+                    >
+                        Practice Again Later
+                    </button>
+                )}
                 <button
                     onClick={handleAction}
                     className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 
                              transition-colors text-base"
                 >
-                    {isFlipped ? (isLastCard ? "Shuffle Deck" : "Next Device") : "Show Answer"}
+                    {isFlipped ? (isLastCard ? (practiceDeckLength > 0 ? "Start Practice" : "Shuffle Deck") : "Next Device") : "Show Answer"}
                 </button>
             </div>
 

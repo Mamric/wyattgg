@@ -22,7 +22,9 @@ export default function WritingExercisesFlashcards() {
     const [isStarted, setIsStarted] = useState(false);
     const [isReverseMode, setIsReverseMode] = useState(false);
     const [deck, setDeck] = useState<LiteraryDevice[]>([]);
+    const [practiceDeck, setPracticeDeck] = useState<LiteraryDevice[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isInPracticeMode, setIsInPracticeMode] = useState(false);
 
     useEffect(() => {
         if (deck.length > 0) {
@@ -33,6 +35,25 @@ export default function WritingExercisesFlashcards() {
     const handleNext = () => {
         if (currentIndex < deck.length - 1) {
             setCurrentIndex(currentIndex + 1);
+        } else if (!isInPracticeMode && practiceDeck.length > 0) {
+            // Switch to practice deck
+            setDeck(practiceDeck);
+            setPracticeDeck([]);
+            setCurrentIndex(0);
+            setIsInPracticeMode(true);
+        }
+    };
+
+    const handleAddToPracticeDeck = (device: LiteraryDevice) => {
+        setPracticeDeck([...practiceDeck, device]);
+        if (currentIndex === deck.length - 1) {
+            // If this is the last card, immediately switch to practice deck
+            setDeck([...practiceDeck, device]);
+            setPracticeDeck([]);
+            setCurrentIndex(0);
+            setIsInPracticeMode(true);
+        } else {
+            handleNext();
         }
     };
 
@@ -44,7 +65,9 @@ export default function WritingExercisesFlashcards() {
 
     const handleShuffle = () => {
         setDeck(shuffleDeck());
+        setPracticeDeck([]);
         setCurrentIndex(0);
+        setIsInPracticeMode(false);
     };
 
     if (!isStarted) {
@@ -62,11 +85,15 @@ export default function WritingExercisesFlashcards() {
                     device={deck[currentIndex]}
                     isReverseMode={isReverseMode}
                     onNext={handleNext}
+                    onAddToPractice={handleAddToPracticeDeck}
                     isLastCard={currentIndex === deck.length - 1}
                     onShuffle={handleShuffle}
                     currentIndex={currentIndex}
                     deckLength={deck.length}
                     totalCards={deck.length}
+                    isInPracticeMode={isInPracticeMode}
+                    showPracticeButton={!isInPracticeMode}
+                    practiceDeckLength={practiceDeck.length}
                 />
             </div>
         </div>
