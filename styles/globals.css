@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: var(--font-inter), system-ui, sans-serif;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-poppins), system-ui, sans-serif;
-  }
+    html {
+        font-family: var(--font-inter), system-ui, sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-poppins), system-ui, sans-serif;
+    }
 }
 
 :root {
@@ -35,7 +40,8 @@ body {
 }
 
 /* Ensure proper sizing */
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -47,4 +53,20 @@ html, body {
 
 main {
     flex: 1;
+}
+
+.perspective-1000 {
+    perspective: 1000px;
+}
+
+.transform-style-3d {
+    transform-style: preserve-3d;
+}
+
+.backface-hidden {
+    backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+    transform: rotateY(-180deg);
 }

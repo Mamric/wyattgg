@@ -17,7 +17,7 @@ export default function ResponseInput({ value, onChange, deviceName }: ResponseI
                     rows={3}
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
-                    placeholder={`Rewrite the sentence using ${deviceName.toLowerCase()}...`}
+                    placeholder={`Rewrite the prompt sentence using ${deviceName.toLowerCase()}...`}
                 />
                 <p className="text-gray-400 text-sm mt-2">
                     Try to incorporate {deviceName.toLowerCase()} into your response.

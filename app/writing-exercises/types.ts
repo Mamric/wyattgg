@@ -2,10 +2,13 @@ export type ExerciseState = "start" | "in-progress" | "completed";
 
 export type LiteraryDevice = {
     name: string;
+    pronunciation: string;
     definition: string;
     whyUseIt: string;
     howToUseIt: string;
     school: string;
+    example: string;
+    derivation: string;
 };
 
 export type UserAnswers = {
