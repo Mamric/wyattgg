@@ -1,20 +1,20 @@
 "use client";
 
-import { useWritingExercise } from "../hooks/useWritingExercise";
-import StartScreen from "./components/StartScreen";
+import { useQuiz } from "../hooks/useQuiz";
+import QuizScreen from "./components/QuizScreen";
 import CompletedScreen from "./components/CompletedScreen";
-import ExerciseScreen from "./components/ExerciseScreen";
+import StartScreen from "./components/StartScreen";
 
 export default function WritingExercisesQuiz() {
-    const exercise = useWritingExercise();
+    const quiz = useQuiz();
 
-    if (exercise.exerciseState === "start") {
-        return <StartScreen onBegin={exercise.beginExercise} />;
+    if (quiz.quizState === "start") {
+        return <StartScreen onBegin={quiz.beginQuiz} />;
     }
 
-    if (exercise.exerciseState === "completed") {
-        return <CompletedScreen exercise={exercise} />;
+    if (quiz.quizState === "completed") {
+        return <CompletedScreen results={quiz.results} onRestart={quiz.restartQuiz} />;
     }
 
-    return <ExerciseScreen exercise={exercise} />;
+    return <QuizScreen currentQuestion={quiz.currentQuestion} onAnswer={quiz.handleAnswer} progress={quiz.progress} />;
 }
