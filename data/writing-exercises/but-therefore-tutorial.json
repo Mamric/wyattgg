@@ -1,0 +1,124 @@
+{
+	"title": "Mastering the But/Therefore Technique",
+	"introduction": "The But/Therefore method is a powerful storytelling tool that helps create cohesive and engaging narratives. By using 'but' to introduce conflicts and 'therefore' to show consequences, you ensure that each part of your story is causally connected.",
+	"sections": [
+		{
+			"title": "Why Use But/Therefore?",
+			"points": [
+				"Enhances Story Flow: Moves the narrative forward logically",
+				"Builds Tension and Interest: Introduces challenges and resolutions",
+				"Avoids Disjointed Events: Prevents the 'and then' problem, where events feel disconnected",
+				"Creates Meaningful Connections: Each story beat directly relates to what came before",
+				"Improves Character Development: Shows how characters react and adapt to situations"
+			]
+		},
+		{
+			"title": "How to Use the Method",
+			"example": {
+				"start": "A young girl discovers a hidden door in her grandmother's house",
+				"progression": [
+					{
+						"type": "BUT",
+						"text": "the door is locked, and no one knows where the key is"
+					},
+					{
+						"type": "THEREFORE",
+						"text": "she decides to find a way to open it herself"
+					},
+					{
+						"type": "BUT",
+						"text": "strange noises start coming from behind the door"
+					},
+					{
+						"type": "THEREFORE",
+						"text": "she becomes determined to uncover the mystery"
+					}
+				]
+			}
+		},
+		{
+			"title": "Tips",
+			"points": [
+				"Logical Progression: Ensure each 'but' or 'therefore' logically follows from the previous statement",
+				"Character Motivation: Use this method to explore your characters' decisions and motivations",
+				"Conflict and Resolution Balance: A good story balances challenges with actions taken to overcome them",
+				"Natural Flow: Don't force the connections - they should feel organic to the story",
+				"Varying Impact: Some 'buts' and 'therefores' can be major plot points, while others drive smaller moments"
+			]
+		},
+		{
+			"title": "Examples from Literature",
+			"examples": [
+				{
+					"title": "Harry Potter and the Sorcerer's Stone",
+					"author": "J.K. Rowling",
+					"start": "Harry learns he is a wizard",
+					"progression": [
+						{
+							"type": "BUT",
+							"text": "he lives with his neglectful aunt and uncle who forbid him from embracing his identity"
+						},
+						{
+							"type": "THEREFORE",
+							"text": "he leaves to attend Hogwarts School of Witchcraft and Wizardry"
+						},
+						{
+							"type": "BUT",
+							"text": "there is a plot to steal the Sorcerer's Stone"
+						},
+						{
+							"type": "THEREFORE",
+							"text": "Harry and his friends must try to prevent its theft"
+						}
+					]
+				},
+				{
+					"title": "The Lord of the Rings",
+					"author": "J.R.R. Tolkien",
+					"start": "Frodo inherits a powerful ring",
+					"progression": [
+						{
+							"type": "BUT",
+							"text": "the ring is sought by dark forces that would use it for evil"
+						},
+						{
+							"type": "THEREFORE",
+							"text": "he must leave his home to protect the Shire"
+						},
+						{
+							"type": "BUT",
+							"text": "the ring's power begins to corrupt those around him"
+						},
+						{
+							"type": "THEREFORE",
+							"text": "he decides to undertake the journey to destroy it himself"
+						}
+					]
+				},
+				{
+					"title": "The Hunger Games",
+					"author": "Suzanne Collins",
+					"start": "Katniss volunteers for the Hunger Games to save her sister",
+					"progression": [
+						{
+							"type": "BUT",
+							"text": "she must fight to the death against 23 other tributes"
+						},
+						{
+							"type": "THEREFORE",
+							"text": "she uses her hunting and survival skills to stay alive"
+						},
+						{
+							"type": "BUT",
+							"text": "she develops feelings for her fellow tribute, Peeta"
+						},
+						{
+							"type": "THEREFORE",
+							"text": "she defies the Capitol by threatening a double suicide"
+						}
+					]
+				}
+			]
+		}
+	]
+}
