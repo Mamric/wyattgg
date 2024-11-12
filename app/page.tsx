@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRightIcon, MicrophoneIcon, BookOpenIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon, BookOpenIcon } from "@heroicons/react/24/outline";
 
 const XIcon = ({ className }: { className?: string }) => (
     <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -34,15 +34,9 @@ type PageInfo = {
 
 const internalLinks: PageInfo[] = [
     {
-        title: "Voice Over Work",
-        description: "Explore my voice over portfolio",
-        url: "/works",
-        icon: MicrophoneIcon,
-    },
-    {
-        title: "Game Dev References",
-        description: "Curated resources for game developers",
-        url: "/references",
+        title: "Writing Exercises",
+        description: "Interactive tools to improve your writing skills",
+        url: "/writing-exercises",
         icon: BookOpenIcon,
     },
 ];
@@ -83,17 +77,17 @@ export default function Home() {
                         Voice Over Artist | Content Creator | Game Enthusiast
                     </p>
                     <Link
-    href="/contact"
-    className="inline-flex items-center px-8 py-4 text-lg font-bold rounded-lg text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
->
-    Get in Touch
-    <ArrowRightIcon className="ml-2 -mr-1 h-6 w-6" aria-hidden="true" />
-</Link>
+                        href="/contact"
+                        className="inline-flex items-center px-8 py-4 text-lg font-bold rounded-lg text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
+                    >
+                        Get in Touch
+                        <ArrowRightIcon className="ml-2 -mr-1 h-6 w-6" aria-hidden="true" />
+                    </Link>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                    <section className="md:col-span-2">
-                        <h2 className="text-2xl font-bold mb-6">My Work</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <section>
+                        <h2 className="text-2xl font-bold mb-6">Featured</h2>
                         <div className="space-y-4">
                             {internalLinks.map((link) => (
                                 <InternalCard key={link.title} {...link} />

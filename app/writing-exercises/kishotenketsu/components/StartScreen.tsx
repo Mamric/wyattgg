@@ -20,7 +20,7 @@ export default function StartScreen({ onBegin }: StartScreenProps) {
                     <button
                         onClick={onBegin}
                         className="px-8 py-3 bg-green-600 text-white rounded-lg text-xl 
-                                 hover:bg-green-700 transition-colors transform hover:scale-105
+                                 hover:bg-green-700 hover:scale-105
                                  transition-all duration-200"
                     >
                         Begin Exercise

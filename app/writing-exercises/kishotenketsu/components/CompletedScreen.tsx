@@ -30,8 +30,8 @@ export default function CompletedScreen({ exercise }: CompletedScreenProps) {
                         <button
                             onClick={exercise.resetExercise}
                             className="px-4 sm:px-6 py-2 sm:py-3 bg-green-600 text-white rounded-lg
-                                     hover:bg-green-700 transition-colors transform 
-                                     hover:scale-105 transition-all duration-200
+                                     hover:bg-green-700 hover:scale-105
+                                     transition-all duration-200
                                      text-sm sm:text-base"
                         >
                             Write Another Story
@@ -48,8 +48,8 @@ export default function CompletedScreen({ exercise }: CompletedScreenProps) {
                                 }
                             }}
                             className="px-4 sm:px-6 py-2 sm:py-3 bg-gray-600 text-white rounded-lg
-                                     hover:bg-gray-700 transition-colors transform 
-                                     hover:scale-105 transition-all duration-200
+                                     hover:bg-gray-700 hover:scale-105
+                                     transition-all duration-200
                                      text-sm sm:text-base"
                         >
                             Copy to Clipboard
