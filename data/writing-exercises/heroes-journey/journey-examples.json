@@ -1,0 +1,221 @@
+{
+	"examples": [
+	  {
+		"title": "Star Wars: A New Hope",
+		"hero": "Luke Skywalker",
+		"stages": [
+		  {
+			"stageName": "Ordinary World",
+			"description": "Luke lives on Tatooine with his aunt and uncle."
+		  },
+		  {
+			"stageName": "Call to Adventure",
+			"description": "He discovers a message from Princess Leia."
+		  },
+		  {
+			"stageName": "Refusal of the Call",
+			"description": "Initially resists leaving to help Obi-Wan."
+		  },
+		  {
+			"stageName": "Meeting the Mentor",
+			"description": "Obi-Wan Kenobi guides him."
+		  },
+		  {
+			"stageName": "Crossing the Threshold",
+			"description": "Leaves Tatooine after his family is killed."
+		  },
+		  {
+			"stageName": "Tests, Allies, and Enemies",
+			"description": "Meets Han Solo, battles the Empire."
+		  },
+		  {
+			"stageName": "Approach to the Inmost Cave",
+			"description": "Plans the attack on the Death Star."
+		  },
+		  {
+			"stageName": "Ordeal",
+			"description": "The trench run on the Death Star."
+		  },
+		  {
+			"stageName": "Reward",
+			"description": "Destroys the Death Star."
+		  },
+		  {
+			"stageName": "The Road Back",
+			"description": "Returns to the Rebel base."
+		  },
+		  {
+			"stageName": "Resurrection",
+			"description": "Ceremony honoring his heroism."
+		  },
+		  {
+			"stageName": "Return with the Elixir",
+			"description": "Becomes a hero of the Rebellion."
+		  }
+		]
+	  },
+	  {
+		"title": "The Hobbit",
+		"hero": "Bilbo Baggins",
+		"stages": [
+		  {
+			"stageName": "Ordinary World",
+			"description": "Lives a comfortable life in the Shire."
+		  },
+		  {
+			"stageName": "Call to Adventure",
+			"description": "Gandalf invites him on a quest."
+		  },
+		  {
+			"stageName": "Refusal of the Call",
+			"description": "Hesitates to leave his home."
+		  },
+		  {
+			"stageName": "Meeting the Mentor",
+			"description": "Gandalf encourages him."
+		  },
+		  {
+			"stageName": "Crossing the Threshold",
+			"description": "Joins the dwarves on their journey."
+		  },
+		  {
+			"stageName": "Tests, Allies, and Enemies",
+			"description": "Encounters trolls, goblins, Gollum."
+		  },
+		  {
+			"stageName": "Approach to the Inmost Cave",
+			"description": "Reaches the Lonely Mountain."
+		  },
+		  {
+			"stageName": "Ordeal",
+			"description": "Faces Smaug, the dragon."
+		  },
+		  {
+			"stageName": "Reward",
+			"description": "Gains courage and the Arkenstone."
+		  },
+		  {
+			"stageName": "The Road Back",
+			"description": "Returns home after the Battle of Five Armies."
+		  },
+		  {
+			"stageName": "Resurrection",
+			"description": "Recognized as a hero by his community."
+		  },
+		  {
+			"stageName": "Return with the Elixir",
+			"description": "Brings back treasure and a new perspective."
+		  }
+		]
+	  },
+	  {
+		"title": "Harry Potter and the Sorcerer's Stone",
+		"hero": "Harry Potter",
+		"stages": [
+		  {
+			"stageName": "Ordinary World",
+			"description": "Lives with his neglectful aunt and uncle."
+		  },
+		  {
+			"stageName": "Call to Adventure",
+			"description": "Learns he is a wizard."
+		  },
+		  {
+			"stageName": "Refusal of the Call",
+			"description": "Initially doubts he can be a wizard."
+		  },
+		  {
+			"stageName": "Meeting the Mentor",
+			"description": "Hagrid guides him into the wizarding world."
+		  },
+		  {
+			"stageName": "Crossing the Threshold",
+			"description": "Attends Hogwarts School of Witchcraft and Wizardry."
+		  },
+		  {
+			"stageName": "Tests, Allies, and Enemies",
+			"description": "Makes friends, learns magic, faces challenges."
+		  },
+		  {
+			"stageName": "Approach to the Inmost Cave",
+			"description": "Investigates the mystery of the Sorcerer's Stone."
+		  },
+		  {
+			"stageName": "Ordeal",
+			"description": "Confronts Professor Quirrell/Voldemort."
+		  },
+		  {
+			"stageName": "Reward",
+			"description": "Protects the Sorcerer's Stone."
+		  },
+		  {
+			"stageName": "The Road Back",
+			"description": "Recovers in the hospital wing."
+		  },
+		  {
+			"stageName": "Resurrection",
+			"description": "Wins House Cup for Gryffindor."
+		  },
+		  {
+			"stageName": "Return with the Elixir",
+			"description": "Returns to the Dursleys with newfound confidence."
+		  }
+		]
+	  },
+	  {
+		"title": "The Lion King",
+		"hero": "Simba",
+		"stages": [
+		  {
+			"stageName": "Ordinary World",
+			"description": "Lives as the prince of the Pride Lands."
+		  },
+		  {
+			"stageName": "Call to Adventure",
+			"description": "Witnesses his father's death."
+		  },
+		  {
+			"stageName": "Refusal of the Call",
+			"description": "Runs away from the Pride Lands."
+		  },
+		  {
+			"stageName": "Meeting the Mentor",
+			"description": "Meets Timon and Pumbaa."
+		  },
+		  {
+			"stageName": "Crossing the Threshold",
+			"description": "Adopts a carefree life in the jungle."
+		  },
+		  {
+			"stageName": "Tests, Allies, and Enemies",
+			"description": "Grows up away from home."
+		  },
+		  {
+			"stageName": "Approach to the Inmost Cave",
+			"description": "Encounters Nala and is urged to return."
+		  },
+		  {
+			"stageName": "Ordeal",
+			"description": "Confronts Scar to reclaim his throne."
+		  },
+		  {
+			"stageName": "Reward",
+			"description": "Defeats Scar and takes his place as king."
+		  },
+		  {
+			"stageName": "The Road Back",
+			"description": "Restores the Pride Lands."
+		  },
+		  {
+			"stageName": "Resurrection",
+			"description": "Embraces his role as leader."
+		  },
+		  {
+			"stageName": "Return with the Elixir",
+			"description": "Brings peace and prosperity back to his kingdom."
+		  }
+		]
+	  }
+	]
+  }
+  

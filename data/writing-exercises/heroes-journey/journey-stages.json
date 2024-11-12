@@ -1,0 +1,82 @@
+{
+	"tutorial": {
+	  "title": "Crafting Your Hero's Journey",
+	  "introduction": "The Hero's Journey is a timeless storytelling framework that maps out the protagonist's adventure from the ordinary to the extraordinary. This exercise will guide you through each stage, helping you create a compelling and cohesive narrative.",
+	  "stages": [
+		{
+		  "stageNumber": 1,
+		  "stageName": "Ordinary World",
+		  "purpose": "Introduce the hero's normal life before the adventure begins.",
+		  "consider": "What is your hero's everyday environment? What are their desires and fears?"
+		},
+		{
+		  "stageNumber": 2,
+		  "stageName": "Call to Adventure",
+		  "purpose": "Present a challenge or quest that disrupts the hero's ordinary world.",
+		  "consider": "What event compels your hero to take action?"
+		},
+		{
+		  "stageNumber": 3,
+		  "stageName": "Refusal of the Call",
+		  "purpose": "Show the hero's hesitation or reluctance to embark on the journey.",
+		  "consider": "What fears or obstacles cause your hero to resist?"
+		},
+		{
+		  "stageNumber": 4,
+		  "stageName": "Meeting the Mentor",
+		  "purpose": "Introduce a guide who provides wisdom or tools needed for the journey.",
+		  "consider": "Who helps your hero overcome their doubts?"
+		},
+		{
+		  "stageNumber": 5,
+		  "stageName": "Crossing the Threshold",
+		  "purpose": "The hero commits to the journey, leaving the ordinary world behind.",
+		  "consider": "What decisive action does your hero take?"
+		},
+		{
+		  "stageNumber": 6,
+		  "stageName": "Tests, Allies, and Enemies",
+		  "purpose": "The hero faces challenges, makes friends, and confronts foes.",
+		  "consider": "What trials does your hero encounter? Who supports or opposes them?"
+		},
+		{
+		  "stageNumber": 7,
+		  "stageName": "Approach to the Inmost Cave",
+		  "purpose": "The hero prepares for a significant challenge in the journey.",
+		  "consider": "How does your hero brace for the ordeal ahead?"
+		},
+		{
+		  "stageNumber": 8,
+		  "stageName": "Ordeal",
+		  "purpose": "The hero faces their greatest fear or a significant challenge.",
+		  "consider": "What is the pivotal moment where everything is at stake?"
+		},
+		{
+		  "stageNumber": 9,
+		  "stageName": "Reward (Seizing the Sword)",
+		  "purpose": "After overcoming the ordeal, the hero gains a reward.",
+		  "consider": "What does your hero obtain? Knowledge, an object, reconciliation?"
+		},
+		{
+		  "stageNumber": 10,
+		  "stageName": "The Road Back",
+		  "purpose": "The hero begins their return to the ordinary world.",
+		  "consider": "What new challenges arise as they attempt to go back?"
+		},
+		{
+		  "stageNumber": 11,
+		  "stageName": "Resurrection",
+		  "purpose": "The hero faces a final test where everything is on the line.",
+		  "consider": "How does your hero demonstrate their transformation?"
+		},
+		{
+		  "stageNumber": 12,
+		  "stageName": "Return with the Elixir",
+		  "purpose": "The hero returns home, transformed, and brings back something to benefit others.",
+		  "consider": "What does your hero bring back? How does it impact their world?"
+		}
+	  ],
+	  "conclusion": "By the end of this exercise, you'll have a complete outline of your hero's journey, ready to be expanded into a full story."
+	}
+  }
+  

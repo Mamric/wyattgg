@@ -58,6 +58,29 @@ export default function WritingExercisesLanding() {
                                 </div>
                             </div>
                         </Link>
+                        {/* Hero's Journey Builder */}
+                        <Link
+                            href="/writing-exercises/heroes-journey"
+                            className="block bg-gradient-to-r from-purple-900 to-indigo-900 p-4 sm:p-8 rounded-lg 
+                                     hover:from-purple-800 hover:to-indigo-800 transition-all transform 
+                                     hover:scale-[1.02] border-2 border-purple-500/20 hover:border-purple-500/40
+                                     shadow-xl"
+                        >
+                            <div className="flex items-center gap-3 sm:gap-4">
+                                <div className="bg-purple-500/10 p-3 sm:p-4 rounded-lg flex-shrink-0">
+                                    <span className="text-3xl sm:text-4xl">🦸</span>
+                                </div>
+                                <div className="text-left">
+                                    <h2 className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">
+                                        Hero's Journey Builder
+                                    </h2>
+                                    <p className="text-gray-300 text-sm sm:text-lg">
+                                        Create a compelling story outline using the classic Hero's Journey structure,
+                                        from the Call to Adventure to the Return.
+                                    </p>
+                                </div>
+                            </div>
+                        </Link>
                         {/* Secondary Cards */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {/* Quiz Card */}
