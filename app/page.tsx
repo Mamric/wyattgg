@@ -32,14 +32,14 @@ type PageInfo = {
     icon: React.ElementType;
 };
 
-const internalLinks: PageInfo[] = [
-    {
-        title: "Writing Exercises",
-        description: "Interactive tools to improve your writing skills",
-        url: "/writing-exercises",
-        icon: BookOpenIcon,
-    },
-];
+// const internalLinks: PageInfo[] = [
+//     {
+//         title: "Writing Exercises",
+//         description: "Interactive tools to improve your writing skills",
+//         url: "/writing-exercises",
+//         icon: BookOpenIcon,
+//     },
+// ];
 
 const externalLinks: PageInfo[] = [
     {
@@ -65,77 +65,82 @@ const externalLinks: PageInfo[] = [
 export default function Home() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 text-white">
-            <main className="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
-                        Welcome to{" "}
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                            Wyatt.gg
-                        </span>
-                    </h1>
-                    <p className="text-lg sm:text-xl text-gray-300 mb-8">
-                        Voice Over Artist | Content Creator | Game Enthusiast
-                    </p>
-                    <Link
-                        href="/contact"
-                        className="inline-flex items-center px-8 py-4 text-lg font-bold rounded-lg text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
-                    >
-                        Get in Touch
-                        <ArrowRightIcon className="ml-2 -mr-1 h-6 w-6" aria-hidden="true" />
-                    </Link>
-                </div>
+            <main className="max-w-4xl mx-auto px-4 py-8 sm:py-16 sm:px-6 lg:px-8">
+                <div className="bg-gray-800/50 rounded-lg p-4 sm:p-8 backdrop-blur-sm">
+                    {/* Hero Section */}
+                    <div className="text-center mb-12">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
+                            Welcome to{" "}
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                                Wyatt.gg
+                            </span>
+                        </h1>
+                        <p className="text-lg sm:text-xl text-gray-300 mb-8">
+                            Voice Over Artist | Content Creator | Game Enthusiast
+                        </p>
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center px-6 py-3 text-lg font-bold rounded-lg 
+                                     bg-gradient-to-r from-blue-600 to-purple-600 
+                                     hover:from-blue-500 hover:to-purple-500
+                                     shadow-lg hover:shadow-xl transition-all duration-300 
+                                     hover:scale-[1.02]"
+                        >
+                            Get in Touch
+                            <ArrowRightIcon className="ml-2 -mr-1 h-6 w-6" aria-hidden="true" />
+                        </Link>
+                    </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                    <section>
-                        <h2 className="text-2xl font-bold mb-6">Featured</h2>
-                        <div className="space-y-4">
-                            {internalLinks.map((link) => (
-                                <InternalCard key={link.title} {...link} />
-                            ))}
+                    {/* Featured Section */}
+                    <div className="space-y-8">
+                        <div>
+                            <h2 className="text-2xl font-semibold text-white mb-4">Featured</h2>
+                            <Link
+                                href="/writing-exercises"
+                                className="block bg-gradient-to-br from-green-900 to-teal-900 p-4 sm:p-6 rounded-lg 
+                                         hover:from-green-800 hover:to-teal-800 transition-all transform 
+                                         hover:scale-[1.02] border-2 border-green-500/20 hover:border-green-500/40
+                                         shadow-xl"
+                            >
+                                <div className="flex items-center gap-3">
+                                    <div className="bg-green-500/10 p-3 rounded-lg">
+                                        <BookOpenIcon className="h-8 w-8 text-green-400" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-1">Writing Exercises</h3>
+                                        <p className="text-gray-300 text-sm">Interactive tools to improve your writing skills</p>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
-                    </section>
-                    <section>
-                        <h2 className="text-2xl font-bold mb-6">Connect With Me</h2>
-                        <div className="space-y-4">
-                            {externalLinks.map((link) => (
-                                <ExternalCard key={link.title} {...link} />
-                            ))}
+
+                        {/* Connect Section */}
+                        <div>
+                            <h2 className="text-2xl font-semibold text-white mb-4">Connect With Me</h2>
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                {externalLinks.map((link) => (
+                                    <a
+                                        key={link.title}
+                                        href={link.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="block bg-gradient-to-br from-gray-800 to-gray-900 p-4 rounded-lg 
+                                                 hover:from-gray-700 hover:to-gray-800 transition-all transform 
+                                                 hover:scale-[1.02] border border-gray-700 hover:border-gray-600
+                                                 shadow-lg"
+                                    >
+                                        <div className="flex flex-col items-center text-center">
+                                            <link.icon className="h-8 w-8 text-gray-400 mb-2" />
+                                            <h3 className="font-medium text-white">{link.title}</h3>
+                                            <p className="text-sm text-gray-400">{link.description}</p>
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </main>
         </div>
     );
 }
-
-const InternalCard = ({ title, description, url, icon: Icon }: PageInfo) => (
-    <Link
-        href={url}
-        className="block p-4 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition duration-150 ease-in-out"
-    >
-        <div className="flex items-center">
-            <Icon className="h-6 w-6 text-blue-400 mr-3" />
-            <div>
-                <h3 className="text-lg font-semibold">{title}</h3>
-                <p className="text-sm text-gray-400">{description}</p>
-            </div>
-        </div>
-    </Link>
-);
-
-const ExternalCard = ({ title, description, url, icon: Icon }: PageInfo) => (
-    <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block p-3 bg-gray-800 bg-opacity-50 rounded-lg shadow-sm hover:bg-opacity-75 transition duration-150 ease-in-out"
-    >
-        <div className="flex items-center">
-            <Icon className="h-5 w-5 text-gray-400 mr-2" />
-            <div>
-                <h3 className="text-sm font-medium">{title}</h3>
-                <p className="text-xs text-gray-500">{description}</p>
-            </div>
-        </div>
-    </a>
-);
