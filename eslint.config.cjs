@@ -32,6 +32,7 @@ module.exports = [
                 window: "readonly",
                 URL: "readonly",
                 Blob: "readonly",
+                console: "readonly",
             },
         },
         rules: {
