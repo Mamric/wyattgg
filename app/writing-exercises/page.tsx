@@ -81,6 +81,29 @@ export default function WritingExercisesLanding() {
                                 </div>
                             </div>
                         </Link>
+                        {/* Kishōtenketsu Story Builder */}
+                        <Link
+                            href="/writing-exercises/kishotenketsu"
+                            className="block bg-gradient-to-r from-green-900 to-teal-900 p-4 sm:p-8 rounded-lg 
+                                     hover:from-green-800 hover:to-teal-800 transition-all transform 
+                                     hover:scale-[1.02] border-2 border-green-500/20 hover:border-green-500/40
+                                     shadow-xl"
+                        >
+                            <div className="flex items-center gap-3 sm:gap-4">
+                                <div className="bg-green-500/10 p-3 sm:p-4 rounded-lg flex-shrink-0">
+                                    <span className="text-3xl sm:text-4xl">🎋</span>
+                                </div>
+                                <div className="text-left">
+                                    <h2 className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">
+                                        Kishōtenketsu Story Builder
+                                    </h2>
+                                    <p className="text-gray-300 text-sm sm:text-lg">
+                                        Create stories using the four-part Japanese narrative structure that focuses on
+                                        exposition and contrast over conflict.
+                                    </p>
+                                </div>
+                            </div>
+                        </Link>
                         {/* Secondary Cards */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {/* Quiz Card */}

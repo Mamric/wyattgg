@@ -1,0 +1,88 @@
+{
+	"examples": [
+		{
+			"title": "The Gardener's Surprise",
+			"parts": [
+				{
+					"partName": "Ki (Introduction)",
+					"description": "A man plants a seed in his garden."
+				},
+				{
+					"partName": "Shō (Development)",
+					"description": "The seed sprouts, and he cares for the growing plant diligently."
+				},
+				{
+					"partName": "Ten (Twist)",
+					"description": "One morning, he discovers a rare butterfly resting on the plant."
+				},
+				{
+					"partName": "Ketsu (Conclusion)",
+					"description": "The encounter inspires him to create a butterfly garden, transforming his backyard into a haven for wildlife."
+				}
+			]
+		},
+		{
+			"title": "The Silent Pond (Haiku)",
+			"parts": [
+				{
+					"partName": "Ki (Introduction)",
+					"description": "An old silent pond."
+				},
+				{
+					"partName": "Shō (Development)",
+					"description": "A frog jumps into the pond—"
+				},
+				{
+					"partName": "Ten (Twist)",
+					"description": "Splash! Silence again."
+				},
+				{
+					"partName": "Ketsu (Conclusion)",
+					"description": "The moment captures the serenity and suddenness of nature."
+				}
+			]
+		},
+		{
+			"title": "Four-Panel Manga Example",
+			"parts": [
+				{
+					"partName": "Ki (Introduction)",
+					"description": "Character A greets Character B in the morning."
+				},
+				{
+					"partName": "Shō (Development)",
+					"description": "They discuss plans for the day."
+				},
+				{
+					"partName": "Ten (Twist)",
+					"description": "Character B reveals they have won a trip to an exotic location."
+				},
+				{
+					"partName": "Ketsu (Conclusion)",
+					"description": "Both characters celebrate, setting off on a new adventure."
+				}
+			]
+		},
+		{
+			"title": "\"Snow Country\" by Yasunari Kawabata",
+			"parts": [
+				{
+					"partName": "Ki (Introduction)",
+					"description": "Introduction of a remote hot spring town in Japan."
+				},
+				{
+					"partName": "Shō (Development)",
+					"description": "Development of the relationship between the protagonist and a geisha."
+				},
+				{
+					"partName": "Ten (Twist)",
+					"description": "The appearance of another woman introduces emotional complexity."
+				},
+				{
+					"partName": "Ketsu (Conclusion)",
+					"description": "The story concludes with reflections on beauty and transience."
+				}
+			]
+		}
+	]
+}

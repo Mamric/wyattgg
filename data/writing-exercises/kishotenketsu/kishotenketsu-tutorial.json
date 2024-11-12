@@ -1,0 +1,33 @@
+{
+	"tutorial": {
+		"title": "Exploring Kishōtenketsu: A Four-Part Storytelling Journey",
+		"introduction": "Kishōtenketsu is a traditional narrative structure emphasizing exposition and contrast over conflict. This exercise will guide you through crafting a story using this unique framework.",
+		"parts": [
+			{
+				"partNumber": 1,
+				"partName": "Ki (Introduction)",
+				"purpose": "Set the scene and introduce characters or the setting.",
+				"consider": "What is the starting point of your story? Who or what do you want to introduce?"
+			},
+			{
+				"partNumber": 2,
+				"partName": "Shō (Development)",
+				"purpose": "Build upon the introduction by adding details and depth.",
+				"consider": "How does the situation evolve? What additional information enriches the story?"
+			},
+			{
+				"partNumber": 3,
+				"partName": "Ten (Twist)",
+				"purpose": "Introduce a surprising or contrasting element that shifts the narrative.",
+				"consider": "What unexpected event or detail can you introduce? How does it contrast with earlier parts?"
+			},
+			{
+				"partNumber": 4,
+				"partName": "Ketsu (Conclusion)",
+				"purpose": "Bring the story to a satisfying close by connecting all parts.",
+				"consider": "How do you resolve the narrative? What overarching theme or message emerges?"
+			}
+		],
+		"conclusion": "By following the kishōtenketsu structure, you'll craft a story that captivates readers through careful exposition and thoughtful contrast. This exercise encourages you to explore new narrative possibilities and expand your storytelling repertoire."
+	}
+}
