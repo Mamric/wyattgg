@@ -11,141 +11,110 @@ export default function WritingExercisesLanding() {
                     <p className="text-gray-300 text-base sm:text-lg mb-6 sm:mb-8">
                         Choose an exercise type to practice and improve your writing skills.
                     </p>
-                    <div className="space-y-4 sm:space-y-6">
-                        {/* Flashcards - Primary Card */}
-                        <Link
-                            href="/writing-exercises/flashcards"
-                            className="block bg-gradient-to-r from-blue-900 to-purple-900 p-4 sm:p-8 rounded-lg 
-                                     hover:from-blue-800 hover:to-purple-800 transition-all transform 
-                                     hover:scale-[1.02] border-2 border-blue-500/20 hover:border-blue-500/40
-                                     shadow-xl"
-                        >
-                            <div className="flex items-center gap-3 sm:gap-4">
-                                <div className="bg-blue-500/10 p-3 sm:p-4 rounded-lg flex-shrink-0">
-                                    <span className="text-3xl sm:text-4xl">📚</span>
-                                </div>
-                                <div className="text-left">
-                                    <h2 className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">
-                                        Literary Devices Flashcards
-                                    </h2>
-                                    <p className="text-gray-300 text-sm sm:text-lg">
-                                        Master literary devices through interactive flashcards with detailed
-                                        explanations and examples.
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
-                        {/* But/Therefore Story Builder */}
-                        <Link
-                            href="/writing-exercises/but-therefore"
-                            className="block bg-gradient-to-r from-orange-900 to-red-900 p-4 sm:p-8 rounded-lg 
-                                     hover:from-orange-800 hover:to-red-800 transition-all transform 
-                                     hover:scale-[1.02] border-2 border-orange-500/20 hover:border-orange-500/40
-                                     shadow-xl"
-                        >
-                            <div className="flex items-center gap-3 sm:gap-4">
-                                <div className="bg-orange-500/10 p-3 sm:p-4 rounded-lg flex-shrink-0">
-                                    <span className="text-3xl sm:text-4xl">📖</span>
-                                </div>
-                                <div className="text-left">
-                                    <h2 className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">
-                                        But/Therefore Story Builder
-                                    </h2>
-                                    <p className="text-gray-300 text-sm sm:text-lg">
-                                        Create engaging story progressions using the But/Therefore principle to avoid
-                                        weak "and then" storytelling.
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
-                        {/* Hero's Journey Builder */}
-                        <Link
-                            href="/writing-exercises/heroes-journey"
-                            className="block bg-gradient-to-r from-purple-900 to-indigo-900 p-4 sm:p-8 rounded-lg 
-                                     hover:from-purple-800 hover:to-indigo-800 transition-all transform 
-                                     hover:scale-[1.02] border-2 border-purple-500/20 hover:border-purple-500/40
-                                     shadow-xl"
-                        >
-                            <div className="flex items-center gap-3 sm:gap-4">
-                                <div className="bg-purple-500/10 p-3 sm:p-4 rounded-lg flex-shrink-0">
-                                    <span className="text-3xl sm:text-4xl">🦸</span>
-                                </div>
-                                <div className="text-left">
-                                    <h2 className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">
-                                        Hero's Journey Builder
-                                    </h2>
-                                    <p className="text-gray-300 text-sm sm:text-lg">
-                                        Create a compelling story outline using the classic Hero's Journey structure,
-                                        from the Call to Adventure to the Return.
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
-                        {/* Kishōtenketsu Story Builder */}
-                        <Link
-                            href="/writing-exercises/kishotenketsu"
-                            className="block bg-gradient-to-r from-green-900 to-teal-900 p-4 sm:p-8 rounded-lg 
-                                     hover:from-green-800 hover:to-teal-800 transition-all transform 
-                                     hover:scale-[1.02] border-2 border-green-500/20 hover:border-green-500/40
-                                     shadow-xl"
-                        >
-                            <div className="flex items-center gap-3 sm:gap-4">
-                                <div className="bg-green-500/10 p-3 sm:p-4 rounded-lg flex-shrink-0">
-                                    <span className="text-3xl sm:text-4xl">🎋</span>
-                                </div>
-                                <div className="text-left">
-                                    <h2 className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">
-                                        Kishōtenketsu Story Builder
-                                    </h2>
-                                    <p className="text-gray-300 text-sm sm:text-lg">
-                                        Create stories using the four-part Japanese narrative structure that focuses on
-                                        exposition and contrast over conflict.
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
-                        {/* Secondary Cards */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            {/* Quiz Card */}
+
+                    {/* Story Structure Section */}
+                    <div className="space-y-6 mb-12">
+                        <h2 className="text-2xl font-semibold text-white">Story Structure</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {/* Hero's Journey - Now First */}
                             <Link
-                                href="/writing-exercises/quiz"
-                                className="block bg-gray-700/50 p-4 sm:p-6 rounded-lg hover:bg-gray-600/50 
-                                         transition-all transform hover:scale-[1.01]"
+                                href="/writing-exercises/heroes-journey"
+                                className="block bg-gradient-to-br from-purple-900 to-indigo-900 p-4 sm:p-6 rounded-lg 
+                                         hover:from-purple-800 hover:to-indigo-800 transition-all transform 
+                                         hover:scale-[1.02] border-2 border-purple-500/20 hover:border-purple-500/40
+                                         shadow-xl"
                             >
-                                <div className="flex items-center gap-3 sm:gap-4">
-                                    <div className="bg-purple-500/10 p-2.5 sm:p-3 rounded-lg flex-shrink-0">
-                                        <span className="text-xl sm:text-2xl">📝</span>
-                                    </div>
-                                    <div className="text-left">
-                                        <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">
-                                            Knowledge Quiz
-                                        </h2>
-                                        <p className="text-gray-300 text-sm">
-                                            Test your understanding of literary devices with multiple choice questions.
-                                        </p>
+                                <div className="flex items-center gap-3">
+                                    <span className="text-3xl">🦸</span>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-1">Hero's Journey</h3>
+                                        <p className="text-gray-300 text-sm">Classic monomyth structure</p>
                                     </div>
                                 </div>
                             </Link>
 
-                            {/* Practice Card */}
+                            {/* Kishōtenketsu - Now Second */}
                             <Link
-                                href="/writing-exercises/practice"
-                                className="block bg-gray-700/50 p-4 sm:p-6 rounded-lg hover:bg-gray-600/50 
-                                         transition-all transform hover:scale-[1.01]"
+                                href="/writing-exercises/kishotenketsu"
+                                className="block bg-gradient-to-br from-green-900 to-teal-900 p-4 sm:p-6 rounded-lg 
+                                         hover:from-green-800 hover:to-teal-800 transition-all transform 
+                                         hover:scale-[1.02] border-2 border-green-500/20 hover:border-green-500/40
+                                         shadow-xl"
                             >
-                                <div className="flex items-center gap-3 sm:gap-4">
-                                    <div className="bg-green-500/10 p-2.5 sm:p-3 rounded-lg flex-shrink-0">
-                                        <span className="text-xl sm:text-2xl">✍️</span>
-                                    </div>
-                                    <div className="text-left">
-                                        <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">
-                                            Writing Practice
-                                        </h2>
-                                        <p className="text-gray-300 text-sm">
-                                            Create your own examples using literary devices in context.
-                                        </p>
+                                <div className="flex items-center gap-3">
+                                    <span className="text-3xl">🎋</span>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-1">Kishōtenketsu</h3>
+                                        <p className="text-gray-300 text-sm">Japanese four-part narrative structure</p>
                                     </div>
                                 </div>
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* Story Development Section - Adjusted Layout */}
+                    <div className="space-y-6 mb-12">
+                        <h2 className="text-2xl font-semibold text-white">Story Development</h2>
+                        <div className="flex justify-center">
+                            <Link
+                                href="/writing-exercises/but-therefore"
+                                className="block bg-gradient-to-br from-orange-900 to-red-900 p-4 sm:p-6 rounded-lg 
+                                         hover:from-orange-800 hover:to-red-800 transition-all transform 
+                                         hover:scale-[1.02] border-2 border-orange-500/20 hover:border-orange-500/40
+                                         shadow-xl max-w-xl w-full"
+                            >
+                                <div className="flex items-center gap-3">
+                                    <span className="text-3xl">📖</span>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-1">But/Therefore Story Builder</h3>
+                                        <p className="text-gray-300 text-sm">Create engaging story progressions</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* Learning Tools Section - Updated Descriptions */}
+                    <div className="space-y-6">
+                        <div className="text-center mb-6">
+                            <h2 className="text-2xl font-semibold text-white">Literary Devices</h2>
+                            <p className="text-gray-300 text-sm mt-2">Tools to master metaphors, similes, and other literary techniques</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            {/* Flashcards */}
+                            <Link
+                                href="/writing-exercises/flashcards"
+                                className="block bg-gradient-to-br from-blue-900 to-blue-800 p-4 rounded-lg 
+                                         hover:from-blue-800 hover:to-blue-700 transition-all transform 
+                                         hover:scale-[1.02] border border-blue-500/20 hover:border-blue-500/40"
+                            >
+                                <span className="text-2xl mb-2 block">📚</span>
+                                <h3 className="text-lg font-bold text-white mb-1">Study</h3>
+                                <p className="text-gray-300 text-sm">Learn with flashcards</p>
+                            </Link>
+
+                            {/* Quiz */}
+                            <Link
+                                href="/writing-exercises/quiz"
+                                className="block bg-gradient-to-br from-purple-900 to-purple-800 p-4 rounded-lg 
+                                         hover:from-purple-800 hover:to-purple-700 transition-all transform 
+                                         hover:scale-[1.02] border border-purple-500/20 hover:border-purple-500/40"
+                            >
+                                <span className="text-2xl mb-2 block">📝</span>
+                                <h3 className="text-lg font-bold text-white mb-1">Test</h3>
+                                <p className="text-gray-300 text-sm">Challenge your knowledge</p>
+                            </Link>
+
+                            {/* Practice */}
+                            <Link
+                                href="/writing-exercises/practice"
+                                className="block bg-gradient-to-br from-green-900 to-green-800 p-4 rounded-lg 
+                                         hover:from-green-800 hover:to-green-700 transition-all transform 
+                                         hover:scale-[1.02] border border-green-500/20 hover:border-green-500/40"
+                            >
+                                <span className="text-2xl mb-2 block">✍️</span>
+                                <h3 className="text-lg font-bold text-white mb-1">Create</h3>
+                                <p className="text-gray-300 text-sm">Write your own examples</p>
                             </Link>
                         </div>
                     </div>
