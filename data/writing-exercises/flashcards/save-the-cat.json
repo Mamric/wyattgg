@@ -1,0 +1,198 @@
+{
+	"opening_image": {
+	  "id": "opening_image",
+	  "term": "Opening Image",
+	  "definition": "A visual that represents the story's tone and the hero's starting point.",
+	  "example": "Star Wars: Luke Skywalker gazing at twin suns, yearning for adventure beyond his mundane farm life.",
+	  "additionalInfo": {
+		"purpose": "Sets the tone, mood, and style; introduces the hero's world.",
+		"pacing": "Page 1",
+		"whenToUseIt": "At the very beginning of the screenplay",
+		"pitfalls": "Avoid generic or unengaging openings",
+		"commonVariations": "Establishing shots, symbolic images, contrasting visuals"
+	  }
+	},
+	"theme_stated": {
+	  "id": "theme_stated",
+	  "term": "Theme Stated",
+	  "definition": "A moment where the story's central theme or message is hinted at.",
+	  "example": "Dead Poets Society: Mr. Keating tells his students 'Carpe Diem' and to make their lives extraordinary.",
+	  "additionalInfo": {
+		"purpose": "Introduces the moral or message explored throughout the story.",
+		"pacing": "Pages 1-5",
+		"whenToUseIt": "Early in the story, often through dialogue",
+		"pitfalls": "Don't make it too on-the-nose or preachy",
+		"commonVariations": "A question posed, advice given, a philosophical statement"
+	  }
+	},
+	"set_up": {
+	  "id": "set_up",
+	  "term": "Set-Up",
+	  "definition": "Introduction of the hero's world, flaws, and current situation.",
+	  "example": "The Devil Wears Prada: Andy Sachs, a serious journalist, struggling to fit into the superficial fashion world.",
+	  "additionalInfo": {
+		"purpose": "Establishes the status quo and presents the hero's everyday life.",
+		"pacing": "Pages 1-10",
+		"whenToUseIt": "At the start, before the catalyst",
+		"pitfalls": "Avoid excessive exposition or slow pacing",
+		"commonVariations": "Daily routine, introduction of supporting characters, displaying the hero's flaws"
+	  }
+	},
+	"catalyst": {
+	  "id": "catalyst",
+	  "term": "Catalyst",
+	  "definition": "An event that disrupts the hero's normal life and presents a new challenge.",
+	  "example": "Jurassic Park: Hammond invites Grant and Sattler to endorse his mysterious new theme park.",
+	  "additionalInfo": {
+		"purpose": "Kick-starts the story by forcing the hero to take action.",
+		"pacing": "Page 12",
+		"whenToUseIt": "Shortly after the set-up",
+		"pitfalls": "Ensure the catalyst is impactful and relevant",
+		"commonVariations": "An invitation, a disaster, a new opportunity, a challenge"
+	  }
+	},
+	"debate": {
+	  "id": "debate",
+	  "term": "Debate",
+	  "definition": "The hero's hesitation or conflict about how to proceed after the catalyst.",
+	  "example": "Spider-Man: Peter Parker wrestling with whether to use his powers for personal gain or responsibility.",
+	  "additionalInfo": {
+		"purpose": "Shows internal struggle and the weighing of options.",
+		"pacing": "Pages 12-25",
+		"whenToUseIt": "After the catalyst, before committing to action",
+		"pitfalls": "Don't let the debate stall the story's momentum",
+		"commonVariations": "Internal conflict, advice from others, weighing pros and cons"
+	  }
+	},
+	"break_into_two": {
+	  "id": "break_into_two",
+	  "term": "Break into Two",
+	  "definition": "The hero makes a decisive action to enter a new world or situation.",
+	  "example": "The Hunger Games: Katniss volunteers as tribute to save her sister.",
+	  "additionalInfo": {
+		"purpose": "Transitions from the setup to the main journey or conflict.",
+		"pacing": "Page 25",
+		"whenToUseIt": "After the debate is resolved",
+		"pitfalls": "Avoid making the decision seem unmotivated",
+		"commonVariations": "Accepting a quest, making a bold decision, leaving home"
+	  }
+	},
+	"b_story": {
+	  "id": "b_story",
+	  "term": "B Story",
+	  "definition": "A secondary storyline that often provides support or contrast to the main plot.",
+	  "example": "The Social Network: Mark's friendship with Eduardo paralleling Facebook's rise.",
+	  "additionalInfo": {
+		"purpose": "Introduces subplots that enrich the narrative.",
+		"pacing": "Page 30",
+		"whenToUseIt": "Early in Act II",
+		"pitfalls": "Ensure the B story complements the main plot",
+		"commonVariations": "A romantic subplot, mentor relationships, friendships"
+	  }
+	},
+	"fun_and_games": {
+	  "id": "fun_and_games",
+	  "term": "Fun and Games",
+	  "definition": "The section where the premise is explored in an entertaining way.",
+	  "example": "Back to the Future: Marty exploring 1955, meeting young versions of his parents.",
+	  "additionalInfo": {
+		"purpose": "Delivers on the promise of the premise; shows the hero in the new world.",
+		"pacing": "Pages 30-55",
+		"whenToUseIt": "During the first half of Act II",
+		"pitfalls": "Avoid filler scenes that don't advance the plot",
+		"commonVariations": "Training montages, exploring new worlds, humorous situations"
+	  }
+	},
+	"midpoint": {
+	  "id": "midpoint",
+	  "term": "Midpoint",
+	  "definition": "A significant event that raises the stakes and changes the hero's situation.",
+	  "example": "Alien: The crew discovers the Alien has grown into a lethal adult, changing from survival horror to action.",
+	  "additionalInfo": {
+		"purpose": "Pivots the story, often resulting in a false victory or defeat.",
+		"pacing": "Page 55",
+		"whenToUseIt": "At the middle of the story",
+		"pitfalls": "Ensure it has meaningful impact on the hero's journey",
+		"commonVariations": "A false victory, a false defeat, a major revelation"
+	  }
+	},
+	"bad_guys_close_in": {
+	  "id": "bad_guys_close_in",
+	  "term": "Bad Guys Close In",
+	  "definition": "Complications intensify, and the antagonist gains strength.",
+	  "example": "The Dark Knight: Joker's escalating chaos culminating in Harvey Dent's transformation.",
+	  "additionalInfo": {
+		"purpose": "Increases tension and challenges the hero further.",
+		"pacing": "Pages 55-75",
+		"whenToUseIt": "After the midpoint, leading up to the low point",
+		"pitfalls": "Avoid repetitive or predictable obstacles",
+		"commonVariations": "Antagonist's power increases, internal conflicts worsen, alliances weaken"
+	  }
+	},
+	"all_is_lost": {
+	  "id": "all_is_lost",
+	  "term": "All Is Lost",
+	  "definition": "A moment when the hero experiences a significant setback or loss.",
+	  "example": "Whiplash: Andrew gets kicked out of the studio band and crashes his car.",
+	  "additionalInfo": {
+		"purpose": "Creates a low point that forces the hero to reassess.",
+		"pacing": "Page 75",
+		"whenToUseIt": "Towards the end of Act II",
+		"pitfalls": "Don't introduce random disasters; it should stem from the plot",
+		"commonVariations": "A death, a major failure, loss of support"
+	  }
+	},
+	"dark_night_of_the_soul": {
+	  "id": "dark_night_of_the_soul",
+	  "term": "Dark Night of the Soul",
+	  "definition": "The hero's deepest moment of despair and contemplation.",
+	  "example": "Iron Man: Tony Stark in the cave, realizing his weapons have caused worldwide suffering.",
+	  "additionalInfo": {
+		"purpose": "Allows the hero to reflect and prepare for transformation.",
+		"pacing": "Pages 75-85",
+		"whenToUseIt": "After 'All Is Lost' and before the finale",
+		"pitfalls": "Avoid dragging this period out too long",
+		"commonVariations": "Isolation, self-doubt, existential crisis"
+	  }
+	},
+	"break_into_three": {
+	  "id": "break_into_three",
+	  "term": "Break into Three",
+	  "definition": "The hero finds new inspiration or a solution to overcome challenges.",
+	  "example": "The Shawshank Redemption: Andy's escape plan finally coming together.",
+	  "additionalInfo": {
+		"purpose": "Transitions into the climax with renewed determination.",
+		"pacing": "Page 85",
+		"whenToUseIt": "At the start of Act III",
+		"pitfalls": "Ensure the turnaround is believable and earned",
+		"commonVariations": "An epiphany, receiving help, a renewed commitment"
+	  }
+	},
+	"finale": {
+	  "id": "finale",
+	  "term": "Finale",
+	  "definition": "The climax where the hero confronts the antagonist and resolves the conflict.",
+	  "example": "Get Out: Chris using cotton stuffing to block hypnosis and escape the Armitage family.",
+	  "additionalInfo": {
+		"purpose": "Provides a satisfying conclusion to the hero's journey.",
+		"pacing": "Pages 85-110",
+		"whenToUseIt": "Throughout Act III",
+		"pitfalls": "Avoid an anticlimactic or rushed resolution",
+		"commonVariations": "Showdown with the villain, final battle, sacrifice, clever plan"
+	  }
+	},
+	"final_image": {
+	  "id": "final_image",
+	  "term": "Final Image",
+	  "definition": "A visual that reflects the hero's transformation and the story's resolution.",
+	  "example": "The Breakfast Club: Five different students walking away as changed friends.",
+	  "additionalInfo": {
+		"purpose": "Contrasts with the Opening Image, highlighting change.",
+		"pacing": "Page 110",
+		"whenToUseIt": "At the very end of the screenplay",
+		"pitfalls": "Don't introduce new elements; focus on closure",
+		"commonVariations": "Mirror of the opening image, symbolizing change, hopeful outlook"
+	  }
+	}
+  }
+  

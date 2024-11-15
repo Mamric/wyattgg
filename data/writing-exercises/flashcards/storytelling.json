@@ -1,0 +1,276 @@
+{
+	"protagonist": {
+	  "id": "protagonist",
+	  "term": "Protagonist",
+	  "definition": "The main character around whom the story revolves.",
+	  "example": "Harry Potter in the 'Harry Potter' series.",
+	  "additionalInfo": {
+		"purpose": "Drives the story forward through their actions and decisions.",
+		"howToUseIt": "Develop the protagonist with depth, including desires, flaws, and growth.",
+		"pitfalls": "Avoid making the protagonist too perfect; flaws make them relatable.",
+		"origin": "From Greek 'protagonistes' meaning 'first actor' or 'chief actor.'",
+		"commonVariations": "Anti-heroes, multiple protagonists, ensemble casts"
+	  }
+	},
+	"antagonist": {
+	  "id": "antagonist",
+	  "term": "Antagonist",
+	  "definition": "A character or force that opposes the protagonist, creating conflict.",
+	  "example": "Lord Voldemort opposing Harry Potter.",
+	  "additionalInfo": {
+		"purpose": "Provides obstacles that challenge the protagonist and create tension.",
+		"howToUseIt": "Create an antagonist that challenges the protagonist, pushing them to evolve.",
+		"pitfalls": "Avoid one-dimensional antagonists; give them motives and depth.",
+		"origin": "From Greek 'antagonistes' meaning 'opponent, competitor, rival.'",
+		"commonVariations": "Nature as antagonist, internal conflict, societal norms"
+	  }
+	},
+	"side_character": {
+	  "id": "side_character",
+	  "term": "Side Character",
+	  "definition": "Supporting characters that enrich the story and aid in developing the main characters.",
+	  "example": "Samwise Gamgee supporting Frodo in 'The Lord of the Rings.'",
+	  "additionalInfo": {
+		"purpose": "Enhance the narrative by providing support, contrast, or subplots.",
+		"howToUseIt": "Use side characters to interact with the protagonist, influencing their journey.",
+		"pitfalls": "Avoid making side characters overshadow the protagonist or become irrelevant.",
+		"origin": "Derived from the concept of supporting roles in drama and literature.",
+		"commonVariations": "Mentors, comic relief characters, love interests"
+	  }
+	},
+	"theme": {
+	  "id": "theme",
+	  "term": "Theme",
+	  "definition": "The underlying message or central idea of a story.",
+	  "example": "The battle between good and evil in 'Star Wars.'",
+	  "additionalInfo": {
+		"purpose": "Provides depth and meaning, allowing readers to connect with the story.",
+		"howToUseIt": "Integrate the theme naturally through characters and plot.",
+		"pitfalls": "Avoid being overly didactic; let the theme emerge organically.",
+		"origin": "From Greek 'thema' meaning 'subject' or 'proposition.'",
+		"commonVariations": "Redemption, love conquers all, the hero's journey"
+	  }
+	},
+	"macguffin": {
+	  "id": "macguffin",
+	  "term": "MacGuffin",
+	  "definition": "An object or goal that motivates the characters but may have little actual significance.",
+	  "example": "The Ark of the Covenant in 'Raiders of the Lost Ark.'",
+	  "additionalInfo": {
+		"purpose": "Drives the plot forward by giving characters a shared objective.",
+		"howToUseIt": "Focus on characters' actions and development rather than the MacGuffin itself.",
+		"pitfalls": "Avoid making the MacGuffin uninteresting; it should be compelling enough to justify the characters' pursuit.",
+		"origin": "Term popularized by filmmaker Alfred Hitchcock to describe a plot device.",
+		"commonVariations": "Secret documents, valuable artifacts, personal vendettas"
+	  }
+	},
+	"foil": {
+	  "id": "foil",
+	  "term": "Foil",
+	  "definition": "A character that contrasts with the protagonist to highlight particular qualities.",
+	  "example": "Draco Malfoy as a foil to Harry Potter.",
+	  "additionalInfo": {
+		"purpose": "Emphasizes traits of the main character through contrast.",
+		"howToUseIt": "Develop a foil character whose differences accentuate the protagonist's attributes.",
+		"pitfalls": "Ensure the foil is a fully developed character, not just a stereotype.",
+		"origin": "From the practice of placing foil behind gemstones to make them shine brighter.",
+		"commonVariations": "Best friends with opposing traits, rivals, siblings with contrasting personalities"
+	  }
+	},
+	"plot_twist": {
+	  "id": "plot_twist",
+	  "term": "Plot Twist",
+	  "definition": "An unexpected development that changes the direction of the story.",
+	  "example": "The revelation in 'The Sixth Sense' that the protagonist was dead all along.",
+	  "additionalInfo": {
+		"purpose": "Surprise readers and keep them engaged by altering expectations.",
+		"howToUseIt": "Introduce twists that are logical yet unforeseen.",
+		"pitfalls": "Avoid twists that feel forced or undermine the story's logic.",
+		"origin": "Derived from the term 'twist' meaning to turn or change direction suddenly.",
+		"commonVariations": "Identity reveals, betrayal by a trusted character, unexpected death"
+	  }
+	},
+	"climax": {
+	  "id": "climax",
+	  "term": "Climax",
+	  "definition": "The most intense point of the story where the main conflict reaches its peak.",
+	  "example": "The final battle between the Avengers and Thanos in 'Avengers: Endgame.'",
+	  "additionalInfo": {
+		"purpose": "Provides a turning point leading to the resolution of the story.",
+		"howToUseIt": "Build up tension and stakes leading to a satisfying confrontation.",
+		"pitfalls": "Don't resolve the main conflict too easily or abruptly; ensure it feels earned.",
+		"origin": "From Greek 'klimax' meaning 'ladder,' symbolizing the peak of action.",
+		"commonVariations": "Showdowns, ultimate sacrifices, moral choices"
+	  }
+	},
+	"deus_ex_machina": {
+	  "id": "deus_ex_machina",
+	  "term": "Deus Ex Machina",
+	  "definition": "An unexpected power or event saving a seemingly hopeless situation.",
+	  "example": "The Eagles rescuing the characters in 'The Lord of the Rings.'",
+	  "additionalInfo": {
+		"purpose": "Resolves conflicts that appear unsolvable within the story.",
+		"howToUseIt": "Use sparingly; better to have conflicts resolved through characters' actions.",
+		"pitfalls": "Can feel unsatisfying; avoid overuse as it undermines plot tension.",
+		"origin": "Latin for 'god from the machine,' from ancient Greek theater.",
+		"commonVariations": "Sudden inheritances, miraculous recoveries, unexpected reinforcements"
+	  }
+	},
+	"red_herring": {
+	  "id": "red_herring",
+	  "term": "Red Herring",
+	  "definition": "A misleading clue that distracts readers from the actual issue or solution.",
+	  "example": "A seemingly suspicious character who turns out to be innocent.",
+	  "additionalInfo": {
+		"purpose": "Creates suspense or misdirects the audience.",
+		"howToUseIt": "Employ to lead readers away from the true answer or culprit.",
+		"pitfalls": "Ensure it's not overused, which can lead to reader frustration.",
+		"origin": "Refers to smoked fish used to distract hunting dogs from the scent.",
+		"commonVariations": "False suspects, misleading evidence, deceptive appearances"
+	  }
+	},
+	"allegory": {
+	  "id": "allegory",
+	  "term": "Allegory",
+	  "definition": "A story with a hidden meaning, often moral or political.",
+	  "example": "'Animal Farm' as an allegory for the Russian Revolution.",
+	  "additionalInfo": {
+		"purpose": "Conveys complex ideas through symbolic figures and actions.",
+		"howToUseIt": "Craft characters and events that represent broader concepts.",
+		"pitfalls": "Avoid being too obscure or overly simplistic in conveying the hidden meaning.",
+		"origin": "From Greek 'allegoria' meaning 'speaking otherwise.'",
+		"commonVariations": "Fables, parables, symbolic narratives"
+	  }
+	},
+	"archetype": {
+	  "id": "archetype",
+	  "term": "Archetype",
+	  "definition": "A typical character, action, or situation representing universal patterns of human nature.",
+	  "example": "The 'Hero' archetype embodied by characters like Luke Skywalker.",
+	  "additionalInfo": {
+		"purpose": "Provides familiar elements that resonate with readers.",
+		"howToUseIt": "Incorporate archetypes to tap into collective experiences.",
+		"pitfalls": "Avoid clichés by adding unique traits to archetypal characters.",
+		"origin": "From Greek 'archetypon' meaning 'original pattern.'",
+		"commonVariations": "The Mentor, The Trickster, The Shadow"
+	  }
+	},
+	"foreshadowing": {
+	  "id": "foreshadowing",
+	  "term": "Foreshadowing",
+	  "definition": "Hints or clues about events that will occur later in the story.",
+	  "example": "Early storm warnings hinting at a coming disaster.",
+	  "additionalInfo": {
+		"purpose": "Builds anticipation and prepares readers for future developments.",
+		"howToUseIt": "Subtly integrate indications without revealing too much.",
+		"pitfalls": "Don't make it too obvious or too obscure; balance is key.",
+		"origin": "From 'fore,' meaning 'before,' and 'shadow,' implying a hint of things to come.",
+		"commonVariations": "Prophetic dreams, symbolic omens, character premonitions"
+	  }
+	},
+	"motif": {
+	  "id": "motif",
+	  "term": "Motif",
+	  "definition": "A recurring element that has symbolic significance in a story.",
+	  "example": "The recurring image of eyes in 'The Great Gatsby.'",
+	  "additionalInfo": {
+		"purpose": "Reinforces themes and enhances narrative unity.",
+		"howToUseIt": "Repeat symbols or ideas to emphasize their importance.",
+		"pitfalls": "Avoid overusing motifs to the point of distraction.",
+		"origin": "From French 'motif' meaning 'dominant idea' or 'theme.'",
+		"commonVariations": "Colors, objects, phrases"
+	  }
+	},
+	"symbolism": {
+	  "id": "symbolism",
+	  "term": "Symbolism",
+	  "definition": "The use of symbols to represent ideas or qualities beyond their literal sense.",
+	  "example": "The conch shell symbolizing authority in 'Lord of the Flies.'",
+	  "additionalInfo": {
+		"purpose": "Adds deeper meaning and engages readers intellectually.",
+		"howToUseIt": "Incorporate symbols that enhance the story's themes.",
+		"pitfalls": "Ensure symbols are appropriate and enhance the narrative.",
+		"origin": "From Greek 'symbolon' meaning 'token' or 'sign.'",
+		"commonVariations": "Objects as symbols, symbolic characters, symbolic settings"
+	  }
+	},
+	"chekhovs_gun": {
+	  "id": "chekhovs_gun",
+	  "term": "Chekhov's Gun",
+	  "definition": "A dramatic principle stating that every element in a story must be necessary.",
+	  "example": "A loaded gun introduced early must be fired later.",
+	  "additionalInfo": {
+		"purpose": "Ensures all details contribute to the story.",
+		"howToUseIt": "Introduce elements that will have significance later.",
+		"pitfalls": "Avoid irrelevant details that don't serve the plot.",
+		"origin": "Named after Russian playwright Anton Chekhov.",
+		"commonVariations": "Early clues, setup and payoff, planting and payoff"
+	  }
+	},
+	"dialogue": {
+	  "id": "dialogue",
+	  "term": "Dialogue",
+	  "definition": "The spoken words between characters in a story.",
+	  "example": "Conversations that reveal character and advance the plot.",
+	  "additionalInfo": {
+		"purpose": "Reveals character traits and moves the story forward.",
+		"howToUseIt": "Write natural-sounding dialogue that serves multiple functions.",
+		"pitfalls": "Avoid unnecessary or unrealistic conversations.",
+		"origin": "From Greek 'dialogos' meaning 'conversation.'",
+		"commonVariations": "Inner dialogue, monologues, dialects"
+	  }
+	},
+	"exposition": {
+	  "id": "exposition",
+	  "term": "Exposition",
+	  "definition": "Background information presented to help readers understand the context.",
+	  "example": "A narrator explaining the history of a fantasy world.",
+	  "additionalInfo": {
+		"purpose": "Provides essential details about characters and setting.",
+		"howToUseIt": "Integrate smoothly without overwhelming the reader.",
+		"pitfalls": "Avoid info-dumping or lengthy explanations that slow the pace.",
+		"origin": "From Latin 'exponere' meaning 'to set forth.'",
+		"commonVariations": "Prologues, flashbacks, dialogue-based exposition"
+	  }
+	},
+	"rising_action": {
+	  "id": "rising_action",
+	  "term": "Rising Action",
+	  "definition": "A series of events that build tension leading up to the climax.",
+	  "example": "Challenges the hero faces before the final confrontation.",
+	  "additionalInfo": {
+		"purpose": "Develops the plot and increases interest.",
+		"howToUseIt": "Complicate the protagonist's journey and raise stakes.",
+		"pitfalls": "Don't let the action plateau; keep escalating tension.",
+		"origin": "From the concept of action that 'rises' toward the peak of the story.",
+		"commonVariations": "Increasing obstacles, subplots intertwining, escalating conflicts"
+	  }
+	},
+	"falling_action": {
+	  "id": "falling_action",
+	  "term": "Falling Action",
+	  "definition": "Events that occur after the climax leading towards resolution.",
+	  "example": "After defeating the villain, the hero deals with the aftermath.",
+	  "additionalInfo": {
+		"purpose": "Leads the story toward its conclusion, tying up loose ends.",
+		"howToUseIt": "Show consequences and begin resolving subplots.",
+		"pitfalls": "Avoid dragging out the story after the climax; maintain interest.",
+		"origin": "From the idea of action 'falling' after reaching the peak.",
+		"commonVariations": "Reconciliation scenes, explanations, setting up sequels"
+	  }
+	},
+	"denouement": {
+	  "id": "denouement",
+	  "term": "Denouement",
+	  "definition": "The final resolution or outcome of the story.",
+	  "example": "Characters settling into their new lives after the adventure.",
+	  "additionalInfo": {
+		"purpose": "Provides closure and answers remaining questions.",
+		"howToUseIt": "Conclude the narrative by resolving subplots and themes.",
+		"pitfalls": "Ensure it's satisfying and doesn't introduce new conflicts.",
+		"origin": "From French 'dénouement' meaning 'untying' or 'unraveling.'",
+		"commonVariations": "Epilogues, final reflections, return to normalcy"
+	  }
+	}
+  }
+  

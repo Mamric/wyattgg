@@ -1,0 +1,159 @@
+{
+	"ordinary_world": {
+	  "id": "ordinary_world",
+	  "term": "Ordinary World",
+	  "definition": "The hero's normal life at the start of the story before the adventure begins.",
+	  "example": "In 'The Hobbit', Bilbo Baggins enjoys a quiet, comfortable life in the Shire.",
+	  "additionalInfo": {
+		"purpose": "Introduce the hero's everyday life, including their environment, background, and personal challenges.",
+		"pacing": "Approximately 5% of the story",
+		"whenToUseIt": "At the very beginning of the story",
+		"pitfalls": "Avoid lengthy exposition that might bore the reader",
+		"commonVariations": "Establishing the hero's routine, highlighting their flaws, showing their desires"
+	  }
+	},
+	"call_to_adventure": {
+	  "id": "call_to_adventure",
+	  "term": "Call to Adventure",
+	  "definition": "The hero is presented with a challenge or quest that disrupts their ordinary world.",
+	  "example": "Bilbo is invited by Gandalf and the dwarves to reclaim the Lonely Mountain.",
+	  "additionalInfo": {
+		"purpose": "Sets the story in motion by presenting the hero with a challenge.",
+		"pacing": "Approximately 5% of the story",
+		"whenToUseIt": "Early in the story to disrupt the ordinary world",
+		"pitfalls": "Avoid making it too sudden or unbelievable",
+		"commonVariations": "A threat, an invitation, a discovery, a mysterious message"
+	  }
+	},
+	"refusal_of_the_call": {
+	  "id": "refusal_of_the_call",
+	  "term": "Refusal of the Call",
+	  "definition": "The hero initially refuses or is reluctant to embark on their journey.",
+	  "example": "Bilbo hesitates to join the dwarves, valuing his comfortable life over adventure.",
+	  "additionalInfo": {
+		"purpose": "Shows the stakes and the hero's internal conflict.",
+		"pacing": "Approximately 5% of the story",
+		"whenToUseIt": "After the call but before the journey begins",
+		"pitfalls": "Don't let it drag on too long or make the hero seem cowardly",
+		"commonVariations": "Fear, doubt, obligations, skepticism, denial"
+	  }
+	},
+	"meeting_the_mentor": {
+	  "id": "meeting_the_mentor",
+	  "term": "Meeting the Mentor",
+	  "definition": "The hero meets a mentor who provides guidance, advice, or training.",
+	  "example": "Gandalf encourages Bilbo and offers wisdom for the journey ahead.",
+	  "additionalInfo": {
+		"purpose": "Equip the hero with confidence and insight needed to embark on the adventure.",
+		"pacing": "Approximately 5% of the story",
+		"whenToUseIt": "Before the hero commits to the journey",
+		"pitfalls": "Avoid making the mentor solve all the hero's problems",
+		"commonVariations": "A wise old man/woman, a supernatural guide, a symbolic object"
+	  }
+	},
+	"crossing_the_threshold": {
+	  "id": "crossing_the_threshold",
+	  "term": "Crossing the First Threshold",
+	  "definition": "The hero commits to the journey and enters the unknown world.",
+	  "example": "Bilbo leaves the Shire to join the dwarves on their quest.",
+	  "additionalInfo": {
+		"purpose": "Signify the hero's commitment to the adventure, leaving their comfort zone.",
+		"pacing": "Approximately 5% of the story",
+		"whenToUseIt": "After meeting the mentor and overcoming initial reluctance",
+		"pitfalls": "Ensure the transition feels significant and impactful",
+		"commonVariations": "Physical departure, a point of no return, entering a new environment"
+	  }
+	},
+	"tests_allies_enemies": {
+	  "id": "tests_allies_enemies",
+	  "term": "Tests, Allies, and Enemies",
+	  "definition": "The hero faces challenges, meets allies, and confronts enemies in the new world.",
+	  "example": "Bilbo and the dwarves encounter trolls and goblins, forming stronger bonds.",
+	  "additionalInfo": {
+		"purpose": "Develop the hero's skills and relationships, highlighting growth and setbacks.",
+		"pacing": "Approximately 20% of the story",
+		"whenToUseIt": "After crossing the threshold, during the early part of the journey",
+		"pitfalls": "Avoid irrelevant obstacles that don't contribute to the hero's development",
+		"commonVariations": "Trials, forming a team, rivalries, learning new skills"
+	  }
+	},
+	"approach_to_inmost_cave": {
+	  "id": "approach_to_inmost_cave",
+	  "term": "Approach to the Inmost Cave",
+	  "definition": "The hero approaches a dangerous place where the main conflict resides.",
+	  "example": "The group nears the Lonely Mountain, preparing to face Smaug.",
+	  "additionalInfo": {
+		"purpose": "Prepare the hero for the major challenge ahead, often involving introspection.",
+		"pacing": "Approximately 10% of the story",
+		"whenToUseIt": "Before the central ordeal or climax",
+		"pitfalls": "Don't rush this stage; build tension and anticipation",
+		"commonVariations": "Planning a heist, gathering resources, inner reflection, facing minor hurdles"
+	  }
+	},
+	"ordeal": {
+	  "id": "ordeal",
+	  "term": "Ordeal",
+	  "definition": "The hero faces a significant challenge, often confronting death or their greatest fear.",
+	  "example": "Bilbo confronts Smaug inside the Lonely Mountain.",
+	  "additionalInfo": {
+		"purpose": "Test the hero to the utmost, leading to transformation.",
+		"pacing": "Approximately 10% of the story",
+		"whenToUseIt": "At the midpoint or climax of the story",
+		"pitfalls": "Ensure the stakes are high and the outcome is uncertain",
+		"commonVariations": "A life-or-death situation, a major battle, a personal crisis"
+	  }
+	},
+	"reward": {
+	  "id": "reward",
+	  "term": "Reward (Seizing the Sword)",
+	  "definition": "After overcoming the ordeal, the hero gains a reward or achieves a goal.",
+	  "example": "Bilbo discovers Smaug's weak spot and gains confidence.",
+	  "additionalInfo": {
+		"purpose": "Provide the hero with something valuable that will aid in their return.",
+		"pacing": "Approximately 5% of the story",
+		"whenToUseIt": "Immediately after the ordeal",
+		"pitfalls": "Avoid making the reward feel unearned or insignificant",
+		"commonVariations": "Physical treasure, newfound knowledge, reconciliation, empowerment"
+	  }
+	},
+	"the_road_back": {
+	  "id": "the_road_back",
+	  "term": "The Road Back",
+	  "definition": "The hero begins the journey back to the ordinary world.",
+	  "example": "Smaug attacks Lake-town, leading to new challenges.",
+	  "additionalInfo": {
+		"purpose": "Present challenges that arise as the hero attempts to return home.",
+		"pacing": "Approximately 5% of the story",
+		"whenToUseIt": "After obtaining the reward, before the final climax",
+		"pitfalls": "Avoid introducing entirely new conflicts unrelated to the main story",
+		"commonVariations": "Pursuit by enemies, internal struggles, sudden obstacles"
+	  }
+	},
+	"resurrection": {
+	  "id": "resurrection",
+	  "term": "Resurrection",
+	  "definition": "The hero faces a final test where everything is at stake and emerges transformed.",
+	  "example": "Bilbo participates in the Battle of the Five Armies.",
+	  "additionalInfo": {
+		"purpose": "Demonstrate the hero's ultimate growth and resolve the story's central conflict.",
+		"pacing": "Approximately 10% of the story",
+		"whenToUseIt": "Near the end, as the climax of the story",
+		"pitfalls": "Ensure the hero plays an active role in their transformation",
+		"commonVariations": "A climactic battle, a personal sacrifice, a final showdown"
+	  }
+	},
+	"return_with_the_elixir": {
+	  "id": "return_with_the_elixir",
+	  "term": "Return with the Elixir",
+	  "definition": "The hero returns home with new wisdom, insight, or a physical reward.",
+	  "example": "Bilbo returns to the Shire with treasure and a new sense of self-worth.",
+	  "additionalInfo": {
+		"purpose": "Show the hero's transformation and how it benefits their ordinary world.",
+		"pacing": "Approximately 5% of the story",
+		"whenToUseIt": "At the very end of the story",
+		"pitfalls": "Avoid an abrupt ending; provide closure for the hero's journey",
+		"commonVariations": "Sharing knowledge, restoring peace, starting anew, bringing back a cure"
+	  }
+	}
+  }
+  
