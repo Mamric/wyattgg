@@ -6,7 +6,7 @@
 	  "example": "In 'The Hobbit', Bilbo Baggins enjoys a quiet, comfortable life in the Shire.",
 	  "additionalInfo": {
 		"purpose": "Introduce the hero's everyday life, including their environment, background, and personal challenges.",
-		"pacing": "Approximately 5% of the story",
+		"pacing": "Approximately 5% of the story (first 5% of the story)",
 		"whenToUseIt": "At the very beginning of the story",
 		"pitfalls": "Avoid lengthy exposition that might bore the reader",
 		"commonVariations": "Establishing the hero's routine, highlighting their flaws, showing their desires"
@@ -19,7 +19,7 @@
 	  "example": "Bilbo is invited by Gandalf and the dwarves to reclaim the Lonely Mountain.",
 	  "additionalInfo": {
 		"purpose": "Sets the story in motion by presenting the hero with a challenge.",
-		"pacing": "Approximately 5% of the story",
+		"pacing": "Approximately 5% of the story (from 5% - 10% of 100%)",
 		"whenToUseIt": "Early in the story to disrupt the ordinary world",
 		"pitfalls": "Avoid making it too sudden or unbelievable",
 		"commonVariations": "A threat, an invitation, a discovery, a mysterious message"
@@ -32,7 +32,7 @@
 	  "example": "Bilbo hesitates to join the dwarves, valuing his comfortable life over adventure.",
 	  "additionalInfo": {
 		"purpose": "Shows the stakes and the hero's internal conflict.",
-		"pacing": "Approximately 5% of the story",
+		"pacing": "Approximately 5% of the story (from 10% - 15% of 100%)",
 		"whenToUseIt": "After the call but before the journey begins",
 		"pitfalls": "Don't let it drag on too long or make the hero seem cowardly",
 		"commonVariations": "Fear, doubt, obligations, skepticism, denial"
@@ -45,7 +45,7 @@
 	  "example": "Gandalf encourages Bilbo and offers wisdom for the journey ahead.",
 	  "additionalInfo": {
 		"purpose": "Equip the hero with confidence and insight needed to embark on the adventure.",
-		"pacing": "Approximately 5% of the story",
+		"pacing": "Approximately 5% of the story (from 15% - 20% of 100%)",
 		"whenToUseIt": "Before the hero commits to the journey",
 		"pitfalls": "Avoid making the mentor solve all the hero's problems",
 		"commonVariations": "A wise old man/woman, a supernatural guide, a symbolic object"
@@ -58,7 +58,7 @@
 	  "example": "Bilbo leaves the Shire to join the dwarves on their quest.",
 	  "additionalInfo": {
 		"purpose": "Signify the hero's commitment to the adventure, leaving their comfort zone.",
-		"pacing": "Approximately 5% of the story",
+		"pacing": "Approximately 5% of the story (from 20% - 25% of 100%)",
 		"whenToUseIt": "After meeting the mentor and overcoming initial reluctance",
 		"pitfalls": "Ensure the transition feels significant and impactful",
 		"commonVariations": "Physical departure, a point of no return, entering a new environment"
@@ -71,7 +71,7 @@
 	  "example": "Bilbo and the dwarves encounter trolls and goblins, forming stronger bonds.",
 	  "additionalInfo": {
 		"purpose": "Develop the hero's skills and relationships, highlighting growth and setbacks.",
-		"pacing": "Approximately 20% of the story",
+		"pacing": "Approximately 20% of the story (from 25% - 45% of 100%)",
 		"whenToUseIt": "After crossing the threshold, during the early part of the journey",
 		"pitfalls": "Avoid irrelevant obstacles that don't contribute to the hero's development",
 		"commonVariations": "Trials, forming a team, rivalries, learning new skills"
@@ -84,7 +84,7 @@
 	  "example": "The group nears the Lonely Mountain, preparing to face Smaug.",
 	  "additionalInfo": {
 		"purpose": "Prepare the hero for the major challenge ahead, often involving introspection.",
-		"pacing": "Approximately 10% of the story",
+		"pacing": "Approximately 10% of the story (from 45% - 55% of 100%)",
 		"whenToUseIt": "Before the central ordeal or climax",
 		"pitfalls": "Don't rush this stage; build tension and anticipation",
 		"commonVariations": "Planning a heist, gathering resources, inner reflection, facing minor hurdles"
@@ -97,7 +97,7 @@
 	  "example": "Bilbo confronts Smaug inside the Lonely Mountain.",
 	  "additionalInfo": {
 		"purpose": "Test the hero to the utmost, leading to transformation.",
-		"pacing": "Approximately 10% of the story",
+		"pacing": "Approximately 10% of the story (from 55% - 65% of 100%)",
 		"whenToUseIt": "At the midpoint or climax of the story",
 		"pitfalls": "Ensure the stakes are high and the outcome is uncertain",
 		"commonVariations": "A life-or-death situation, a major battle, a personal crisis"
@@ -110,7 +110,7 @@
 	  "example": "Bilbo discovers Smaug's weak spot and gains confidence.",
 	  "additionalInfo": {
 		"purpose": "Provide the hero with something valuable that will aid in their return.",
-		"pacing": "Approximately 5% of the story",
+		"pacing": "Approximately 5% of the story (from 65% - 70% of 100%)",
 		"whenToUseIt": "Immediately after the ordeal",
 		"pitfalls": "Avoid making the reward feel unearned or insignificant",
 		"commonVariations": "Physical treasure, newfound knowledge, reconciliation, empowerment"
@@ -123,7 +123,7 @@
 	  "example": "Smaug attacks Lake-town, leading to new challenges.",
 	  "additionalInfo": {
 		"purpose": "Present challenges that arise as the hero attempts to return home.",
-		"pacing": "Approximately 5% of the story",
+		"pacing": "Approximately 10% of the story (from 70% - 80% of 100%)",
 		"whenToUseIt": "After obtaining the reward, before the final climax",
 		"pitfalls": "Avoid introducing entirely new conflicts unrelated to the main story",
 		"commonVariations": "Pursuit by enemies, internal struggles, sudden obstacles"
@@ -136,7 +136,7 @@
 	  "example": "Bilbo participates in the Battle of the Five Armies.",
 	  "additionalInfo": {
 		"purpose": "Demonstrate the hero's ultimate growth and resolve the story's central conflict.",
-		"pacing": "Approximately 10% of the story",
+		"pacing": "Approximately 10% of the story (from 80% - 90% of 100%)",
 		"whenToUseIt": "Near the end, as the climax of the story",
 		"pitfalls": "Ensure the hero plays an active role in their transformation",
 		"commonVariations": "A climactic battle, a personal sacrifice, a final showdown"
@@ -149,7 +149,7 @@
 	  "example": "Bilbo returns to the Shire with treasure and a new sense of self-worth.",
 	  "additionalInfo": {
 		"purpose": "Show the hero's transformation and how it benefits their ordinary world.",
-		"pacing": "Approximately 5% of the story",
+		"pacing": "Approximately 10% of the story (from 90% - 100%)",
 		"whenToUseIt": "At the very end of the story",
 		"pitfalls": "Avoid an abrupt ending; provide closure for the hero's journey",
 		"commonVariations": "Sharing knowledge, restoring peace, starting anew, bringing back a cure"
