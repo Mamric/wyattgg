@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import { useState } from "react";
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 import tutorial from "@/data/writing-exercises/heroes-journey/journey-tutorial.json";
 import stages from "@/data/writing-exercises/heroes-journey/journey-stages.json";
 import examples from "@/data/writing-exercises/heroes-journey/journey-examples.json";
@@ -16,17 +16,15 @@ export default function StartScreen({ onBegin }: StartScreenProps) {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
             <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-                <Header 
-                    title="Hero's Journey Builder" 
-                    subtitle="Create a compelling story outline using the classic Hero's Journey structure" 
+                <Header
+                    title="Hero's Journey Builder"
+                    subtitle="Create a compelling story outline using the classic Hero's Journey structure"
                 />
 
                 {/* Tutorial Section */}
                 <div className="bg-gray-800/50 rounded-lg p-6 mb-6 backdrop-blur-sm">
                     {/* Introduction - Always visible */}
-                    <p className="text-lg text-gray-300 mb-6">
-                        {stages.tutorial.introduction}
-                    </p>
+                    <p className="text-lg text-gray-300 mb-6">{stages.tutorial.introduction}</p>
 
                     {/* Collapsible Tutorial Content */}
                     <div className="border-t border-gray-700 pt-4">
@@ -52,10 +50,8 @@ export default function StartScreen({ onBegin }: StartScreenProps) {
                                     <ul className="list-disc list-inside space-y-2 ml-4">
                                         {tutorial.generalTips.tipsForUsingTheExercise.map((tip, i) => (
                                             <li key={i}>
-                                                <span className="text-purple-400 font-medium">
-                                                    {tip.tip}
-                                                </span>
-                                                : {tip.description}
+                                                <span className="text-purple-400 font-medium">{tip.tip}</span>{" "}
+                                                {tip.description}
                                             </li>
                                         ))}
                                     </ul>
@@ -76,16 +72,19 @@ export default function StartScreen({ onBegin }: StartScreenProps) {
                                                     Hero: {example.hero}
                                                 </p>
                                                 <div className="space-y-1.5 sm:space-y-2">
-                                                    {(expandedExample === i ? example.stages : example.stages.slice(0, 4)).map((stage, j) => (
+                                                    {(expandedExample === i
+                                                        ? example.stages
+                                                        : example.stages.slice(0, 4)
+                                                    ).map((stage, j) => (
                                                         <p key={j} className="ml-2 sm:ml-4 text-xs sm:text-sm">
                                                             <span className="text-purple-400 font-medium">
                                                                 {stage.stageName}:
-                                                            </span>
-                                                            {" "}{stage.description}
+                                                            </span>{" "}
+                                                            {stage.description}
                                                         </p>
                                                     ))}
                                                     {example.stages.length > 4 && expandedExample !== i && (
-                                                        <button 
+                                                        <button
                                                             onClick={() => setExpandedExample(i)}
                                                             className="text-xs sm:text-sm text-purple-400 hover:text-purple-300 
                                                                      transition-colors ml-2 sm:ml-4 italic"
@@ -94,7 +93,7 @@ export default function StartScreen({ onBegin }: StartScreenProps) {
                                                         </button>
                                                     )}
                                                     {expandedExample === i && (
-                                                        <button 
+                                                        <button
                                                             onClick={() => setExpandedExample(null)}
                                                             className="text-xs sm:text-sm text-purple-400 hover:text-purple-300 
                                                                      transition-colors ml-2 sm:ml-4 italic"
