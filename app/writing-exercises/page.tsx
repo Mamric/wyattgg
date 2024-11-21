@@ -167,6 +167,28 @@ export default function WritingExercisesLanding() {
                             </Link>
                         </div>
                     </div>
+
+                    {/* Tools Section */}
+                    <div className="space-y-6 mt-12">
+                        <h2 className="text-2xl font-semibold text-white">Productivity Tools</h2>
+                        <div className="flex justify-center">
+                            <Link 
+                                href="/writing-exercises/pomodoro" 
+                                className="block bg-gradient-to-br from-red-900 to-orange-900 p-4 sm:p-6 rounded-lg 
+                                         hover:from-red-800 hover:to-orange-800 transition-all transform 
+                                         hover:scale-[1.02] border-2 border-red-500/20 hover:border-red-500/40 
+                                         shadow-xl max-w-xl w-full"
+                            >
+                                <div className="flex items-center gap-3 justify-center">
+                                    <span className="text-3xl">🍅</span>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-1">Pomodoro Timer</h3>
+                                        <p className="text-gray-300 text-sm">Stay focused with timed work sessions</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
