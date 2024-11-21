@@ -23,7 +23,18 @@ declare global {
 }
 
 // Create audio context and sources outside the component
-const audioContext = typeof window !== 'undefined' ? new (window.AudioContext || window.webkitAudioContext)() : null;
+const audioContext = typeof window !== 'undefined' ? new (window.AudioContext || window.webkitAudioContext)({
+    // This might help with iOS silent mode
+    sampleRate: 44100,
+    latencyHint: 'interactive'
+}) : null;
+
+// Add this function to resume audio context
+const resumeAudioContext = async () => {
+    if (audioContext?.state === 'suspended') {
+        await audioContext.resume();
+    }
+};
 
 // Preload audio files
 const preloadAudio = async (url: string): Promise<AudioBuffer | null> => {
@@ -86,8 +97,10 @@ export function usePomodoroTimer() {
     }, []);
 
     // Play sound function
-    const playSound = useCallback((buffer: AudioBuffer | null) => {
+    const playSound = useCallback(async (buffer: AudioBuffer | null) => {
         if (!audioContext || !buffer) return;
+        
+        await resumeAudioContext();
         
         const source = audioContext.createBufferSource();
         source.buffer = buffer;
@@ -252,6 +265,54 @@ export function usePomodoroTimer() {
         setIsActive(false);
     }, [timerState, getTotalTime]);
 
+    // Add effect to handle audio context state
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            // Try to resume audio context on any user interaction
+            const handleInteraction = () => {
+                resumeAudioContext();
+            };
+
+            window.addEventListener('touchstart', handleInteraction);
+            window.addEventListener('mousedown', handleInteraction);
+            window.addEventListener('keydown', handleInteraction);
+
+            return () => {
+                window.removeEventListener('touchstart', handleInteraction);
+                window.removeEventListener('mousedown', handleInteraction);
+                window.removeEventListener('keydown', handleInteraction);
+            };
+        }
+    }, []);
+
+    const skipTimer = useCallback(() => {
+        // Stop the current timer if it's running
+        if (isActive) {
+            setIsActive(false);
+            if (intervalRef.current) {
+                clearInterval(intervalRef.current);
+                intervalRef.current = null;
+            }
+        }
+
+        // Determine next state
+        if (timerState === 'POMODORO') {
+            // Check if we should go to long break
+            if ((completedPomodoros + 1) % settings.longBreakInterval === 0) {
+                setTimerState('LONG_BREAK');
+                setTimeRemaining(settings.longBreakTime * 60);
+            } else {
+                setTimerState('SHORT_BREAK');
+                setTimeRemaining(settings.shortBreakTime * 60);
+            }
+            setCompletedPomodoros(prev => prev + 1);
+        } else {
+            // If we're in any break, go to next pomodoro
+            setTimerState('POMODORO');
+            setTimeRemaining(settings.pomodoroTime * 60);
+        }
+    }, [timerState, completedPomodoros, settings, isActive]);
+
     return {
         timerState,
         timeRemaining,
@@ -262,6 +323,7 @@ export function usePomodoroTimer() {
         pauseTimer,
         resetTimer,
         updateSettings,
-        progress
+        progress,
+        skipTimer,
     };
 }

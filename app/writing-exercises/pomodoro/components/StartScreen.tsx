@@ -15,7 +15,7 @@ export default function StartScreen({ onBegin }: StartScreenProps) {
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-gray-300">
                         <div className="bg-gray-700/50 rounded-lg p-4">
                             <div className="text-2xl mb-2">🍅</div>
-                            <h3 className="text-lg font-medium text-green-400 mb-2">Focus Session</h3>
+                            <h3 className="text-lg font-medium text-rose-400 mb-2">Focus Session</h3>
                             <p className="text-sm">25 minutes of focused work on a single task</p>
                         </div>
                         <div className="bg-gray-700/50 rounded-lg p-4">
@@ -34,8 +34,8 @@ export default function StartScreen({ onBegin }: StartScreenProps) {
                 <div className="text-center">
                     <button
                         onClick={onBegin}
-                        className="px-8 py-3 bg-green-600 text-white rounded-lg text-xl 
-                                 hover:bg-green-700 hover:scale-105 
+                        className="px-8 py-3 bg-rose-600 text-white rounded-lg text-xl 
+                                 hover:bg-rose-700 hover:scale-105 
                                  transition-all duration-200"
                     >
                         Start Timer

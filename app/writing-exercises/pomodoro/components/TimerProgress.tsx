@@ -7,41 +7,56 @@ type TimerProgressProps = {
 
 export default function TimerProgress({ progress, state }: TimerProgressProps) {
     // Calculate circle properties
-    const size = 320;
+    const size = 280;
     const strokeWidth = 8;
     const radius = (size - strokeWidth) / 2;
     const circumference = radius * 2 * Math.PI;
     const offset = circumference - (progress * circumference);
 
-    // Get color based on timer state
-    const getColor = () => {
+    const getStateInfo = () => {
         switch (state) {
             case 'POMODORO':
-                return 'rgb(74 222 128)'; // text-green-400
+                return {
+                    color: '#f43f5e', // rose-500
+                    label: 'Focus'
+                };
             case 'SHORT_BREAK':
-                return 'rgb(96 165 250)'; // text-blue-400
+                return {
+                    color: '#3b82f6', // blue-500
+                    label: 'Short Break'
+                };
             case 'LONG_BREAK':
-                return 'rgb(192 132 252)'; // text-purple-400
+                return {
+                    color: '#a855f7', // purple-500
+                    label: 'Long Break'
+                };
             case 'PAUSED':
-                return 'rgb(156 163 175)'; // text-gray-400
+                return {
+                    color: '#404040',
+                    label: 'Paused'
+                };
             default:
-                return 'white';
+                return {
+                    color: '#ffffff',
+                    label: ''
+                };
         }
     };
 
+    const { color, label } = getStateInfo();
+
     return (
-        <div className="w-[320px] h-[320px] mx-auto">
-            {/* Background circle */}
-            <svg
-                className="transform -rotate-90 w-full h-full"
-                viewBox={`0 0 ${size} ${size}`}
-            >
+        <div className="w-[280px] h-[280px] relative">
+            <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-gray-400 text-lg font-medium">{label}</span>
+            </div>
+            <svg className="transform -rotate-90 w-full h-full filter drop-shadow-[0_0_8px_rgba(233,69,96,0.3)]">
                 <circle
                     cx={size / 2}
                     cy={size / 2}
                     r={radius}
                     fill="none"
-                    stroke="rgb(55 65 81)"  // bg-gray-700
+                    stroke="rgb(55 65 81)"
                     strokeWidth={strokeWidth}
                 />
                 <circle
@@ -49,7 +64,7 @@ export default function TimerProgress({ progress, state }: TimerProgressProps) {
                     cy={size / 2}
                     r={radius}
                     fill="none"
-                    stroke={getColor()}
+                    stroke={color}
                     strokeWidth={strokeWidth}
                     strokeDasharray={circumference}
                     strokeDashoffset={offset}

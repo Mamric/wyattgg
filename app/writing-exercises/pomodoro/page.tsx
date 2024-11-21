@@ -16,8 +16,8 @@ export default function PomodoroPage() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
-            <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        <div className="min-h-screen bg-[#1a1a2e] flex items-center justify-center">
+            <div className="w-full max-w-5xl px-4 py-4 sm:py-8">
                 {currentScreen === "start" ? <StartScreen onBegin={handleBegin} /> : <PomodoroTimer timer={timer} />}
             </div>
         </div>

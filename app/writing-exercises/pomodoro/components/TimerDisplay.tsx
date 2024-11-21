@@ -14,7 +14,7 @@ export default function TimerDisplay({ timeRemaining, state }: TimerDisplayProps
     const getColorClass = () => {
         switch (state) {
             case 'POMODORO':
-                return 'text-green-400';
+                return 'text-rose-400';
             case 'SHORT_BREAK':
                 return 'text-blue-400';
             case 'LONG_BREAK':
