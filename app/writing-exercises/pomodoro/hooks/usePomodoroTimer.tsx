@@ -1,6 +1,6 @@
 /// <reference lib="dom" />
 /// <reference types="node" />
-/* global NodeJS, setInterval, clearInterval, HTMLAudioElement, Audio */
+/* global NodeJS, setInterval, clearInterval */
 
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 
@@ -14,6 +14,30 @@ export interface TimerSettings {
     autoStartPomodoros: boolean;
     longBreakInterval: number; // number of pomodoros before long break
 }
+
+declare global {
+    interface Window {
+        AudioContext: typeof AudioContext;
+        webkitAudioContext: typeof AudioContext;
+    }
+}
+
+// Create audio context and sources outside the component
+const audioContext = typeof window !== 'undefined' ? new (window.AudioContext || window.webkitAudioContext)() : null;
+
+// Preload audio files
+const preloadAudio = async (url: string): Promise<AudioBuffer | null> => {
+    if (!audioContext) return null;
+    try {
+        const response = await window.fetch(url);
+        const arrayBuffer = await response.arrayBuffer();
+        const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+        return audioBuffer;
+    } catch (error) {
+        console.error('Error loading audio:', error);
+        return null;
+    }
+};
 
 export function usePomodoroTimer() {
     // Timer Settings
@@ -35,32 +59,77 @@ export function usePomodoroTimer() {
     // Refs for interval management
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-    // Audio refs (only for tick and ring which need to be controlled)
-    const tickSound = useRef<HTMLAudioElement | null>(null);
-    const ringSound = useRef<HTMLAudioElement | null>(null);
+    // Audio buffer refs
+    const clickBuffer = useRef<AudioBuffer | null>(null);
+    const tickBuffer = useRef<AudioBuffer | null>(null);
+    const ringBuffer = useRef<AudioBuffer | null>(null);
+    const tickSourceRef = useRef<AudioBufferSourceNode | null>(null);
 
-    // Initialize audio elements
+    // Preload audio files on mount
     useEffect(() => {
-        tickSound.current = new Audio('/sounds/tick.mp3');
-        ringSound.current = new Audio('/sounds/ring.mp3');
-        
-        // Set tick sound to loop
-        if (tickSound.current) {
-            tickSound.current.loop = true;
-        }
+        if (!audioContext) return;
 
-        // Cleanup
+        const loadAudio = async () => {
+            clickBuffer.current = await preloadAudio('/sounds/click.mp3');
+            tickBuffer.current = await preloadAudio('/sounds/tick.mp3');
+            ringBuffer.current = await preloadAudio('/sounds/ring.mp3');
+        };
+
+        loadAudio();
+
         return () => {
-            tickSound.current = null;
-            ringSound.current = null;
+            if (tickSourceRef.current) {
+                tickSourceRef.current.stop();
+                tickSourceRef.current.disconnect();
+            }
         };
     }, []);
 
-    // Play click sound function (creates new instance each time)
-    const playClickSound = useCallback(() => {
-        const click = new Audio('/sounds/click.mp3');
-        click.play();
+    // Play sound function
+    const playSound = useCallback((buffer: AudioBuffer | null) => {
+        if (!audioContext || !buffer) return;
+        
+        const source = audioContext.createBufferSource();
+        source.buffer = buffer;
+        source.connect(audioContext.destination);
+        source.start(0);
+        return source;
     }, []);
+
+    // Play click sound function
+    const playClickSound = useCallback(() => {
+        if (clickBuffer.current) {
+            playSound(clickBuffer.current);
+        }
+    }, [playSound]);
+
+    // Handle tick sound
+    useEffect(() => {
+        if (!audioContext || !tickBuffer.current) return;
+
+        if (timeRemaining <= 5 && timeRemaining > 0 && isActive) {
+            if (!tickSourceRef.current) {
+                const source = audioContext.createBufferSource();
+                source.buffer = tickBuffer.current;
+                source.loop = true;
+                source.connect(audioContext.destination);
+                source.start(0);
+                tickSourceRef.current = source;
+            }
+        } else if (tickSourceRef.current) {
+            tickSourceRef.current.stop();
+            tickSourceRef.current.disconnect();
+            tickSourceRef.current = null;
+        }
+
+        return () => {
+            if (tickSourceRef.current) {
+                tickSourceRef.current.stop();
+                tickSourceRef.current.disconnect();
+                tickSourceRef.current = null;
+            }
+        };
+    }, [timeRemaining, isActive]);
 
     // Modified startTimer
     const startTimer = useCallback(() => {
@@ -86,14 +155,15 @@ export function usePomodoroTimer() {
 
     // Handle timer completion
     const handleTimerComplete = useCallback(() => {
-        // Stop tick sound if it's playing
-        if (tickSound.current) {
-            tickSound.current.pause();
-            tickSound.current.currentTime = 0;
+        if (tickSourceRef.current) {
+            tickSourceRef.current.stop();
+            tickSourceRef.current.disconnect();
+            tickSourceRef.current = null;
         }
         
-        // Play completion sound
-        ringSound.current?.play();
+        if (ringBuffer.current) {
+            playSound(ringBuffer.current);
+        }
 
         if (timerState === 'POMODORO') {
             const nextPomodoroCount = completedPomodoros + 1;
@@ -111,7 +181,7 @@ export function usePomodoroTimer() {
             setTimeRemaining(getTotalTime('POMODORO'));
             setIsActive(settings.autoStartPomodoros);
         }
-    }, [timerState, completedPomodoros, settings, getTotalTime]);
+    }, [timerState, completedPomodoros, settings, getTotalTime, playSound]);
 
     // Timer tick effect
     useEffect(() => {

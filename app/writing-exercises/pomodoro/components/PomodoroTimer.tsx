@@ -69,7 +69,7 @@ export default function PomodoroTimer({ timer }: PomodoroTimerProps) {
 
             <div
                 className={`mt-6 transition-all duration-300 ease-in-out overflow-hidden ${
-                    isSettingsOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                    isSettingsOpen ? "max-h-[800px] sm:max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                 }`}
             >
                 <div className="border-t border-gray-700 pt-6">
