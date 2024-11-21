@@ -3,7 +3,6 @@ import TimerDisplay from "./TimerDisplay";
 import TimerControls from "./TimerControls";
 import TimerProgress from "./TimerProgress";
 import TimerSettings from "./TimerSettings";
-import { useState } from "react";
 
 type PomodoroTimerProps = {
     timer: {
@@ -23,8 +22,6 @@ type PomodoroTimerProps = {
 };
 
 export default function PomodoroTimer({ timer }: PomodoroTimerProps) {
-    const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-    
     const getStateColors = () => {
         switch (timer.timerState) {
             case 'POMODORO':

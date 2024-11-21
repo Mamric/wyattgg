@@ -1,3 +1,5 @@
+import { TimerState } from "../hooks/usePomodoroTimer";
+
 type TimerControlsProps = {
     isActive: boolean;
     onStart: () => void;
