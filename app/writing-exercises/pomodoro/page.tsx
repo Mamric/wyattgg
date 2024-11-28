@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePomodoroTimer } from "./hooks/usePomodoroTimer";
 import StartScreen from "./components/StartScreen";
 import PomodoroTimer from "./components/PomodoroTimer";
@@ -10,6 +10,39 @@ type Screen = "start" | "timer";
 export default function PomodoroPage() {
     const [currentScreen, setCurrentScreen] = useState<Screen>("start");
     const timer = usePomodoroTimer();
+
+    useEffect(() => {
+        const handleKeyPress = (e: globalThis.KeyboardEvent) => {
+            if (e.code === 'Space' && 
+                e.target instanceof globalThis.Element && 
+                !['INPUT', 'TEXTAREA'].includes(e.target.tagName)
+            ) {
+                e.preventDefault();
+                if (currentScreen === 'timer') {
+                    timer.isActive ? timer.pauseTimer() : timer.startTimer();
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyPress);
+        return () => window.removeEventListener('keydown', handleKeyPress);
+    }, [currentScreen, timer]);
+
+    useEffect(() => {
+        const minutes = Math.floor(timer.timeRemaining / 60);
+        const seconds = timer.timeRemaining % 60;
+        const timeString = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        
+        if (currentScreen === 'timer') {
+            document.title = `Wyatt.gg | ${timeString}`;
+        } else {
+            document.title = 'Wyatt.gg | Writing Exercises';
+        }
+
+        return () => {
+            document.title = 'Wyatt.gg | Writing Exercises';
+        };
+    }, [currentScreen, timer.timeRemaining]);
 
     const handleBegin = () => {
         setCurrentScreen("timer");
