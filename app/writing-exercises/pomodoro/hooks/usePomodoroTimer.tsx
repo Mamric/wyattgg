@@ -72,6 +72,7 @@ export function usePomodoroTimer() {
 
     // Refs for interval management
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
+    const startTimeRef = useRef<number | null>(null);
 
     // Audio buffer refs
     const clickBuffer = useRef<AudioBuffer | null>(null);
@@ -236,29 +237,43 @@ export function usePomodoroTimer() {
     // Timer tick effect
     useEffect(() => {
         if (isActive) {
+            // Store the start time when activating the timer
+            if (startTimeRef.current === null) {
+                startTimeRef.current = Date.now() - ((getTotalTime(timerState) - timeRemaining) * 1000);
+            }
+
             intervalRef.current = setInterval(() => {
-                setTimeRemaining((prev) => {
-                    if (prev <= 1) {
-                        handleTimerComplete();
-                        return 0;
-                    }
-                    return prev - 1;
-                });
-            }, 1000);
+                if (startTimeRef.current === null) return;
+
+                const elapsedMs = Date.now() - startTimeRef.current;
+                const totalSeconds = getTotalTime(timerState);
+                const newTimeRemaining = Math.max(
+                    Math.ceil(totalSeconds - (elapsedMs / 1000)),
+                    0
+                );
+
+                if (newTimeRemaining === 0) {
+                    handleTimerComplete();
+                    startTimeRef.current = null;
+                } else {
+                    setTimeRemaining(newTimeRemaining);
+                }
+            }, 100); // Run more frequently for smoother updates
         } else {
             if (intervalRef.current) {
                 clearInterval(intervalRef.current);
-                intervalRef.current = null; // Clear the ref
+                intervalRef.current = null;
             }
+            startTimeRef.current = null;
         }
 
         return () => {
             if (intervalRef.current) {
                 clearInterval(intervalRef.current);
-                intervalRef.current = null; // Clear the ref
+                intervalRef.current = null;
             }
         };
-    }, [isActive, handleTimerComplete]);
+    }, [isActive, handleTimerComplete, getTotalTime, timerState, timeRemaining]);
 
     // Memoize progress calculation
     const progress = useMemo(
@@ -282,11 +297,12 @@ export function usePomodoroTimer() {
                 }
             })();
 
-            setSettings(newSettings);
-
-            // Only update time remaining if the current phase's duration was changed
             if (shouldResetTimer) {
-                setTimeRemaining((prev) => {
+                // Calculate time passed in seconds
+                const timePassed = getTotalTime(timerState) - timeRemaining;
+                
+                // Calculate new total time in seconds
+                const newTotalTime = (() => {
                     if (timerState === "POMODORO") {
                         return newSettings.pomodoroTime * 60;
                     } else if (timerState === "SHORT_BREAK") {
@@ -294,16 +310,30 @@ export function usePomodoroTimer() {
                     } else if (timerState === "LONG_BREAK") {
                         return newSettings.longBreakTime * 60;
                     }
-                    return prev;
-                });
+                    return timeRemaining;
+                })();
+                
+                // Calculate new time remaining by subtracting the same amount of passed time
+                const newTimeRemaining = Math.max(newTotalTime - timePassed, 0);
+                
+                // Update the startTimeRef to maintain consistency with the timer
+                if (startTimeRef.current !== null) {
+                    startTimeRef.current = Date.now() - (timePassed * 1000);
+                }
+                
+                setTimeRemaining(newTimeRemaining);
+                setSettings(newSettings);
+            } else {
+                setSettings(newSettings);
             }
         },
-        [timerState, settings]
+        [timerState, settings, getTotalTime, timeRemaining]
     );
 
     const resetTimer = useCallback(() => {
         setTimeRemaining(getTotalTime(timerState));
         setIsActive(false);
+        startTimeRef.current = null;
     }, [timerState, getTotalTime]);
 
     // Add effect to handle audio context state
@@ -327,7 +357,6 @@ export function usePomodoroTimer() {
     }, []);
 
     const skipTimer = useCallback(() => {
-        // Stop the current timer if it's running
         if (isActive) {
             setIsActive(false);
             if (intervalRef.current) {
@@ -335,6 +364,7 @@ export function usePomodoroTimer() {
                 intervalRef.current = null;
             }
         }
+        startTimeRef.current = null;
 
         // Determine next state
         if (timerState === "POMODORO") {
